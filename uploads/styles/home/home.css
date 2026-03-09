@@ -216,7 +216,7 @@
   position: relative;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure {
-  background: var(--gradient-b);
+  background: var(--gradient-a);
   height: 500px;
   overflow: hidden;
 }
@@ -422,7 +422,7 @@
   border-radius: 10px;
 }
 .industry_sec .tab-nav-content .industry_wrapper figcaption {
-  background: var(--gradient-a);
+  background: var(--white);
   padding: 35px 40px;
   border-radius: 10px;
   max-width: 400px;
@@ -435,10 +435,10 @@
 .industry_sec .tab-nav-content .industry_wrapper figcaption h3 {
   font-weight: 300;
   font-size: 40px;
-  color: var(--white);
+  color: var(--black);
 }
 .industry_sec .tab-nav-content .industry_wrapper figcaption p {
-  color: rgba(255, 255, 255, 0.6980392157);
+  color: var(--text);
   margin: 20px 0 35px;
 }
 

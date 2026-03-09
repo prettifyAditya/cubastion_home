@@ -91,7 +91,7 @@ export default function IndustriesSec(){
                                 <figcaption>
                                     <h3>Automobile</h3>
                                     <p>We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.</p>
-                                    <Button linkHref="/" classname="white-border" buttonText="Explore"></Button>
+                                    <Button linkHref="/" classname="" buttonText="Explore"></Button>
                                 </figcaption>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ export default function IndustriesSec(){
                                 <figcaption>
                                     <h3>Automobile</h3>
                                     <p>We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.</p>
-                                    <Button linkHref="/" classname="white-border" buttonText="Explore"></Button>
+                                    <Button linkHref="/" classname="" buttonText="Explore"></Button>
                                 </figcaption>
                             </div>
                         </div>
@@ -115,7 +115,7 @@ export default function IndustriesSec(){
                                 <figcaption>
                                     <h3>Automobile</h3>
                                     <p>We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.</p>
-                                    <Button linkHref="/" classname="white-border" buttonText="Explore"></Button>
+                                    <Button linkHref="/" classname="" buttonText="Explore"></Button>
                                 </figcaption>
                             </div>
                         </div>
@@ -127,7 +127,7 @@ export default function IndustriesSec(){
                                 <figcaption>
                                     <h3>Automobile</h3>
                                     <p>We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.</p>
-                                    <Button linkHref="/" classname="white-border" buttonText="Explore"></Button>
+                                    <Button linkHref="/" classname="" buttonText="Explore"></Button>
                                 </figcaption>
                             </div>
                         </div>
@@ -139,7 +139,7 @@ export default function IndustriesSec(){
                                 <figcaption>
                                     <h3>Automobile</h3>
                                     <p>We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.</p>
-                                    <Button linkHref="/" classname="white-border" buttonText="Explore"></Button>
+                                    <Button linkHref="/" classname="" buttonText="Explore"></Button>
                                 </figcaption>
                             </div>
                         </div>
@@ -151,7 +151,7 @@ export default function IndustriesSec(){
                                 <figcaption>
                                     <h3>Automobile</h3>
                                     <p>We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.</p>
-                                    <Button linkHref="/" classname="white-border" buttonText="Explore"></Button>
+                                    <Button linkHref="/" classname="" buttonText="Explore"></Button>
                                 </figcaption>
                             </div>
                         </div>
