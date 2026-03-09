@@ -1,0 +1,57 @@
+"use client";
+import { useRef } from "react";
+import CommanSlider from "@/components/organisms/CommanSlider";
+import SwiperButton from "@/components/atoms/SwiperButton";
+
+function RelatedBlog({ data }) {
+  if (!data) return null;
+
+  const swiperRef = useRef(null);
+
+  return (
+    <section>
+      <div className="related_sec slider-section sec-pad-all">
+        <div className="container">
+          <div className="upper-sec">
+            <div className="swiper-nav group">
+              <SwiperButton
+                classname="swiper-prev"
+                onClick={() => swiperRef.current?.slidePrev()}
+              />
+              <SwiperButton
+                classname="swiper-next"
+                onClick={() => swiperRef.current?.slideNext()}
+              />
+              </div>
+            <div className="heading">
+              <h2>{data.heading}</h2>
+            </div>
+          </div>
+          <CommanSlider
+            data={data}
+            cardType="blog"
+            loop={true}
+            breakpoints= {{
+              0: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              540: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+              },
+              991: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+            classname="related_slider"
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default RelatedBlog;

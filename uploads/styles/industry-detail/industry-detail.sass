@@ -1,0 +1,217 @@
+@import '../_var'
+
+header
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+
+.industry-banner
+    margin-top: calc(var(--headerheight) + 20px)
+    .grid
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        gap: 3rem
+        padding: 50px 50px 114px
+        border-radius: 10px
+        background: var(--gradient-c)
+        .item-content
+            flex: 1
+            max-width: 420px
+            .name
+                margin-top: 0
+                font-size: 14px
+                color: $white
+                position: relative
+                padding-left: 30px
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    left: 0
+                    transform: translateY(-50%)
+                    width: 12px
+                    height: 12px
+                    border: 1px solid var(--white)
+                    border-radius: 50%
+            h1
+                color: var(--white)
+                margin: 80px 0 20px
+            p:not(.name)
+                color: #FFFFFFB2
+                width: 100%
+                max-width: 415px
+                line-height: 1.5
+                font-weight: 400 
+            .btn
+                margin-top: 70px
+        .item-media
+            flex: 0 1 auto
+            width: 527px
+        
+        
+.automation_sec ,
+.business_sec
+    .heading
+        text-align: center
+        width: 100%
+        max-width: 650px
+        margin: 0 auto 50px
+
+    .grid
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 40px
+
+.business_sec
+    .grid
+        .card
+            padding: 28px 20px
+            &:not(:last-child)
+                border-top: 1px solid rgba(240, 142, 29, 1)
+                border-bottom: 1px solid rgba(240, 142, 29, 1)
+            p
+                margin: 8px 0 12px
+                color: var(--black)
+            span
+                display: block
+                font-size: 14px
+                font-weight: 400
+                color: $text
+                line-height: 1.4
+            &:last-child
+                background: var(--gradient-a)
+                padding: 30px 35px
+                border-radius: 10px
+                h2,p
+                    color: var(--white)
+                span
+                    color: var(--para)
+                    font-size: 14px
+                    font-weight: 400 
+           
+.case_sec
+    .container-fluid
+        padding: 0
+    .case_slider
+        padding: 30px 15px
+
+.related_sec
+    .related_slider
+        padding: 15px
+
+
+.awards_slider
+    margin-top: 0
+
+.faq_sec
+  .grid
+    background: var(--bglight)
+    display: grid
+    grid-template-columns: 427px 1fr
+    align-items: start
+    border-radius: 10px
+    padding: 60px 50px
+    .heading
+      position: sticky
+      top: calc( var(--headerheight) + 20px)
+      .btn
+        margin-top: 30px
+    .item-content
+      display: flex
+      flex-direction: column
+      gap: 16px
+      .faq_item
+        background: var(--white)
+        border-radius: 10px
+        overflow: hidden
+        transition: background 0.35s
+        &.active
+          background: var(--gradient-c)
+          border-color: transparent
+
+          .faq_item_question
+            color: #fff
+
+          .faq_item_icon
+            color: #fff
+
+          .faq_item_answer
+            color: rgba(255, 255, 255, 0.80)
+
+        &_question
+          width: 100%
+          display: flex
+          justify-content: space-between
+          align-items: center
+          gap: 20px
+          padding: 20px 22px
+          background: none
+          cursor: pointer
+          color: rgba(0, 0, 0, 0.4)
+          transition: color 0.35s
+
+        &_text
+          font-size: 18px
+          font-weight: 500
+          line-height: 1.2
+
+        &_icon
+          font-size: 1.4rem
+          flex-shrink: 0
+
+        &_body
+          display: grid
+          grid-template-rows: 0fr
+          padding: 0 22px 0
+          transition: .5s ease
+          &.active
+            padding: 0 22px 22px
+            grid-template-rows: 1fr
+
+        &_answer
+          font-size: 16px
+          color: rgba(15, 27, 53, 0.65)
+          overflow: hidden
+            
+
+.speak_sec
+    .grid
+        background: var(--bglight)
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 10rem
+        align-items: center
+        border-radius: 10px
+        padding: 45px
+        .heading
+            p:not( .card-profile figcaption > p)
+                margin: 20px 0 45px
+                line-height: 1.5
+            .card-profile
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                gap: 18px
+                max-width: max-content
+                figure
+                    flex: 0 1 auto
+                    width: 52px
+                    height: 52px
+                figcaption
+                    flex: 1
+                    line-height: 1.2
+                    h6
+                        font-size: 14px
+                        margin-bottom: 4px
+                    p
+                        color: #000000B2
+                        font-size: 14px
+
+        .form
+            background: var(--gradient-a)
+            padding: 45px 40px
+            border-radius: 10px
+            .form-grid
+                --item: 2
+
+

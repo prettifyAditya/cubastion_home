@@ -1,0 +1,756 @@
+@import '../_var'
+
+.hero_sec
+    margin-top: calc( var(--headerheight) + 30px)
+    height: calc( 100vh - calc( var(--headerheight) + 50px ) )
+    .container
+        height: 100%
+    .hero_wrapper
+        position: relative
+        height: 100%
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        gap: 20px
+        .hero_col
+            flex: 1
+            position: relative
+            width: 100%
+            height: 100%
+            overflow: hidden
+            &:not(.active)
+                flex: 0 1 100px
+                figcaption
+                    .hero_title
+                        transform: translate(0, -10%) rotate(90deg)
+            figure
+                line-height: 0
+                overflow: hidden
+                width: 100%
+                height: 100%
+                border-radius: 10px
+                @include before()
+                &::before
+                    background: linear-gradient(270deg, #0000 50%, #000 100% 100% ), linear-gradient(0deg, #0000 28%, #000 86%)
+                    border-radius: 10px
+                img,video
+                    height: 100%
+                    width: 100%
+                    border-radius: 10px
+                    object-fit: cover
+                    transition: .5s ease
+            figcaption
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                width: 100%
+                height: 100%
+                .hero_title
+                    position: absolute
+                    top: 10%
+                    transform: translate(0, -10%)
+                    display: flex
+                    align-items: center
+                    gap: 10px
+                    white-space: nowrap
+                    .dot
+                        width: 11px
+                        height: 11px
+                        border: 1px solid $white
+                        border-radius: 50%
+                    h6
+                        font-size: 14px
+                        color: $white
+                .heading
+                    position: absolute
+                    top: 50%
+                    transform: translate(0, -50%)
+                    max-width: 510px
+                    h2
+                        font-size: 40px
+                        color: $white
+                    p
+                        color: rgba(255, 255, 255, 0.7)
+                        max-width: 395px
+                        margin: 10px 0 30px
+
+.about_sec
+    @include before-blur
+    &::before
+        z-index: -1
+    .about_wrapper
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-around
+        --gap: 100px
+        figcaption
+            flex: 0 1 40%
+            max-width: 40%
+            width: 100%
+            .heading
+                h1
+                    font-size: 36px 
+                p
+                    margin: 10px 0 30px
+        figure
+            flex: 0 1 auto
+            width: 340px
+            height: 340px
+            border-radius: 50%
+            img
+                border-radius: 50%
+
+.industry_sec
+    background: var(--bglight)
+    padding-bottom: 130px
+    .heading
+        text-align: center
+    .tab-nav
+        display: flex
+        align-items: center
+        gap: 60px
+        justify-content: space-between
+        margin: 40px auto 30px
+        border-bottom: 1px solid #C2C2C2
+        max-width: 1170px
+        li
+            position: relative
+            padding-bottom: 15px
+            color: #00000066
+            cursor: pointer
+            &.active
+                color: $primary
+                &::before
+                    width: 100%
+            &::before
+                content: ""
+                position: absolute
+                left: 0
+                bottom: 0
+                height: 2px
+                width: 0
+                background-color: var(--secondary)
+                transition: .5s ease
+    .tab-nav-content
+        max-width: 1170px
+        margin: auto
+        .tabs
+            transition: .8s ease
+            &:not(.active)
+                opacity: 0
+                .industry_wrapper
+                    figcaption
+                        transform: translate(-29%, 10%)
+        .industry_wrapper
+            position: relative
+            &.vector
+                figure
+                    background: var(--gradient-b)
+                    height: 500px
+                    overflow: hidden
+                    .animate_wrapper
+                        position: absolute
+                        right: 10%
+                        top: 50%
+                        transform: translate(10%, -50%)
+                        height: 375px
+                        width: 500px
+                        overflow: hidden
+                        .road_line
+                            position: absolute
+                            left: 0
+                            bottom: 30%
+                            width: 0
+                            height: 3px
+                            background-image: repeating-linear-gradient(to right, #fff 0px, #fff 12px, transparent 12px, transparent 24px)
+                            background-size: 24px 2px
+                            background-repeat: repeat-x
+                            transition: width 1.5s ease-in-out
+                            &.road_visible
+                                width: 100%
+                            &.moving
+                                animation: roadMove 0.6s linear infinite
+                        &:not(.active)
+                            .main_wrap
+                                .parts1
+                                    transform: translate(-15%, 0px) scale(.8)
+                                .parts2
+                                    transform: translate(0%, -25%) scale(.8)
+                                .parts3
+                                    transform: translate(-25%, -35%)
+                                .parts4
+                                    transform: translate(-40%, -90%)
+                                .parts5
+                                    transform: translate(-100%, 90%) rotate(90deg)
+                                .parts6
+                                    transform: translate(90%, 90%)
+                                .parts7
+                                    transform: translate(-50%, 20%)
+                        &.active
+                            .hand_top
+                                animation: touch_go 2s ease 1s 
+                            .main_wrap
+                                &::before
+                                    animation: beforeblur 3s ease 1.2s forwards
+                                .parts5, .tire
+                                    animation: tirerun 2s linear 3s infinite forwards
+                        .main_wrap
+                            position: absolute
+                            left: 50%
+                            top: 50%
+                            transform: translate(-50%, -50%)
+                            width: 185px
+                            height: 140px
+                            @include before(var(--white))
+                            &::before
+                                border-radius: 50%
+                                filter: blur(10px)
+                                opacity: 0
+                                z-index: -1
+                            .parts1
+                                width: 55%
+                                top: 0
+                                left: 0
+                                transform: translate(0, 0)
+                                transition: .5s ease
+                            .parts2
+                                width: 55%
+                                top: 0
+                                left: 3%
+                                transform: translate(-3%, 0)
+                                transition: .5s ease
+                            .parts3
+                                width: 42%
+                                top: 65%
+                                left: 98%
+                                transform: translate(-98%, -65%)
+                                transition: .5s ease
+                            .parts4
+                                width: 29%
+                                top: 22%
+                                left: 98%
+                                transform: translate(-98%, -22%)
+                                transition: .5s ease
+                            .parts5
+                                width: 20%
+                                left: 13%
+                                bottom: 1%
+                                transform: translate(-13%, 1%)
+                                transition: .5s ease
+                            .tire
+                                position: absolute
+                                width: 20%
+                                height: 26.43%
+                                right: 22%
+                                bottom: 0%
+                                transform: translate(22%, 0%)
+                            .parts6
+                                height: 48.7%
+                                left: 50% 
+                                bottom: 0
+                                transform: translate(-50%, 0)
+                                transition: .5s ease
+                            .parts7
+                                height: 48.7%
+                                left: 50% 
+                                top: 0
+                                transform: translate(-50%, 0)
+                                transition: .5s ease
+                        
+                        // Animations keyframes
+                        @keyframes touch_go
+                            0%, 100%
+                                transform: translate(0, 0)
+                            60%      
+                                transform: translate(10%, 45%)scale(1.2)
+                        @keyframes beforeblur
+                            0%
+                                opacity: 0
+                            50%      
+                                opacity: 0.3
+                            100%      
+                                opacity: 0
+                        @keyframes tirerun
+                            0%
+                                transform: rotate(0)
+                            100%      
+                                transform: rotate(360deg)
+                        @keyframes roadMove
+                            from
+                                background-position: 0 0
+                            to
+                                background-position: -24px 0
+                        // Animations keyframes
+                        img
+                            width: auto
+                            height: auto
+                            object-fit: contain
+                            position: absolute
+                            &.hand_top
+                                top: 0
+                                left: 0
+                                transform: translate(0, 0)
+                                width: 200px
+                            &.hand_bottom
+                                bottom: 0
+                                right: 0
+                                transform: translate(0, 0)
+                                width: 200px
+            figure
+                position: relative
+                border-radius: 10px
+            figcaption
+                background: var(--gradient-a)
+                padding: 35px 40px
+                border-radius: 10px
+                max-width: 400px
+                position: absolute
+                left: 10%
+                bottom: -10%
+                transform: translate(-10%, 10%)
+                transition: 1s ease
+                h3
+                    font-weight: 300
+                    font-size: 40px
+                    color: $white
+                p
+                    color: #FFFFFFB2
+                    margin: 20px 0 35px
+
+.services_sec
+    background: #F5F7FA
+    .heading
+        text-align: center
+        max-width: 500px
+        margin: 0 auto 60px
+    .service_wrapper
+        display: flex
+        flex-wrap: wrap
+        align-items: start
+        --gap: 10px
+        gap: var(--gap)
+        .filter_wrapper
+            flex: 0 1 auto
+            max-width: 45%
+            width: 100%
+            .filter_col
+                cursor: pointer
+                border-radius: 10px
+                &:not(:last-child)
+                    margin-bottom: 10px
+                &.disabled
+                    cursor: no-drop
+                &.active
+                    background: $white
+                    .filter_title
+                        border-bottom: none
+                        border-bottom-left-radius: 0
+                        border-bottom-right-radius: 0
+                        cursor: pointer
+                        .count, h6
+                            color: $black
+                        .plus
+                            --bgcolor: var(--black)
+                            &::after
+                                transform: scaleY(0)
+                    .filter_dropdown
+                        opacity: 1
+                        height: 280px
+                        .filter_type_wrap
+                            display: flex
+                .filter_title
+                    padding: 30px 25px
+                    border: 1px solid #D2D2D2
+                    border-radius: 10px
+                    display: flex
+                    gap: 10px
+                    .count
+                        font-size: 16px
+                        color: #00000066
+                        line-height: 1.3
+                    h6
+                        font-size: 16px
+                        line-height: 1.3
+                        color: #00000066
+                    .plus
+                        margin-left: auto
+                        --bgcolor: var(--text)
+                        --size: 20px
+                        --border: 2px
+                        height: var(--size)
+                        width: var(--size)
+                        position: relative
+                        @include before(var(--bgcolor))
+                        @include after(var(--bgcolor))
+                        &::before,&::after
+                            transition: .5s ease
+                        &::before
+                            top: calc(var(--size) / 2 - var(--border) / 2)
+                            bottom: auto
+                            height: var(--border)
+                            width: 100%
+                        &::after
+                            left: calc(var(--size) / 2)
+                            translate: -50% 0 
+                            right: auto
+                            width: var(--border)
+                            height: 100%
+                .filter_dropdown
+                    border: 1px solid #D2D2D2
+                    border-radius: 0 0 10px 10px
+                    border-top: none
+                    height: 0
+                    opacity: 0
+                    transition: .5s ease
+                .filter_type_wrap
+                    padding: 0 25px 20px
+                    display: none
+                    flex-wrap: wrap
+                    gap: 12px 10px
+                    .ques_type_col
+                        position: relative
+                        flex: 0 1 auto 
+                        background: $white
+                        color: $text
+                        border: 1px solid #00000033
+                        padding: 6px 20px
+                        border-radius: 25px
+                        font-size: 14px
+                        font-weight: 400
+                        max-width: fit-content
+                        cursor: pointer
+                        transition: .5s ease
+                        &:hover, &:has(input:checked), &.active
+                            background: var(--gradient-a)
+                            color: $white
+                            border-color: transparent
+                        input
+                            position: absolute
+                            left: 0
+                            top: 0
+                            width: 100%
+                            height: 100%
+                            opacity: 0
+                            visibility: hidden
+                            z-index: 1
+                            cursor: pointer
+        .filter_service_wrap
+            flex: 1
+            max-width: calc( 55% - var(--gap) )
+            width: 100% 
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 15px 10px
+            .service_col
+                position: relative
+                border: 1px solid #D2D2D2
+                --padlr: 28px
+                --padtb: 29px
+                padding: var(--padtb) var(--padlr)
+                border-radius: 10px
+                overflow: hidden
+                min-height: 266px
+                cursor: pointer
+                transition: .5s ease
+                @include before(var(--white))
+                @include after(var(--gradient-a))
+                &::after
+                    opacity: 0
+                &:hover
+                    &::before
+                        opacity: 0
+                        z-index: -1
+                    &::after
+                        opacity: 1
+                        z-index: 0
+                    .bg_pattern
+                        opacity: 1
+                    figcaption
+                        h6
+                            color: $white
+                        .vector_img
+                            transform-origin: left
+                            transform: scale(.6) translate(0px, calc( -1 * calc( var(--padtb) * 2.5) ))
+                            filter: brightness(1)
+                            opacity: 1
+                        .btn
+                            transform: translate(-50%, 0)
+                .bg_pattern
+                    position: absolute
+                    width: 60px
+                    right: var(--padlr)
+                    top: 50%
+                    transform: translate(0, -50%)
+                    opacity: 0
+                    transition: .5s ease
+                    z-index: 1
+                figcaption
+                    position: relative
+                    z-index: 2
+                    width: 100%
+                    height: 100%
+                    h6
+                        font-size: 16px
+                        opacity: .7s ease
+                    .vector_img
+                        position: absolute
+                        z-index: inherit
+                        height: auto
+                        bottom: 0
+                        left: 0
+                        width: 125px
+                        filter: brightness(0)
+                        opacity: 0.1
+                        transition: .5s ease
+                    .btn
+                        width: 100%
+                        position: absolute
+                        z-index: inherit
+                        bottom: 0
+                        left: 50%
+                        transform: translate(-200%, 0)
+
+.highlights_sec
+    background: var(--bglight)
+    .main_wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        --gap: 50px
+        gap: var(--gap)
+        .colA
+            flex: 0 1 auto
+            max-width: 40%
+            width: 100%
+            .heading
+                h3
+                    font-size: 16px
+                p
+                    font-size: 24px
+                    margin-top: 20px
+                    color: $black
+                    line-height: 1.3
+        .colB
+            flex: 0 1 auto
+            max-width: 40%
+            width: 100%
+            .count_wrapper
+                padding: 40px 0 0
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 40px 50px
+                border-top: 2px solid var(--secondary)
+                .count_col
+                    h6
+                        font-size: 32px
+                    h5
+                        font-size: 16px
+                    p
+                        margin-top: 10px
+                        font-size: 14px
+
+.expert_sec
+    .heading
+        text-align: center
+        margin-bottom: 60px
+    .expert_wrapper
+        position: relative
+        .swiper-nav
+            max-width: 55%
+        .expert_slider
+            .swiper-slide
+                width: 500px
+                &:not(.swiper-slide-active)
+                    .expert_col
+                        &::before, &::after
+                            opacity: 0
+                        figcaption
+                            opacity: 0
+                &.swiper-slide-active
+                    figure
+                        &::after
+                            display: none
+            .expert_col
+                height: 350px
+                &::before, &::after
+                    content: ""
+                    position: absolute
+                    background: url(/assets/vector/dots.svg) no-repeat
+                    background-size: 120px
+                &::before
+                    background-position: 0% 0%
+                &::after
+                    background-position: 100% 100%
+                figure
+                    @include before(linear-gradient(180deg, #0000 0%, #000 100% 100%))
+                    @include after()
+                    &::after
+                        background: #0000001A
+                        backdrop-filter: blur(5px)
+                    border-radius: 10px
+                figcaption
+                    bottom: 50%
+                    right: unset
+                    transform: translate(0, 50%)
+                    text-align: center
+                    padding: 0 28px
+                    transition: .7s ease
+                    h4
+                        font-size: 24px
+                        font-weight: 600
+                        color: $white
+                        line-height: 1.2
+                    .line
+                        width: 32px
+                        height: 3px
+                        border-radius: 5px
+                        background: var(--secondary)
+                        margin: 20px auto
+                    p
+                        font-size: 16px
+                        margin-bottom: 20px
+                        color: $white
+    .btn_wrap
+        margin-top: 40px
+        justify-content: center
+
+.map_sec
+    .heading
+        max-width: 460px
+        margin: 0 auto 50px
+        text-align: center
+        @include media(991)  
+            margin: 0 auto 40px
+        @include media(768)
+            margin: 0 auto 30px
+        h2
+            font-size: 36px
+            @include font(600)
+            padding-bottom: 5px
+            @include media(991)
+                font-size: 32px
+            @include media(768)
+                font-size: 30px
+            @include media(540)
+                font-size: 28px
+        p
+            color: $black
+            line-height: 1.2
+            margin-top: 0
+            @include media(540)
+                font-size: 14px
+                line-height: 1.3
+    .global-container
+        position: relative
+        max-width: 100%
+        text-align: center
+        z-index: 2
+        @include media(991) 
+            margin-top: 50px 
+        @include media(768)
+            margin-top: 0
+        .map-image
+            width: 900px
+            height: 460px
+            object-fit: contain
+            @include media(768)            
+                width: 700px
+                height: 300px
+            @include media(540)
+                width: 100%
+                height: 165px
+        .pointer
+            position: absolute
+            cursor: pointer
+            transform: translate(-50%, -50%)
+            z-index: 1
+            &:hover
+                z-index: 10
+                .point_wrap
+                    span
+                        opacity: 1
+                        visibility: visible
+            .point_wrap
+                position: relative
+                .icon
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 30px
+                    height: 30px
+                    border: 1px solid $primary
+                    border-radius: 50%
+                    animation: blink 2s .2s infinite
+                    position: relative
+                    z-index: 1
+                    @include media(540)
+                        width: 20px
+                        height: 20px
+                    svg
+                        width: 60%
+                        height: 60%
+                span
+                    display: block
+                    width: max-content
+                    max-width: 180px
+                    font-size: 14px  
+                    background-color: var(--white)
+                    padding: 7px 15px
+                    border-radius: 5px
+                    color: $black
+                    position: absolute
+                    bottom: 100%
+                    left: 50%
+                    transform: translate(-50%, -30%)
+                    opacity: 0
+                    visibility: hidden
+                    transition: .5s ease
+                    z-index: 10
+                    --triangle: 10px
+                    @include media(540) 
+                        font-size: 12px
+                        max-width: 150px
+                    &::before
+                        content: ""
+                        display: block
+                        position: absolute
+                        top: calc(100% - var(--triangle) / 2)
+                        left: 50%
+                        width: var(--triangle)
+                        height: var(--triangle)
+                        background: var(--white)
+                        transform: translate(-50%, 0) rotate(45deg)
+                        z-index: -1
+            &.point1
+                top: 50%
+                right: 34%
+            &.point2
+                right: 35%
+                bottom: 32%
+            &.point3
+                top: 45%
+                right: 40%
+            &.point4
+                left: 32%
+                top: 44%
+            &.point5
+                right: 25%
+                top: 44%
+            &.point6
+                left: 52%
+                top: 35%
+
+@keyframes blink
+    0% 
+        opacity: 0.5
+        transform: scale(0.8)
+    
+    50% 
+        opacity: 1
+        transform: scale(1)
+    
+    100% 
+        opacity: 0.5
+        transform: scale(0.8)

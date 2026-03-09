@@ -1,0 +1,325 @@
+@import '../_var'
+
+.career-banner.banner
+    &::before
+        background: linear-gradient(0deg, hsl(0deg 0% 100% / 60%) 0%, #fff 100%)
+    .banner-wrapper
+        .heading
+            width: 100%
+            max-width:  680px
+            margin: 0 auto 30px
+            h1
+                font-size: 48px
+                text-align: center
+        .search-wrapper
+            .form
+                display: flex
+                gap: 20px
+                align-items: center
+                width: 100%
+                max-width: 540px
+                margin: 0 auto
+                .form-group
+                    padding: 10px 10px 10px 60px
+                    border-radius: 10px
+                    background: var(--white)
+                    position: relative
+                    &::before
+                        background: none
+                    &::after
+                        position: absolute
+                        left: 20px
+                        top: 55%
+                        transform: translateY(-50%)
+                        background: url("/assets/icon/search.svg")
+                        width: 30px
+                        display: block
+                        height: 30px
+                        background-size: 20px
+                        background-repeat: no-repeat
+
+                .sbt
+                    padding: 15px 34px
+                    background: var(--secondary)
+                    color: var(--white)
+                    border-radius: 50px
+
+    .role_wrapper
+        margin-top: 120px
+        .role_slider
+            .swiper-wrapper
+                transition-timing-function: linear
+            .role_col
+                display: flex
+                align-items: center
+                gap: 20px
+                img
+                    width: 88px
+                    height: 88px
+                    border-radius: 5px
+                p
+                    font-size: 20px
+                    font-weight: 400
+                    color: var(--black)
+
+        
+.client_sec
+    overflow: hidden
+    @include before-blur
+    &::before
+        background: #00328E1A
+        filter: blur(70px)
+        width: 375px
+        height: 375px
+        right: 10%
+        top: 0
+        transform: translate(10%, 0)
+    .heading
+        max-width: 550px
+        margin: 0 auto 40px
+        text-align: center
+    .media
+        width: 100%
+        max-width: 853px
+        margin: 0 auto
+        position: relative
+        video
+            border-radius: 10px
+        .play
+            width: 110px
+            height: 70px
+            background: var(--white)
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50% , -50%)
+            svg
+                path
+                    fill: var(--primary)
+
+
+.workplace_sec
+    background: var(--bglight)
+    height: 100vh
+    .container
+        height: 100%
+    .workplace_wrapper
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        --gap: 80px
+        gap: var(--gap)
+        height: 100%
+        figure
+            flex: 1
+            max-width: 50%
+            width: 100%
+            height: 450px
+            overflow: hidden
+            position: relative
+            img, video
+                &:not(.active)
+                    opacity: 0
+                    transform: translateY(80px)
+                position: absolute
+                top: 50%
+                left: 0
+                transform: translate(0, -50%)
+                transition: transform 1s ease
+                border-radius: 10px
+        figcaption
+            flex: 1
+            max-width: 50%
+            width: 100%
+            height: 100%
+            overflow: hidden
+            position: relative
+            .heading
+                max-width: 465px
+                position: absolute
+                top: 50%
+                left: 0
+                transform: translate(0, -50%)
+                transition: transform 1s ease
+                &:not(.active)
+                    opacity: 0
+                    transform: translateY(150px)
+                p
+                    margin-top: 15px
+                    color: #000000B2
+                    line-height: 1.4
+
+.opportunity_sec
+    .heading
+        display: flex
+        justify-content: space-between
+        margin-bottom: 40px
+    .btn-group
+        display: flex
+        align-items: center
+        gap: 30px
+        margin-top: 40px
+        .swiper-progress 
+            flex: 1
+            height: 2px
+            background: #00000026
+            position: relative
+            overflow: hidden
+            .swiper-pagination-progressbar-fill 
+                background: $primary
+
+    .opportunities_wrapper
+        .career_slider
+            padding: 20px
+            .swiper-wrapper
+                .career_card
+                    box-shadow: 0 3px 18px #959da533
+                    background: var(--white)
+                    border-radius: 10px
+                    padding: 30px 35px 40px
+                    span
+                        font-size: 14px
+                        color: var(--text)
+                        font-weight: 400
+                    p
+                        color: var(--black)
+                        font-weight: 500
+                        margin: 8px 0 0
+                    ul
+                        margin: 15px 0 20px
+                        li
+                            display: flex
+                            align-items: center
+                            gap: 12px
+                            &:not(:last-child)
+                                margin-bottom: 12px
+                            img
+                                width: 24px
+                                height: 24px
+                                display: block
+                            >p
+                                color: $text
+                                font-size: 14px
+                                font-weight: 400
+
+.stats_sec
+    background: var(--bglight)
+    padding-bottom: 140px
+    .heading
+        text-align: center
+        max-width: 360px
+        margin: 0 auto 60px 
+    .stats_wrapper
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 20px
+        .stas_col
+            display: flex
+            flex-direction: column
+            gap: 20px
+            &:nth-child(even)
+                transform: translateY(60px)
+                figure
+                    order: -1
+            &:hover
+                figure
+                    img, video
+                        transform: scale(1.1)
+            figcaption
+                background: $white
+                border-radius: 10px
+                padding: 35px 40px
+                box-shadow: 0 8px 24px 0 #959DA533
+                .count
+                    font-size: 40px
+                    font-weight: 400
+                p
+                    color: #000000B2
+            figure
+                border-radius: 10px
+                overflow: hidden
+                @include shine()
+                img, video
+                    border-radius: 10px
+                    transition: .5s ease
+
+.social_banner
+    &.banner
+        &::before
+            background: linear-gradient(270deg, #00000000 0%, hsl(0deg 0% 0% / 81%) 100%)
+        .banner-wrapper
+            margin-left: 170px
+            max-width: 500px
+            h2
+                margin-bottom: 16px
+                color: $white
+            p
+                color: #FFFFFFB2
+                line-height: 1.4
+            .btn
+                margin-top: 40px
+
+.engineering_sec
+    .heading
+        display: flex
+        flex-wrap: wrap
+        text-align: center
+        justify-content: center
+        margin-bottom: 60px
+        h2
+            flex: 1
+            text-align: center
+        .btn
+            flex: 0 1 auto
+    .main_wrapper
+        display: flex
+        flex-wrap: wrap
+        .engineer_col
+            position: relative
+            flex: 0 1 200px
+            width: 100%
+            padding: 10px 20px
+            transition: .5s ease
+            &:not(:last-child)
+                border-right: 1px solid #0000001A
+            &.active
+                flex: 1
+                .desc
+                    opacity: 1
+                    visibility: visible
+                    transform: scale(1)
+                .toggleBtn
+                    display: none
+            .count
+                width: 46px
+                height: 46px
+                display: flex
+                align-items: center
+                justify-content: center
+                font-size: 24px
+                background: $white
+                border: 1px solid #C8D0E5
+                border-radius: 5px
+            h6
+                margin: 20px 0 15px
+                font-size: 16px
+            .desc
+                transition: .5s ease
+                opacity: 0
+                visibility: hidden
+                transform: scale(0.5)
+            .toggleBtn
+                width: 36px
+                height: 36px
+                background: #DFE5F1
+                border-radius: 5px
+                display: flex
+                align-items: center
+                justify-content: center
+                opacity: 1
+                position: absolute
+                left: 25px
+                bottom: 10px
+
+
+        

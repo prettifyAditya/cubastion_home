@@ -1,0 +1,1346 @@
+{
+  "Homepage": {
+    "Section2": {
+      "heading": "19 Years of Delivering",
+      "subheading": "With 19 years of consistent delivery, we have helped businesses achieve measurable outcomes through strong execution, proven capability, and dependable processes. Our focus on quality, reliability, and long-term partnerships has enabled us to deliver complex projects with confidence and zero delivery failures.",
+      "buttonText": "Get to Know Us",
+      "imgSrc": "/assets/images/home/about_img.jpg"
+    },
+    "Section3": [
+      {
+        "id": 1,
+        "imgSrc": "/assets/images/others/client1.png"
+      },
+      {
+        "id": 2,
+        "imgSrc": "/assets/images/others/client2.png"
+      },
+      {
+        "id": 3,
+        "imgSrc": "/assets/images/others/client3.png"
+      },
+      {
+        "id": 4,
+        "imgSrc": "/assets/images/others/client4.png"
+      },
+      {
+        "id": 5,
+        "imgSrc": "/assets/images/others/client5.png"
+      },
+      {
+        "id": 6,
+        "imgSrc": "/assets/images/others/client6.png"
+      },
+      {
+        "id": 7,
+        "imgSrc": "/assets/images/others/client7.png"
+      },
+      {
+        "id": 8,
+        "imgSrc": "/assets/images/others/client1.png"
+      },
+      {
+        "id": 9,
+        "imgSrc": "/assets/images/others/client2.png"
+      }
+    ],
+    "Section4": {
+      "heading": "Services & Solutions",
+      "subheading": "End-to-end technology capabilities designed to solve real  business challenges.",
+      "filterData": [
+        {
+          "id": "1",
+          "filterQues": "What stage is your digital initiative currently in?",
+          "quesTypeData": [
+            {
+              "id": "1",
+              "typeQues": "Idea"
+            },
+            {
+              "id": "2",
+              "typeQues": "Proof of Concept"
+            },
+            {
+              "id": "3",
+              "typeQues": "Prototype"
+            },
+            {
+              "id": "4",
+              "typeQues": "MVP"
+            },
+            {
+              "id": "5",
+              "typeQues": "Production"
+            },
+            {
+              "id": "6",
+              "typeQues": "Legacy System"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "filterQues": "What is your primary business goal?",
+          "quesTypeData": [
+            {
+              "id": "1",
+              "typeQues": "Idea"
+            },
+            {
+              "id": "2",
+              "typeQues": "Proof of Concept"
+            },
+            {
+              "id": "3",
+              "typeQues": "Prototype"
+            },
+            {
+              "id": "4",
+              "typeQues": "MVP"
+            },
+            {
+              "id": "5",
+              "typeQues": "Production"
+            },
+            {
+              "id": "6",
+              "typeQues": "Legacy System"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "filterQues": "What kind of metrics are typically measured?",
+          "quesTypeData": [
+            {
+              "id": "1",
+              "typeQues": "Idea"
+            },
+            {
+              "id": "2",
+              "typeQues": "Proof of Concept"
+            },
+            {
+              "id": "3",
+              "typeQues": "Prototype"
+            },
+            {
+              "id": "4",
+              "typeQues": "MVP"
+            },
+            {
+              "id": "5",
+              "typeQues": "Production"
+            },
+            {
+              "id": "6",
+              "typeQues": "Legacy System"
+            }
+          ]
+        }
+      ],
+      "serviceData": [
+        {
+          "id": "1",
+          "bgpattern": "/assets/vector/service_bg1.svg",
+          "serviceName": "AI Foundation",
+          "vectorImg": "/assets/vector/service_vector1.svg"
+        },
+        {
+          "id": "2",
+          "bgpattern": "/assets/vector/service_bg1.svg",
+          "serviceName": "CX Engineering",
+          "vectorImg": "/assets/vector/service_vector1.svg"
+        },
+        {
+          "id": "3",
+          "bgpattern": "/assets/vector/service_bg1.svg",
+          "serviceName": "Data Engineering",
+          "vectorImg": "/assets/vector/service_vector1.svg"
+        },
+        {
+          "id": "4",
+          "bgpattern": "/assets/vector/service_bg1.svg",
+          "serviceName": "Data Governance",
+          "vectorImg": "/assets/vector/service_vector1.svg"
+        },
+        {
+          "id": "5",
+          "bgpattern": "/assets/vector/service_bg1.svg",
+          "serviceName": "Field Services",
+          "vectorImg": "/assets/vector/service_vector1.svg"
+        },
+        {
+          "id": "6",
+          "bgpattern": "/assets/vector/service_bg1.svg",
+          "serviceName": "Data Engineering",
+          "vectorImg": "/assets/vector/service_vector1.svg"
+        }
+      ]
+    },
+    "Section6": {
+      "heading": "Our Customer Success Stories",
+      "customerData": [
+        {
+          "id": "1",
+          "mediaType": "image",
+          "mediaSrc": "/assets/images/testimonial/testimonial1.jpg",
+          "customerLogo": "/assets/images/testimonial/testlogo1.svg",
+          "customerTitle": "FORCE 2.0 in Action - A CloudNative Transformation for CRR and Service Excellence",
+          "caseStudyLink": "https://www.prettifycreative.com/"
+        },
+        {
+          "id": "2",
+          "mediaType": "image",
+          "mediaSrc": "/assets/images/testimonial/testimonial2.jpg",
+          "customerLogo": "/assets/images/testimonial/testlogo2.svg",
+          "customerTitle": "FORCE 2.0 in Action - A CloudNative Transformation for CRR and Service Excellence",
+          "caseStudyLink": "https://www.prettifycreative.com/"
+        },
+        {
+          "id": "3",
+          "mediaType": "image",
+          "mediaSrc": "/assets/images/testimonial/testimonial3.jpg",
+          "customerLogo": "/assets/images/testimonial/testlogo3.svg",
+          "customerTitle": "FORCE 2.0 in Action - A CloudNative Transformation for CRR and Service Excellence",
+          "caseStudyLink": "https://www.prettifycreative.com/"
+        },
+        {
+          "id": "4",
+          "mediaType": "image",
+          "mediaSrc": "/assets/images/testimonial/testimonial4.jpg",
+          "customerLogo": "/assets/images/testimonial/testlogo4.svg",
+          "customerTitle": "FORCE 2.0 in Action - A CloudNative Transformation for CRR and Service Excellence",
+          "caseStudyLink": "https://www.prettifycreative.com/"
+        }
+      ]
+    },
+    "Section7": {
+      "heading": "Company Highlights",
+      "subheading": "Quantified impact across projects, industries, and client partnerships, delivering measurable results and long term business value.",
+      "countData": [
+        {
+          "id": "1",
+          "countNo": "90%",
+          "countHeading": "Client Retention Rate",
+          "countSubHeading": "Consistent delivery and trusted long-term client relationships."
+        },
+        {
+          "id": "2",
+          "countNo": "19+",
+          "countHeading": "Years of Experience",
+          "countSubHeading": "Nearly two decades of reliable technology execution."
+        },
+        {
+          "id": "3",
+          "countNo": "10+",
+          "countHeading": "Industries Served",
+          "countSubHeading": "Experience delivering solutions across diverse industries."
+        },
+        {
+          "id": "4",
+          "countNo": "500+",
+          "countHeading": "Projects Delivered",
+          "countSubHeading": "Proven track record of successfully delivered projects."
+        }
+      ],
+      "clientData": [
+        {
+          "id": "1",
+          "imgSrc": "/assets/images/others/client1.png"
+        },
+        {
+          "id": "2",
+          "imgSrc": "/assets/images/others/client2.png"
+        },
+        {
+          "id": "3",
+          "imgSrc": "/assets/images/others/client3.png"
+        },
+        {
+          "id": "4",
+          "imgSrc": "/assets/images/others/client4.png"
+        },
+        {
+          "id": "5",
+          "imgSrc": "/assets/images/others/client5.png"
+        },
+        {
+          "id": "6",
+          "imgSrc": "/assets/images/others/client6.png"
+        },
+        {
+          "id": "7",
+          "imgSrc": "/assets/images/others/client7.png"
+        }
+      ]
+    },
+    "Section8": {
+      "heading": "Our Expert Insights",
+      "expertSliderData": [
+        {
+          "id": "1",
+          "imgSrc": "/assets/images/home/expert1.jpg",
+          "heading": "Software Product Development",
+          "desc": "Turn your idea into a live software product tailored to fit your customers & business needs and delivered within a short time-to-market.",
+          "btnText": "Read More"
+        },
+        {
+          "id": "2",
+          "imgSrc": "/assets/images/home/expert2.jpg",
+          "heading": "Software Product Development",
+          "desc": "Turn your idea into a live software product tailored to fit your customers & business needs and delivered within a short time-to-market.",
+          "btnText": "Read More"
+        },
+        {
+          "id": "3",
+          "imgSrc": "/assets/images/home/expert3.jpg",
+          "heading": "Software Product Development",
+          "desc": "Turn your idea into a live software product tailored to fit your customers & business needs and delivered within a short time-to-market.",
+          "btnText": "Read More"
+        },
+        {
+          "id": "4",
+          "imgSrc": "/assets/images/home/expert1.jpg",
+          "heading": "Software Product Development",
+          "desc": "Turn your idea into a live software product tailored to fit your customers & business needs and delivered within a short time-to-market.",
+          "btnText": "Read More"
+        },
+        {
+          "id": "5",
+          "imgSrc": "/assets/images/home/expert2.jpg",
+          "heading": "Software Product Development",
+          "desc": "Turn your idea into a live software product tailored to fit your customers & business needs and delivered within a short time-to-market.",
+          "btnText": "Read More"
+        },
+        {
+          "id": "6",
+          "imgSrc": "/assets/images/home/expert3.jpg",
+          "heading": "Software Product Development",
+          "desc": "Turn your idea into a live software product tailored to fit your customers & business needs and delivered within a short time-to-market.",
+          "btnText": "Read More"
+        }
+      ]
+    }
+  },
+
+  "AboutUs": {
+    "Section1": {
+      "heading": "About Us",
+      "subheading": "19 Years of delivering positive business impact with capability and zero failure",
+      "bgmedia": "/assets/video/aboutus_banner.mp4",
+      "ceodetails": {
+        "imgsrc": "/assets/images/about-us/ceo_image.png",
+        "name": "Ravi Kumar",
+        "desgn": "Chief Executive Officer"
+      }
+    },
+    "Section3": [
+      {
+        "id": "1",
+        "imgSrc": "/assets/images/about-us/client1.svg"
+      },
+      {
+        "id": "2",
+        "imgSrc": "/assets/images/about-us/client2.svg"
+      },
+      {
+        "id": "3",
+        "imgSrc": "/assets/images/about-us/client3.svg"
+      },
+      {
+        "id": "4",
+        "imgSrc": "/assets/images/about-us/client4.svg"
+      },
+      {
+        "id": "5",
+        "imgSrc": "/assets/images/about-us/client5.svg"
+      },
+      {
+        "id": "6",
+        "imgSrc": "/assets/images/about-us/client6.svg"
+      },
+      {
+        "id": "7",
+        "imgSrc": "/assets/images/about-us/client7.svg"
+      },
+      {
+        "id": "8",
+        "imgSrc": "/assets/images/about-us/client8.svg"
+      },
+      {
+        "id": "9",
+        "imgSrc": "/assets/images/about-us/client9.svg"
+      },
+      {
+        "id": "10",
+        "imgSrc": "/assets/images/about-us/client10.svg"
+      },
+      {
+        "id": "11",
+        "imgSrc": "/assets/images/about-us/client11.svg"
+      },
+      {
+        "id": "12",
+        "imgSrc": "/assets/images/about-us/client12.svg"
+      }
+    ],
+    "Section4": {
+      "heading": "Meet the Cubastion Leadership Team",
+      "subheading": "Our global leadership team represents an entirely new blend of business intelligence and tech expertise. Each member is dedicated to catalyzing change, delivering results and partnering with you to solve your complex business issues and help transform your business through digital technologies.",
+      "teamData": [
+        {
+          "id": "1",
+          "imgSrc": "/assets/images/about-us/team1.jpg",
+          "memname": "Ravi Kumar",
+          "memdesgn": "Chief Executive officer",
+          "linkedin": ""
+        },
+        {
+          "id": "2",
+          "imgSrc": "/assets/images/about-us/team2.jpg",
+          "memname": "Kumar Harsh",
+          "memdesgn": "Delivery Director",
+          "linkedin": ""
+        },
+        {
+          "id": "3",
+          "imgSrc": "/assets/images/about-us/team3.jpg",
+          "memname": "Umesh Sharma",
+          "memdesgn": "Chief People Officer",
+          "linkedin": ""
+        },
+        {
+          "id": "4",
+          "imgSrc": "/assets/images/about-us/team1.jpg",
+          "memname": "Ravi Kumar",
+          "memdesgn": "Chief Executive officer",
+          "linkedin": ""
+        },
+        {
+          "id": "5",
+          "imgSrc": "/assets/images/about-us/team2.jpg",
+          "memname": "Kumar Harsh",
+          "memdesgn": "Delivery Director",
+          "linkedin": ""
+        },
+        {
+          "id": "6",
+          "imgSrc": "/assets/images/about-us/team3.jpg",
+          "memname": "Umesh Sharma",
+          "memdesgn": "Chief People Officer",
+          "linkedin": ""
+        }
+      ]
+    },
+    "Section5": {
+      "heading": "Our Vision",
+      "subheading": "Our belief in creating tangible value for our customers is what we think is different about ELEKS. Our attention to detail and quality is unmatched in the industry. We're not just a resource provider. We value our customers' success as much as our own – sharing development risk, so that they can be bold in their adoption of new technologies.",
+      "visionData": [
+        {
+          "id": "1",
+          "mediaType": "image",
+          "mediaSrc": "/assets/images/testimonial/testimonial1.jpg",
+          "visionHeading": "Engineering With Passion",
+          "visionSubheading": "We’re a network of innovators. We devise bold solutions to the most intricate client challenges. It’s our ability to explore new technologies to design best-fit solutions that has 96% of our clients ready to recommend us."
+        },
+        {
+          "id": "2",
+          "mediaType": "image",
+          "mediaSrc": "/assets/images/testimonial/testimonial1.jpg",
+          "visionHeading": "Engineering With Passion",
+          "visionSubheading": "We’re a network of innovators. We devise bold solutions to the most intricate client challenges. It’s our ability to explore new technologies to design best-fit solutions that has 96% of our clients ready to recommend us."
+        },
+        {
+          "id": "3",
+          "mediaType": "image",
+          "mediaSrc": "/assets/images/testimonial/testimonial1.jpg",
+          "visionHeading": "Engineering With Passion",
+          "visionSubheading": "We’re a network of innovators. We devise bold solutions to the most intricate client challenges. It’s our ability to explore new technologies to design best-fit solutions that has 96% of our clients ready to recommend us."
+        }
+      ]
+    },
+    "Section6": {
+      "heading": "Awards and Recognition",
+      "awardsData": [
+        {
+          "id": "1",
+          "imgSrc": "/assets/images/others/client1.png"
+        },
+        {
+          "id": "2",
+          "imgSrc": "/assets/images/others/client2.png"
+        },
+        {
+          "id": "3",
+          "imgSrc": "/assets/images/others/client3.png"
+        },
+        {
+          "id": "4",
+          "imgSrc": "/assets/images/others/client4.png"
+        },
+        {
+          "id": "5",
+          "imgSrc": "/assets/images/others/client5.png"
+        },
+        {
+          "id": "6",
+          "imgSrc": "/assets/images/others/client6.png"
+        },
+        {
+          "id": "7",
+          "imgSrc": "/assets/images/others/client7.png"
+        }
+      ]
+    },
+    "Section7": {
+      "heading": "Our Brand Journey",
+      "journeyData": [
+        {
+          "id": "1",
+          "year": "2014",
+          "yeartitle": "2014 : A vision takes shape",
+          "desc": "Our technology solutions and services are built on 17 years of innovation"
+        },
+        {
+          "id": "2",
+          "year": "2015",
+          "yeartitle": "2015 : A vision takes shape",
+          "desc": "Our technology solutions and services are built on 17 years of innovation"
+        },
+        {
+          "id": "3",
+          "year": "2017",
+          "yeartitle": "2017 : A vision takes shape",
+          "desc": "Our technology solutions and services are built on 17 years of innovation"
+        },
+        {
+          "id": "4",
+          "year": "2018",
+          "yeartitle": "2018 : A vision takes shape",
+          "desc": "Our technology solutions and services are built on 17 years of innovation"
+        },
+        {
+          "id": "5",
+          "year": "2019",
+          "yeartitle": "2019 : A vision takes shape",
+          "desc": "Our technology solutions and services are built on 17 years of innovation"
+        },
+        {
+          "id": "6",
+          "year": "2020",
+          "yeartitle": "2020 : A vision takes shape",
+          "desc": "Our technology solutions and services are built on 17 years of innovation"
+        },
+        {
+          "id": "7",
+          "year": "2021",
+          "yeartitle": "2021 : A vision takes shape",
+          "desc": "Our technology solutions and services are built on 17 years of innovation"
+        },
+        {
+          "id": "8",
+          "year": "2022",
+          "yeartitle": "2022 : A vision takes shape",
+          "desc": "Our technology solutions and services are built on 17 years of innovation"
+        },
+        {
+          "id": "9",
+          "year": "2026",
+          "yeartitle": "2026 : A vision takes shape",
+          "desc": "Our technology solutions and services are built on 17 years of innovation"
+        }
+      ]
+    }
+  },
+
+  "ContactUs": {
+    "Section1": {
+      "bgmedia": "/assets/video/aboutus_banner.mp4",
+      "heading": "Let’s build what’s next, together.",
+      "btnText": "Book a Consultation"
+    },
+    "Section2": [
+      {
+        "id": "1",
+        "place": "U.S. Office",
+        "address": "971 US Highway 202N, STE R, Branchburg, NJ 08876",
+        "btnText": "Get Directions",
+        "mail": "solutions@cubastion.com",
+        "mobileNo": "+1 609 874 3572",
+        "mapPoint": "New Jersey, U.S."
+      },
+      {
+        "id": "2",
+        "place": "Gurugram Office",
+        "address": "971 US Highway 202N, STE R, Branchburg, NJ 08876 2",
+        "btnText": "Get Directions",
+        "mail": "solutions@cubastion.com",
+        "mobileNo": "+1 609 874 3572",
+        "mapPoint": "Gurugram, India"
+      },
+      {
+        "id": "3",
+        "place": "Bengaluru Office",
+        "address": "971 US Highway 202N, STE R, Branchburg, NJ 08876 3",
+        "btnText": "Get Directions",
+        "mail": "solutions@cubastion.com",
+        "mobileNo": "+1 609 874 3572",
+        "mapPoint": "Bengaluru, India"
+      },
+      {
+        "id": "4",
+        "place": "Japan Office",
+        "address": "971 US Highway 202N, STE R, Branchburg, NJ 08876 4",
+        "btnText": "Get Directions",
+        "mail": "solutions@cubastion.com",
+        "mobileNo": "+1 609 874 3572",
+        "mapPoint": "Japan, Japan"
+      }
+    ]
+  },
+
+  "IndustryDetails": {
+    "Section1": {
+      "name": "Automobile Industry",
+      "heading": "Driving the Future of Automotive Innovation",
+      "subheading": "We provide intelligent automation solutions for the automotive industry, helping manufacturers improve efficiency, enhance quality, and accelerate innovation in a rapidly evolving market.",
+
+      "bgmedia": "/assets/images/industry-details/industry-hero.png",
+      "ceodetails": {
+        "imgsrc": "/assets/images/about-us/ceo_image.png",
+        "name": "Ravi Kumar",
+        "desgn": "Chief Executive Officer"
+      }
+    },
+
+    "Section2": [
+      {
+        "id": 1,
+        "imgSrc": "/assets/images/others/client1.png"
+      },
+      {
+        "id": 2,
+        "imgSrc": "/assets/images/others/client2.png"
+      },
+      {
+        "id": 3,
+        "imgSrc": "/assets/images/others/client3.png"
+      },
+      {
+        "id": 4,
+        "imgSrc": "/assets/images/others/client4.png"
+      },
+      {
+        "id": 5,
+        "imgSrc": "/assets/images/others/client5.png"
+      },
+      {
+        "id": 6,
+        "imgSrc": "/assets/images/others/client6.png"
+      },
+      {
+        "id": 7,
+        "imgSrc": "/assets/images/others/client7.png"
+      },
+      {
+        "id": 8,
+        "imgSrc": "/assets/images/others/client1.png"
+      },
+      {
+        "id": 9,
+        "imgSrc": "/assets/images/others/client2.png"
+      }
+    ],
+
+    "Section3": {
+      "heading": "Cubastion’s Automotive Solutions",
+      "subheading": "End-to-End Automotive Solutions",
+      "SolutionsCard": [
+        {
+          "id": "1",
+          "heading": "Powering Efficiencies",
+          "subheading": "Real-time insights from conversations and transactions.",
+          "bgmedia": "/assets/images/industry-details/card1.png"
+        },
+        {
+          "id": "2",
+          "heading": "Powering Efficiencies",
+          "subheading": "Real-time insights from conversations and transactions.",
+          "bgmedia": "/assets/images/industry-details/card2.png"
+        },
+        {
+          "id": "3",
+          "heading": "Powering Efficiencies",
+          "subheading": "Real-time insights from conversations and transactions.",
+          "bgmedia": "/assets/images/industry-details/card3.png"
+        },
+        {
+          "id": "4",
+          "heading": "Powering Efficiencies",
+          "subheading": "Real-time insights from conversations and transactions.",
+          "bgmedia": "/assets/images/industry-details/card4.png"
+        },
+        {
+          "id": "5",
+          "heading": "Powering Efficiencies",
+          "subheading": "Real-time insights from conversations and transactions.",
+          "bgmedia": "/assets/images/industry-details/card5.png"
+        },
+
+        {
+          "id": "6",
+          "heading": "Powering Efficiencies",
+          "subheading": "Real-time insights from conversations and transactions.",
+          "bgmedia": "/assets/images/industry-details/card6.png"
+        },
+        {
+          "id": "7",
+          "heading": "Powering Efficiencies",
+          "subheading": "Real-time insights from conversations and transactions.",
+          "bgmedia": "/assets/images/industry-details/card7.png"
+        },
+        {
+          "id": "8",
+          "heading": "Powering Efficiencies",
+          "subheading": "Real-time insights from conversations and transactions.",
+          "bgmedia": "/assets/images/industry-details/card8.png"
+        }
+      ]
+    },
+
+    "Section4": {
+      "heading": "We Make a Measurable Impact on Your Business",
+      "ImpactCard": [
+        {
+          "id": "1",
+          "value": "410+",
+          "valueName": "Retail Clients Served",
+          "valueDetail": "Consistent delivery and trusted long-term client relationships."
+        },
+        {
+          "id": "2",
+          "value": "500+",
+          "valueName": "Projects Delivered",
+          "valueDetail": "Proven track record of successfully delivered projects."
+        },
+        {
+          "id": "3",
+          "value": "19+",
+          "valueName": "Years of Experience",
+          "valueDetail": "Nearly two decades of reliable technology execution."
+        },
+        {
+          "id": "4",
+          "value": "97%",
+          "valueName": "Client Retention Rate",
+          "valueDetail": "Consistent delivery and trusted long-term client relationships."
+        }
+      ]
+    },
+
+    "Section5": {
+      "heading": "Case Studies",
+      "subheading": "End-to-End Automotive Solutions",
+      "cards": [
+        {
+          "id": "1",
+          "heading": "Powering efficiencies in a global investment firm with AI and google gemini enterprise ",
+          "bgmedia": "/assets/images/industry-details/case1.png",
+          "profile": {
+            "imgsrc": "/assets/images/about-us/ceo_image.png",
+            "name": "Manish Singh",
+            "desgn": "Senior Consultant",
+            "tags": "U.S. Government"
+          }
+        },
+        {
+          "id": "2",
+          "heading": "Revolutionising engineering knowledge discovery in media with google gemini. ",
+          "bgmedia": "/assets/images/industry-details/case2.png",
+          "profile": {
+            "imgsrc": "/assets/images/about-us/ceo_image.png",
+            "name": "Manish Singh",
+            "desgn": "Senior Consultant",
+            "tags": "Communications"
+          }
+        },
+        {
+          "id": "3",
+          "heading": "Powering efficiencies in a global investment firm with AI and google gemini enterprise ",
+          "bgmedia": "/assets/images/industry-details/case1.png",
+          "profile": {
+            "imgsrc": "/assets/images/about-us/ceo_image.png",
+            "name": "Manish Singh",
+            "desgn": "Senior Consultant",
+            "tags": "U.S. Government"
+          }
+        },
+        {
+          "id": "4",
+          "heading": "Modernising environmental compliance for a global resources leader",
+          "bgmedia": "/assets/images/industry-details/case2.png",
+          "profile": {
+            "imgsrc": "/assets/images/about-us/ceo_image.png",
+            "name": "Manish Singh",
+            "desgn": "Senior Consultant",
+            "tags": "Communications"
+          }
+        },
+        {
+          "id": "5",
+          "heading": "Revolutionising engineering knowledge discovery in media with google gemini. ",
+          "bgmedia": "/assets/images/industry-details/case2.png",
+          "profile": {
+            "imgsrc": "/assets/images/about-us/ceo_image.png",
+            "name": "Manish Singh",
+            "desgn": "Senior Consultant",
+            "tags": "Communications"
+          }
+        },
+        {
+          "id": "6",
+          "heading": "Revolutionising engineering knowledge discovery in media with google gemini. ",
+          "bgmedia": "/assets/images/industry-details/case2.png",
+          "profile": {
+            "imgsrc": "/assets/images/about-us/ceo_image.png",
+            "name": "Manish Singh",
+            "desgn": "Senior Consultant",
+            "tags": "Communications"
+          }
+        }
+      ]
+    },
+
+    "Section6": {
+      "awardsData": [
+        {
+          "id": "1",
+          "imgSrc": "/assets/images/others/client1.png"
+        },
+        {
+          "id": "2",
+          "imgSrc": "/assets/images/others/client2.png"
+        },
+        {
+          "id": "3",
+          "imgSrc": "/assets/images/others/client3.png"
+        },
+        {
+          "id": "4",
+          "imgSrc": "/assets/images/others/client4.png"
+        },
+        {
+          "id": "5",
+          "imgSrc": "/assets/images/others/client5.png"
+        },
+        {
+          "id": "6",
+          "imgSrc": "/assets/images/others/client6.png"
+        },
+        {
+          "id": "7",
+          "imgSrc": "/assets/images/others/client7.png"
+        }
+      ]
+    },
+
+    "Section7": {
+      "heading": "Related Blogs",
+      "blogCards": [
+        {
+          "id": "1",
+          "date": "November 21, 2025",
+          "heading": "The Future of AI: What Businesses Need to Know in 2026",
+          "bgmedia": "/assets/images/industry-details/blog1.png",
+          "tags": [
+            {
+              "id": "1",
+              "name": "Automative"
+            },
+            {
+              "id": "2",
+              "name": "Data"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "date": "November 21, 2025",
+          "heading": "The Future of AI: What Businesses Need to Know in 2026",
+          "bgmedia": "/assets/images/industry-details/blog2.png",
+          "tags": [
+            {
+              "name": "Automative"
+            },
+            {
+              "name": "Data"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "date": "November 21, 2025",
+          "heading": "The Future of AI: What Businesses Need to Know in 2026",
+          "bgmedia": "/assets/images/industry-details/blog3.png",
+          "tags": [
+            {
+              "name": "Automative"
+            },
+            {
+              "name": "Data"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "date": "November 21, 2025",
+          "heading": "The Future of AI: What Businesses Need to Know in 2026",
+          "bgmedia": "/assets/images/industry-details/blog1.png",
+          "tags": [
+            {
+              "name": "Automative"
+            },
+            {
+              "name": "Data"
+            }
+          ]
+        }
+      ]
+    },
+
+    "Section8": {
+      "heading": "Frequently Asked Questions",
+      "subheading": "Frequently Asked Questions",
+      "faqs": [
+        {
+          "id": "1",
+          "heading": "What is Agentic AI?",
+          "subheading": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
+        },
+        {
+          "id": "2",
+          "heading": "How is Agentic AI different from traditional AI?",
+          "subheading": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
+        },
+        {
+          "id": "3",
+          "heading": "What does AI-led mean in this context?",
+          "subheading": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
+        },
+        {
+          "id": "4",
+          "heading": "What kind of metrics are typically measured?",
+          "subheading": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
+        }
+      ]
+    },
+
+    "Section9": {
+      "heading": "Speak to Our Experts",
+      "subheading": "Our global leadership team represents an entirely new blend of business intelligence and tech expertise. Each member is dedicated to catalyzing change, delivering results and partnering with you to solve your complex business issues and help transform your business through digital technologies.",
+      "profile": {
+        "imgsrc": "/assets/images/about-us/ceo_image.png",
+        "name": "Manish Singh",
+        "desgn": "Senior Consultant",
+        "tags": "U.S. Government"
+      }
+    }
+  },
+
+  "Career": {
+    "Section1": {
+      "heading": "We recognize that our people are our future success",
+      "bgmedia": "/assets/video/aboutus_banner.mp4",
+      "roles": [
+        {
+          "id": "1",
+          "role": "Senior Java Developer",
+          "imgSrc": "/assets/icon/profile1.svg"
+        },
+        {
+          "id": "2",
+          "role": "Middle DevOps",
+          "imgSrc": "/assets/icon/profile2.svg"
+        },
+        {
+          "id": "3",
+          "role": "Senior ML Engineer (Python)",
+          "imgSrc": "/assets/icon/profile3.svg"
+        }
+      ]
+    },
+    "Section2": {
+      "heading": "Dedication to every client's success. Dedication to self.",
+      "subheading": "We are committed to every client’s success, while continuously strengthening our own capabilities and standards",
+      "bgmedia": "/assets/video/career.mp4"
+      
+    },
+
+    "Section3": [
+      {
+        "id": 1,
+        "heading": "Human-centered workplace",
+        "subheading": "We always put people first. That’s our workplace in a nutshell. We don’t tolerate discrimination, artificial hierarchies, pressure, or toxicity. Instead, we create an environment where people take responsibility and try their best, admit mistakes, and learn from them.",
+        "bgmedia": "/assets/images/career/workplace1.png"
+      },
+      {
+        "id": 2,
+        "heading": "Human-centered workplace 2",
+        "subheading": "We always put people first. That’s our workplace in a nutshell. We don’t tolerate discrimination, artificial hierarchies, pressure, or toxicity.",
+        "bgmedia": "/assets/images/career/workplace2.jpg"
+      },
+      {
+        "id": 3,
+        "heading": "Human-centered workplace 3",
+        "subheading": "We don’t tolerate discrimination, artificial hierarchies, pressure, or toxicity.",
+        "bgmedia": "/assets/images/career/workplace1.png"
+      }
+    ],
+     "Section4": {
+      "heading": "Opportunities That Help You Grow",
+      "locationCards": [
+        {
+          "id": "1",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "2",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "3",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "4",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "5",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "6",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "7",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        }
+      ]
+    }, 
+    "Section5": {
+      "heading": "Numbers speak for themselves",
+      "statsWrapper": [
+        {
+          "id": 1,
+          "count": "20+",
+          "desc": "Years of Experience",
+          "bgmedia": "/assets/images/career/stats1.jpg"
+        },
+        {
+          "id": 2,
+          "count": "3000+",
+          "desc": "Specialists on board",
+          "bgmedia": "/assets/images/career/stats4.jpg"
+        },
+        {
+          "id": 3,
+          "count": "60%",
+          "desc": "Senior engineering",
+          "bgmedia": "/assets/images/career/stats3.jpg"
+        },
+        {
+          "id": 4,
+          "count": "25+",
+          "desc": "Countries Served",
+          "bgmedia": "/assets/images/career/stats2.jpg"
+        }
+      ]
+    },
+    "Section6": {
+      "heading": "Engineering Excellence",
+      "engineerData": [
+        {
+          "id": 1,
+          "title": "Automobile",
+          "desc": "Modernising consumer & dealer facing journey for improving efficiency, communication and visibility"
+        },
+        {
+          "id": 2,
+          "title": "Communications",
+          "desc": "Modernising consumer & dealer facing journey for improving efficiency, communication and visibility"
+        },
+        {
+          "id": 3,
+          "title": "Financial Services",
+          "desc": "Modernising consumer & dealer facing journey for improving efficiency, communication and visibility"
+        },
+        {
+          "id": 4,
+          "title": "Consumer Durables",
+          "desc": "Modernising consumer & dealer facing journey for improving efficiency, communication and visibility"
+        },
+        {
+          "id": 5,
+          "title": "Connected Devices",
+          "desc": "Modernising consumer & dealer facing journey for improving efficiency, communication and visibility"
+        },
+        {
+          "id": 6,
+          "title": "US Government",
+          "desc": "Modernising consumer & dealer facing journey for improving efficiency, communication and visibility"
+        }
+      ]
+    },
+    "Section7": {
+      "mediaSrc": "/assets/images/career/banner_img.jpg",
+      "heading": "Social Responsibility",
+      "subheading": "We use the power of technology to help businesses, communities, and individuals build a more resilient future and make our world a better place.",
+      "btnText": "Explore"
+    }
+  },
+
+  "JobDetails": {
+    "Section1": {
+      "heading": "Junior  Java Developer",
+      "bgmedia": "/assets/images/job/banner.jpg"
+    },
+    "Section3": {
+      "heading": "Similar Vacancies",
+      "locationCards": [
+        {
+          "id": "1",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "2",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "3",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "4",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "5",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "6",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        },
+        {
+          "id": "7",
+          "heading": "Software Engineering",
+          "role": "Junior Java  Developer",
+          "locations":[
+            {
+              "id":"1",
+              "locate": "Junior",
+              "icon": "/assets/icon/locate.svg"
+            },
+            {
+              "id":"2",
+              "locate": "Ukraine",
+              "icon": "/assets/icon/prfile.svg"
+            }
+
+          ]
+        }
+      ]
+    },
+    "Section4": {
+      "heading": "Have not found the most suitable position yet?",
+      "subheading": "Leave your resume and we will select a cool option for you.",
+      "btnText": "Find me a Job",
+      "bgmedia": "/assets/images/job/banner.jpg"
+    }
+  }
+}

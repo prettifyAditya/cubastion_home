@@ -1,0 +1,203 @@
+@import '../_var'
+
+// Awards Slider
+
+.awards_slider
+    margin-top: 60px
+    .swiper-wrapper
+        transition-timing-function: linear !important
+        figure
+            height: 75px
+            &:hover
+                img
+                    filter: grayscale(0)
+            img
+                filter: grayscale(1)
+                object-fit: contain
+
+// Customer testimonial sec
+
+.customer_sec
+    .heading
+        text-align: center
+        margin-bottom: 60px
+    .customer_wrapper
+        display: flex
+        flex-wrap: wrap
+        gap: 10px
+        @keyframes show-content
+            0%
+                opacity: 0
+                transform: translateY(12px)
+            100%
+                opacity: 1
+                transform: translateY(0)
+        .customer_col
+            flex: 0 1 165px
+            transition: all 400ms cubic-bezier(.4, .2, .4, 1)
+            &.active
+                flex: 1
+                figure
+                    &::after
+                        backdrop-filter: blur(0)
+                    .plus-icon
+                        opacity: 0
+                    .video_tag
+                        opacity: 1
+                figcaption
+                    h6
+                        display: inline-flex
+                        animation: 240ms cubic-bezier(.4,.2,.4,1) 240ms forwards show-content
+                    .btn
+                        display: inline-flex
+                        animation: 240ms cubic-bezier(.4,.2,.4,1) 340ms forwards show-content
+            &:not(.active)
+                figure
+                    .video_tag
+                        transform: translateY(20px)
+            figure
+                position: relative
+                overflow: hidden
+                line-height: 0
+                border-radius: 10px
+                height: 391px
+                @include after(#0000001A)
+                &::after
+                    backdrop-filter: blur(10px)
+                img, video
+                    border-radius: 10px
+                .video_tag
+                    display: flex
+                    align-items: center
+                    gap: 10px
+                    padding: 9px 20px
+                    border-radius: 25px
+                    background: #00000066
+                    color: $white
+                    font-size: 14px
+                    position: absolute
+                    top: 30px
+                    left: 30px
+                    transition: 1s ease
+                    opacity: 0
+                .plus-icon
+                    width: 36px
+                    height: 36px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border: 1px solid $white
+                    border-radius: 50%
+                    position: absolute
+                    left: 50%
+                    bottom: 10%
+                    transform: translate(-50%, 10%)
+                    transition: .5s ease
+                    z-index: 1
+            figcaption
+                margin-top: 25px
+                height: 72px
+                display: flex
+                flex-wrap: nowrap
+                align-items: center
+                gap: 25px
+                .cus_logo
+                    flex: 0 1 auto
+                    height: 45px
+                    img
+                        object-fit: contain
+                h6
+                    flex: 1
+                    font-size: 16px
+                    display: none
+                    opacity: 0
+                .btn
+                    font-size: 14px
+                    font-weight: 600
+                    display: none
+                    opacity: 0
+
+// Client Slider Sec
+
+.client_sec
+    .main_wrapper
+        .client_slider
+            .swiper-wrapper
+                transition-timing-function: linear !important
+            figure
+                background: #EDEDED
+                padding: 40px 20px
+                width: 100%
+                transform: skewX(15deg)
+                img
+                    height: 75px
+                    transform: skewX(-15deg)
+                    object-fit: contain
+                    background-blend-mode: multiply
+
+// card variants
+.card
+    &.card-comman,
+    &.card-btn,
+    &.card-case
+        border-radius: 10px
+        overflow: hidden
+        box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2)
+        &:hover
+            .card-img
+                img
+                    transform: scale(1.1)
+        .card-img
+            width: 100%
+            overflow: hidden
+            @include shine()
+            img
+                transition: .5s ease
+                display: block
+        .card-content
+            padding: 16px 30px 30px 20px
+            h6
+                font-size: 16px
+                margin-bottom: 8px
+            p
+                width: 100%
+
+    &.card-btn
+        .card-content
+            text-align: center
+
+            p
+                margin: 0 auto
+    &.card-case
+        .card-profile
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            gap: 18px
+            max-width: max-content
+            padding: 24px 0
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+            width: 100%
+            max-width: 100%
+
+            figure
+                flex: 0 1 auto
+                width: 52px
+                height: 52px
+            figcaption
+                flex: 1
+                line-height: 1.2
+                h6
+                    font-size: 14px
+                    margin-bottom: 4px
+                p
+                    color: #000000B2
+                    font-size: 14px
+
+        .tags
+            padding: 10px 24px
+            color: rgba(102, 102, 102, 1)
+            background: rgba(244, 244, 244, 1)
+            margin-top: 24px
+            border-radius: 50px
+            font-size: 14px
