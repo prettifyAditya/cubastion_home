@@ -19,7 +19,7 @@ export default function Homepage() {
     const expertSecData = staticData.Homepage.Section8
     return(
         <main>
-            <HeroSection />
+            {/* <HeroSection /> */}
             <AboutSec data={aboutSecData} />
             <ClientsSec data={clientsData} />
             <ServicesSec data={servicesData} />

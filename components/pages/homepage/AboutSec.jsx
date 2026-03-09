@@ -12,7 +12,7 @@ export default function AboutSec({ data }){
                             <div className="heading">
                                 <h1>{data.heading}</h1>
                                 <p>{data.subheading}</p>
-                                <Button linkHref="/about-us" buttonText={data.buttonText} />
+                                <Button buttonText={data.buttonText} />
                             </div>
                         </figcaption>
                         <figure>

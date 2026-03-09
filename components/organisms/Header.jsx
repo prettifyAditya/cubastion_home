@@ -58,7 +58,6 @@ export default function Header(){
                         </div>
                     </div>
                     <Button 
-                        linkHref="/contact-us"
                         buttonText="Contact Us"
                     />
                 </div>
