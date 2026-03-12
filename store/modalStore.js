@@ -23,7 +23,7 @@ export const useModalStore = create((set) => {
       closeAll();
       set({ isJobFormOpen: true });
     },
-    closeJobForm: () => {{ isJobFormOpen: false }},
+    closeJobForm: () => set({ isJobFormOpen: false }),
 
     openRegionPop: () => {
       closeAll();

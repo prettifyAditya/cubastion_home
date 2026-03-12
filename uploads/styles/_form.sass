@@ -154,11 +154,11 @@
                 pointer-events: none  
                 height: calc(var(--inputsize) - var(--borderwidth))
                 position: relative
-                --filename: 'Attach Resume*'
+                --filename: 'Attach your CV *'
                 --filenameinitial: var(--filename)
                 --color: var(--text)
                 --background: none
-                // --image: url(../../icon/clip.svg) no-repeat
+                --image: url(/assets/icon/clip.svg) no-repeat
                 appearance: none
                 line-height: calc(var(--inputsize) - var(--borderwidth))
                 &::before,&::after
@@ -175,6 +175,7 @@
                     line-height: calc(var(--inputsize) - var(--borderwidth))
                     padding-left: var(--paddingleftright)
                     color: var(--color)
+                    font-weight: 400 
                     width: 80%
                     overflow: hidden
                     text-overflow: ellipsis
@@ -187,6 +188,30 @@
                     z-index: 1
                     background-position: calc(100% - var(--paddingleftright,0)) 50%
                     background-size: auto 50%
+                    opacity: 0.6
+            .file_type
+                position: absolute
+                font-size: 12px
+                line-height: normal
+                position: absolute
+                top: calc(100% + 3px)
+                left: 0
+                color: $text
+                font-weight: 400
+            .error
+                left: unset 
+                text-align: right
+        .error
+            color: red
+            font-size: 12px
+            line-height: normal
+            position: absolute
+            top: calc(100% + 3px)
+            left: 0
+            right: 0
+            &.static
+                position: static
+                margin: 10px 0
     .check_term
         margin: 15px 0
         .input_box

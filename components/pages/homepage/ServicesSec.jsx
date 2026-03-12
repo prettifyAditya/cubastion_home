@@ -3,7 +3,7 @@ import Button from "@/components/atoms/Button";
 import { useState, useCallback } from "react";
 
 
-export default function ServicesSec({ data }){
+export default function ServicesSec({ data, id }){
     if(!data) return null;
     const [openCol, setOpenCol] = useState("1");
     const [unlockedCols, setUnlockedCols] = useState(["1"]); 
@@ -31,7 +31,7 @@ export default function ServicesSec({ data }){
     };
     return(
         <section>
-            <div className="services_sec sec-pad-all">
+            <div className="services_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="heading">
                         <h2>{data.heading}</h2>

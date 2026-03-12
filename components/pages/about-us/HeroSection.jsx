@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-export default function HeroSection({ data }) {
+export default function HeroSection({ data, id }) {
     if(!data) return null;
     return(
         <section>
-            <div className="banner about-banner">
+            <div className="banner about-banner" id={id}>
                 <div className="bg">
                     <video src={data.bgmedia} autoPlay muted loop playsInline></video>
                     <div className="banner-wrapper">

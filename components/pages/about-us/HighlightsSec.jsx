@@ -7,11 +7,11 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import Button from "@/components/atoms/Button";
 
-export default function HighlightsSec(){
+export default function HighlightsSec({ id }){
     const swiperRef = useRef(null)
     return(
         <section>
-            <div className="highlights_sec sec-pad">
+            <div className="highlights_sec sec-pad" id={id}>
                 <div className="container">
                     <div className="highlights_grid">
                         <div className="high_col">

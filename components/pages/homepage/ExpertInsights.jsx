@@ -9,12 +9,12 @@ import "swiper/css/navigation";
 import 'swiper/css/effect-coverflow';
 import SwiperButton from "@/components/atoms/SwiperButton";
 
-export default function ExpertInsights({ data }){
+export default function ExpertInsights({ data, id }){
     if (!data) return null;
     const swiperRef = useRef(null)
     return(
         <section>
-            <div className="expert_sec sec-pad-all">
+            <div className="expert_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="heading">
                         <h2>{data.heading}</h2>

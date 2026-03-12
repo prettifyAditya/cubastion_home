@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function TeamSec({ data }){
+export default function TeamSec({ data, id }){
     if(!data) return null;
     return(
         <section>
-            <div className="team_sec sec-pad">
+            <div className="team_sec sec-pad" id={id}>
                 <div className="container">
                     <div className="main_wrapper">
                         <div className="colA">

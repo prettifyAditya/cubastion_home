@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useState } from "react";
 import "@/uploads/styles/component/component.css"
 
-export default function CustomerSec({ data }){
+export default function CustomerSec({ data, id }){
     if(!data) return null;
     const [activeCustomer, setActiveCustomer] = useState("1")
     return(
         <section>
-            <div className="customer_sec sec-pad-all">
+            <div className="customer_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="heading">
                         <h2>{data.heading}</h2>

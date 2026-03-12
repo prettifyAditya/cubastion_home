@@ -2,12 +2,12 @@
 import Image from "next/image";
 import { useState } from "react";
 
-export default function VisionSec({ data }){
+export default function VisionSec({ data, id }){
     if(!data) return null;
     const [activeVision, setActiveVision] = useState("1")
     return(
         <section>
-            <div className="vision_sec sec-pad">
+            <div className="vision_sec sec-pad" id={id}>
                 <div className="container">
                     <div className="heading">
                         <h2>{data.heading}</h2>

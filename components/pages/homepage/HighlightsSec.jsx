@@ -1,10 +1,10 @@
 import AwardsSlider from "@/components/organisms/AwardsSlider";
 
-export default function HighlightsSec({ data }){
+export default function HighlightsSec({ data, id }){
     if (!data) return null
     return(
         <main>
-            <div className="highlights_sec sec-pad-all">
+            <div className="highlights_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="main_wrapper">
                         <div className="colA">

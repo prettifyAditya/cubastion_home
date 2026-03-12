@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function BrandJourney({ data }) {
+export default function BrandJourney({ data, id }) {
     if(!data) return null;
     const [selected, setSelected] = useState(
         data.journeyData[0]?.id
@@ -9,7 +9,7 @@ export default function BrandJourney({ data }) {
 
     return(
         <section>
-            <div className="journey_sec sec-pad-all light-bg">
+            <div className="journey_sec sec-pad-all light-bg" id={id}>
                 <div className="container">
                     <div className="heading">
                         <h2>{data.heading}</h2>

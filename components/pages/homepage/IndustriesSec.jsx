@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import Button from "@/components/atoms/Button";
 
-export default function IndustriesSec(){
+export default function IndustriesSec({ id }){
     const sectionRef = useRef(null);
     const roadRef = useRef(null);
     const [activeIndustry, setActiveIndustry] = useState('industry-tab1')
@@ -51,7 +51,7 @@ export default function IndustriesSec(){
     }, [isRoadVisible]);
     return(
         <section>
-            <div className="industry_sec sec-pad-all" ref={sectionRef}>
+            <div className="industry_sec sec-pad-all" ref={sectionRef} id={id}>
                 <div className="container">
                     <div className="heading">
                         <h2>Industries We Drive Growth In</h2>
@@ -69,7 +69,7 @@ export default function IndustriesSec(){
                             <div className="industry_wrapper vector">
                                 <figure>
                                     <div className={`animate_wrapper ${isSectionVisible && activeIndustry === "industry-tab1" ? "active" : ""}`}>
-                                        <img src="/assets/vector/automobile/hand-top.svg" className="hand_top" alt="" />
+                                        <img src="/assets/vector/automobile/top-hand.svg" className="hand_top" alt="" />
                                         <div className="main_wrap">
                                             <img src="/assets/vector/automobile/Industry-03.svg" alt="" className="parts1" />
                                             <img src="/assets/vector/automobile/Industry-04.svg" alt="" className="parts2" />
@@ -81,7 +81,7 @@ export default function IndustriesSec(){
                                                 <img src="/assets/vector/automobile/Industry-09.svg" alt="" className="parts7" />
                                             </div>
                                         </div>
-                                        <img src="/assets/vector/automobile/hand-bottom.svg" className="hand_bottom" alt="" />
+                                        <img src="/assets/vector/automobile/bottom-hand.svg" className="hand_bottom" alt="" />
                                         <div
                                             ref={roadRef}
                                             className={`road_line ${isRoadVisible ? "road_visible" : ""} ${isRoadMoving ? "moving" : ""}`}

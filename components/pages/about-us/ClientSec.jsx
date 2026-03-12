@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-export default function ClientSec({ data }){
+export default function ClientSec({ data, id }){
     if(!data) return null;
     return(
         <section>
-            <div className="client_sec sec-pad">
+            <div className="client_sec sec-pad" id={id}>
                 <div className="container">
                     <div className="main_wrapper light-bg">
                         {data.map((client) => (

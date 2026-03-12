@@ -7,12 +7,12 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import "@/uploads/styles/component/component.css"
 
-export default function ClientsSec({ data }) {
+export default function ClientsSec({ data, id }) {
     if(!data) return null
     const swiperRef = useRef(null);
     return(
         <section>
-            <div className="client_sec sec-pad-all">
+            <div className="client_sec sec-pad-all" id={id}>
                 <div className="main_wrapper">
                     <Swiper
                         className="client_slider"

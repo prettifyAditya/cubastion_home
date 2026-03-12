@@ -1,10 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function HeroSection(){
+export default function HeroSection({ id }){
     return(
         <section>
-            <div className="hero_sec">
+            <div className="hero_sec" id={id}>
                 <div className="container">
                     <div className="hero_wrapper">
                         <div className="hero_col active">

@@ -225,14 +225,14 @@
   right: 10%;
   top: 50%;
   transform: translate(10%, -50%);
-  height: 375px;
+  height: 450px;
   width: 500px;
   overflow: hidden;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper .road_line {
   position: absolute;
   left: 0;
-  bottom: 30%;
+  bottom: 38%;
   width: 0;
   height: 3px;
   background-image: repeating-linear-gradient(to right, #fff 0px, #fff 12px, transparent 12px, transparent 24px);
@@ -244,7 +244,7 @@
   width: 100%;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper .road_line.moving {
-  animation: roadMove 0.6s linear infinite;
+  animation: roadMove 0.3s linear infinite;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper:not(.active) .main_wrap .parts1 {
   transform: translate(-15%, 0px) scale(0.8);
@@ -274,13 +274,13 @@
   animation: beforeblur 3s ease 1.2s forwards;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper.active .main_wrap .parts5, .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper.active .main_wrap .tire {
-  animation: tirerun 2s linear 3s infinite forwards;
+  animation: tirerun 1.3s linear 3s infinite forwards;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper .main_wrap {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 42%;
+  transform: translate(-50%, -42%);
   width: 185px;
   height: 140px;
   position: relative;
@@ -311,35 +311,35 @@
   top: 0;
   left: 0;
   transform: translate(0, 0);
-  transition: 0.5s ease;
+  transition: 1.5s ease;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper .main_wrap .parts2 {
   width: 55%;
   top: 0;
   left: 3%;
   transform: translate(-3%, 0);
-  transition: 0.5s ease;
+  transition: 1.5s ease;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper .main_wrap .parts3 {
   width: 42%;
   top: 65%;
   left: 98%;
   transform: translate(-98%, -65%);
-  transition: 0.5s ease;
+  transition: 1.5s ease;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper .main_wrap .parts4 {
   width: 29%;
   top: 22%;
   left: 98%;
   transform: translate(-98%, -22%);
-  transition: 0.5s ease;
+  transition: 1.5s ease;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper .main_wrap .parts5 {
   width: 20%;
   left: 13%;
   bottom: 1%;
   transform: translate(-13%, 1%);
-  transition: 0.5s ease;
+  transition: 1.5s ease;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper .main_wrap .tire {
   position: absolute;
@@ -354,21 +354,21 @@
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 0);
-  transition: 0.5s ease;
+  transition: 1.5s ease;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper .main_wrap .parts7 {
   height: 48.7%;
   left: 50%;
   top: 0;
   transform: translate(-50%, 0);
-  transition: 0.5s ease;
+  transition: 1.5s ease;
 }
 @keyframes touch_go {
   0%, 100% {
     transform: translate(0, 0);
   }
   60% {
-    transform: translate(10%, 45%) scale(1.2);
+    transform: translate(-83%, -5%);
   }
 }
 @keyframes beforeblur {
@@ -407,15 +407,15 @@
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper img.hand_top {
   top: 0;
-  left: 0;
+  right: 0;
   transform: translate(0, 0);
-  width: 200px;
+  width: 150px;
 }
 .industry_sec .tab-nav-content .industry_wrapper.vector figure .animate_wrapper img.hand_bottom {
   bottom: 0;
-  right: 0;
+  left: 0;
   transform: translate(0, 0);
-  width: 200px;
+  width: 150px;
 }
 .industry_sec .tab-nav-content .industry_wrapper figure {
   position: relative;

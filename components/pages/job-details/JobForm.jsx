@@ -5,6 +5,7 @@ import Button from "@/components/atoms/Button"
 import Input from "@/components/atoms/Input";
 import Textarea from "@/components/atoms/Textarea";
 import Select from "@/components/atoms/Select";
+import FileInput from "@/components/atoms/FileInput";
 
 export default function JobForm(){
     const isJobFormOpen = useModalStore((state) => state.isJobFormOpen)
@@ -19,9 +20,11 @@ export default function JobForm(){
         city: "",
         linkedin: "",
         message: "",
+        resume: null, 
     })
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value })
+        const value = e.target.type === "file" ? e.target.files[0] : e.target.value
+        setFormData({ ...formData, [e.target.name]: value })
     }
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -126,15 +129,13 @@ export default function JobForm(){
                             onChange={handleChange}
                             required
                         />
-                        {/* <Input
-                            label="LinkedIn Link  *"
-                            type="text"
-                            name="linkedin_link"
-                            id="linkedin_link"
-                            value={formData.linkedin}
+                        <FileInput
+                            name="resume"
+                            id="resume"
                             onChange={handleChange}
+                            error="Please upload your resume"
                             required
-                        /> */}
+                        />
                         <Textarea   
                             classname="full"
                             label="Message *"

@@ -1,7 +1,7 @@
-export default function MapSec() {
+export default function MapSec({ id }) {
     return(
         <section>
-            <div className="map_sec sec-pad-all light-bg">
+            <div className="map_sec sec-pad-all light-bg" id={id}>
                 <div className="container">
                     <div className="heading">
                         <h2>Bringing Value, Everywhere We Are</h2>

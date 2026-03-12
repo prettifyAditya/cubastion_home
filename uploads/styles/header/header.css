@@ -207,10 +207,11 @@
   pointer-events: none;
   height: calc(var(--inputsize) - var(--borderwidth));
   position: relative;
-  --filename: 'Attach Resume*';
+  --filename: 'Attach your CV *';
   --filenameinitial: var(--filename);
   --color: var(--text);
   --background: none;
+  --image: url(/assets/icon/clip.svg) no-repeat;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -231,6 +232,7 @@
   line-height: calc(var(--inputsize) - var(--borderwidth));
   padding-left: var(--paddingleftright);
   color: var(--color);
+  font-weight: 400;
   width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -244,6 +246,34 @@
   z-index: 1;
   background-position: calc(100% - var(--paddingleftright, 0)) 50%;
   background-size: auto 50%;
+  opacity: 0.6;
+}
+.form .form-group.file-input .file_type {
+  position: absolute;
+  font-size: 12px;
+  line-height: normal;
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  color: var(--text);
+  font-weight: 400;
+}
+.form .form-group.file-input .error {
+  left: unset;
+  text-align: right;
+}
+.form .form-group .error {
+  color: red;
+  font-size: 12px;
+  line-height: normal;
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  right: 0;
+}
+.form .form-group .error.static {
+  position: static;
+  margin: 10px 0;
 }
 .form .check_term {
   margin: 15px 0;
@@ -2115,6 +2145,75 @@ em {
   border-radius: 25px;
   font-size: 14px;
   font-weight: 400;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  line-height: normal;
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  right: 0;
+}
+.error.static {
+  position: static;
+  margin: 10px 0;
+}
+
+.side-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 10;
+}
+.side-nav ul {
+  padding: 18px 22px 12px 14px;
+}
+.side-nav ul li {
+  position: relative;
+  cursor: pointer;
+}
+.side-nav ul li.active::after {
+  width: 20px;
+  height: 100px;
+  border-color: var(--secondary);
+}
+.side-nav ul li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  transition: 0.5s ease;
+}
+.side-nav ul li:hover .label {
+  opacity: 1;
+}
+.side-nav ul li.active .number {
+  color: var(--primary);
+}
+.side-nav ul li .number {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 900;
+  transition: 0.5s ease;
+}
+.side-nav ul li .label {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translate(10%, 0%);
+  padding: 5px;
+  white-space: nowrap;
+  background: var(--white);
+  line-height: 1;
+  font-weight: 800;
+  font-size: 14px;
+  opacity: 0;
+  transition: 0.5s ease;
 }
 
 header {
