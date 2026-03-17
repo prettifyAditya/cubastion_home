@@ -7,7 +7,7 @@ export default function MainTemplate({ children }) {
     return(
         <SideNavProvider>
             <Header />
-            {/* <SideNavigation /> */}
+            <SideNavigation />
             {children}
             <Footer />
         </SideNavProvider>

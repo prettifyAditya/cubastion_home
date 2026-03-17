@@ -44,6 +44,8 @@ $scrollwidth: 8px
     @include media(320)
         --containerfluid: 10px
 
+main
+    margin-top: var(--headerheight)
 
 .sec-heading
     max-width: 600px
@@ -152,16 +154,6 @@ h3
         font-size: 36px
         font-weight: 500
         line-height: 1.2
-        @include media(1280)
-            font-size: 58px
-        @include media(1024)
-            font-size: 46px
-        @include media(991)
-            font-size: 28px
-        @include media(768)
-            font-size: 26px
-        @include media(540)
-            font-size: 24px
 
     >p
         margin-top: 10px
@@ -367,6 +359,9 @@ img, video
     &::before,&::after
         z-index: -1
         transition: .5s ease
+    &.no_svg
+        svg, img
+            display: none
     svg
         transition: .6s ease
     &::after
@@ -793,13 +788,14 @@ img, video
         display: inline-block
         vertical-align: middle
         a
-            color: $text
-            font-size: 14px
-            @include media(520)
-                font-size: 12px
-                text-overflow: ellipsis
+            &:not(.btn, .btn2)
+                color: #FFFFFFB2
+                font-size: 14px
+                @include media(520)
+                    font-size: 12px
+                    text-overflow: ellipsis
             &.active
-                color: $black
+                color: $white
         &:not(:last-child)
             position: relative
             padding-right: 20px
@@ -813,7 +809,7 @@ img, video
                 translate: 0 -50%
                 font-size: 12px
                 font-family: monospace
-                color: $text
+                color: $white
         &:not(:first-child)
             padding-left: 20px
             @include media(520)

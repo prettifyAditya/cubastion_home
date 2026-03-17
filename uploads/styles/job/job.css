@@ -11,9 +11,6 @@
     left: 100%;
   }
 }
-.job_banner.banner {
-  margin-top: var(--headerfixed);
-}
 .job_banner.banner::before {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
 }

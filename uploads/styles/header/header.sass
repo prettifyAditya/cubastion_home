@@ -9,11 +9,12 @@ header
     z-index: 5
     transition: .5s ease
     height: var(--headerheight)
+    border-bottom: 1px solid #00000033
     @include after(#FFFFFFCC)
     &::after
         backdrop-filter: blur(15px)
         bottom: auto
-        height: 0
+        height: 100%
         z-index: -1
         transition: .5s ease
     .container, .container-fluid
@@ -174,6 +175,8 @@ header
             .colA
                 .logo
                     transition: none !important
+    &.no_shadow
+        box-shadow: none
 
 .login-pop
     max-width: 550px

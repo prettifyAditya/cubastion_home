@@ -6,13 +6,13 @@ import "@/uploads/styles/header/header.css"
 import Button from "../atoms/Button";
 import { usePathname } from "next/navigation";
 export default function Header(){
-    const pathname = usePathname()
+    // const pathname = usePathname()
     const [headerFixed, setHeaderFixed] = useState(false);
 
-    const aboutUsPage = pathname.startsWith('/about-us')
-    const contactUsPage = pathname.startsWith('/contact-us')
-    const JobDetailsPage = pathname.startsWith('/job-details')
-    const headerFill = aboutUsPage || contactUsPage || JobDetailsPage
+    // const aboutUsPage = pathname.startsWith('/about-us')
+    // const contactUsPage = pathname.startsWith('/contact-us')
+    // const JobDetailsPage = pathname.startsWith('/job-details')
+    // const headerFill = aboutUsPage || contactUsPage || JobDetailsPage
     useEffect(() => {
         const handleScroll = () => {
             setHeaderFixed(window.scrollY > 100);
@@ -25,7 +25,7 @@ export default function Header(){
         }
     }, [])
     return(
-        <header className={`${headerFixed ? "header-fixed" : ""} ${headerFill ? "header-fit" : ""}`}>
+        <header className={`${headerFixed ? "header-fixed" : ""}`}>
             <div className="container header-container">
                 <div className="colA">
                     <Link href="/" className="logo">
@@ -53,7 +53,7 @@ export default function Header(){
                         <div className="selected_lang">
                             <div className="show_lan">EN</div>
                             <div className="icon">
-                                <img src="assets/icon/flag.svg" alt="" />
+                                <img src="/assets/icon/flag.svg" alt="" />
                             </div>
                         </div>
                     </div>

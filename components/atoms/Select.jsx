@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 
-export default function Select({ label, name, id, onChange, value, required = false, options = [] }) {
+export default function Select({ classname="", label, name, id, onChange, value, required = false, options = [] }) {
     const [isOpen, setIsOpen] = useState(false);
     const [selected, setSelected] = useState(null);
     const [isActive, setIsActive] = useState(false);
@@ -30,7 +30,7 @@ export default function Select({ label, name, id, onChange, value, required = fa
     }, [name, onChange]);
 
     return (
-        <div className={`form-group ${isActive ? "active" : ""}`} ref={wrapperRef}>
+        <div className={`form-group ${isActive ? "active" : ""} ${classname}`} ref={wrapperRef}>
             {/* Hidden native select */}
             <select
                 name={name}

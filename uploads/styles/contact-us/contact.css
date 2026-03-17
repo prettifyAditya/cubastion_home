@@ -11,9 +11,6 @@
     left: 100%;
   }
 }
-.contact-banner.banner {
-  margin-top: var(--headerfixed);
-}
 .contact-banner.banner::before {
   background: linear-gradient(0deg, hsla(0, 0%, 100%, 0.6) 0%, #fff 100%);
 }

@@ -744,6 +744,10 @@
   }
 }
 
+main {
+  margin-top: var(--headerheight);
+}
+
 .sec-heading {
   max-width: 600px;
   margin: 0 auto;
@@ -964,31 +968,6 @@ h3 {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
-}
-@media only screen and (max-width: 1280px) {
-  .heading h3, .heading h2, .heading h1 {
-    font-size: 58px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .heading h3, .heading h2, .heading h1 {
-    font-size: 46px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .heading h3, .heading h2, .heading h1 {
-    font-size: 28px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .heading h3, .heading h2, .heading h1 {
-    font-size: 26px;
-  }
-}
-@media only screen and (max-width: 540px) {
-  .heading h3, .heading h2, .heading h1 {
-    font-size: 24px;
-  }
 }
 .heading > p {
   margin-top: 10px;
@@ -1336,6 +1315,9 @@ img, video {
 .btn::before, .btn::after {
   z-index: -1;
   transition: 0.5s ease;
+}
+.btn.no_svg svg, .btn.no_svg img {
+  display: none;
 }
 .btn svg {
   transition: 0.6s ease;
@@ -1937,18 +1919,18 @@ img, video {
   display: inline-block;
   vertical-align: middle;
 }
-.breadcrumps li a {
-  color: var(--text);
+.breadcrumps li a:not(.btn, .btn2) {
+  color: rgba(255, 255, 255, 0.6980392157);
   font-size: 14px;
 }
 @media only screen and (max-width: 520px) {
-  .breadcrumps li a {
+  .breadcrumps li a:not(.btn, .btn2) {
     font-size: 12px;
     text-overflow: ellipsis;
   }
 }
 .breadcrumps li a.active {
-  color: var(--black);
+  color: var(--white);
 }
 .breadcrumps li:not(:last-child) {
   position: relative;
@@ -1967,7 +1949,7 @@ img, video {
   translate: 0 -50%;
   font-size: 12px;
   font-family: monospace;
-  color: var(--text);
+  color: var(--white);
 }
 .breadcrumps li:not(:first-child) {
   padding-left: 20px;
@@ -2225,6 +2207,7 @@ header {
   z-index: 5;
   transition: 0.5s ease;
   height: var(--headerheight);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 header::after {
   content: "";
@@ -2244,7 +2227,7 @@ header::after {
 header::after {
   backdrop-filter: blur(15px);
   bottom: auto;
-  height: 0;
+  height: 100%;
   z-index: -1;
   transition: 0.5s ease;
 }
@@ -2490,6 +2473,9 @@ header.header-fit::after {
 }
 header.header-fit .header-container .colA .logo {
   transition: none !important;
+}
+header.no_shadow {
+  box-shadow: none;
 }
 
 .login-pop {

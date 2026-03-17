@@ -1,0 +1,478 @@
+@import '../_var'
+
+.lastest_case_sec
+    background: #F5F7FA
+    .upper_sec
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 40px
+        .heading
+            h1
+                font-size: 24px
+    .main_wrapper
+        .case_slider 
+            height: 441px
+            .swiper-slide
+                transition: all .6s ease
+                &.swiper-slide-active
+                    width: 620px !important
+                    .latest_case_col
+                        figcaption
+                            display: block
+            .latest_case_col
+                height: 100%
+                &::before
+                    background: linear-gradient(#0000 50%, #000 100%)
+                    border-radius: 10px
+                figure
+                    border-radius: 10px
+                    img, video 
+                        border-radius: 10px
+                figcaption
+                    padding: 0 25px 25px
+                    display: none
+                    h6
+                        font-size: 18px
+                        font-weight: 600
+                        color: $white
+                        line-height: 1.2
+                    .case_pro_wrap
+                        display: flex
+                        flex-wrap: wrap
+                        align-items: center
+                        justify-content: space-between
+                        margin-top: 15px
+                        gap: 20px
+                        .profile_wrap
+                            flex: 1
+                            display: flex
+                            flex-wrap: wrap
+                            align-items: center
+                            gap: 15px
+                            .user
+                                flex: 0 1 auto 
+                                width: 37px
+                                height: 37px
+                                img
+                                    border-radius: 50%
+                            .info
+                                flex: 1
+                                .name
+                                    font-size: 14px
+                                    color: $white
+                                .desgn
+                                    color: #FFFFFFB2
+                                    font-size: 14px
+                        .white-border
+                            flex: 0 1 auto
+                            --padding: 12px
+                .case_tag
+                    position: absolute
+                    left: 13px
+                    top: 15px
+                    background: $white
+                    font-size: 14px
+                    padding: 6px 20px
+                    border-radius: 25px
+                    line-height: 1.2
+
+.case_results_sec
+    padding: 30px 0 50px
+    .results_nav
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        gap: 40px
+        margin-bottom: 40px
+        .results_found
+            flex: 0 1 40%
+        .filter_wrap
+            flex: 1
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            gap: 20px
+            .search_wrapper
+                flex: 1
+                display: flex
+                align-items: center
+                gap: 15px
+                padding: 9px 30px
+                border-radius: 10px
+                background: #F4F4F4
+                height: 43px
+                input
+                    background: transparent
+                    border: none
+                    outline: none
+                    &::placeholder
+                        color: #0000004D
+            .industries_filter
+                flex: 0 1 30%
+                border-radius: 10px
+                background: #F4F4F4
+                --selectheight: 43px
+                --inputsize: 43px
+                label
+                    display: none
+                .custom-select
+                    --paddingleftright: 20px
+                    --labelbefore: #0000004D
+    .selected_wrapper
+        display: flex
+        align-items: center
+        gap: 15px
+        .selected_case
+            display: flex
+            align-items: center
+            gap: 8px
+            padding: 8px 18px
+            background: #F4F4F4
+            color: $text
+            font-weight: 400
+            border-radius: 25px
+            font-size: 14px
+            line-height: 1.2
+            .close
+                flex: 0 1 auto
+                width: 20px
+                height: 20px
+                cursor: pointer
+                svg
+                    width: 100%
+                    height: 100%
+        .clearAll
+            color: #EE5858
+            line-height: 1
+
+    .case_results_wrapper
+        margin-top: 40px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 50px 20px
+
+// Case Study Details
+
+.case_details_banner.banner
+    &::before
+        background: linear-gradient(270deg, #0000 65%, #000c 100%)
+    .bg
+        .banner-wrapper
+            .heading
+                max-width: 600px
+                margin: 40px 0
+                h1
+                    color: $white
+            .profile_wrap
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                max-width: max-content
+                gap: 15px
+                .user
+                    flex: 0 1 auto 
+                    width: 37px
+                    height: 37px
+                    img
+                        border-radius: 50%
+                .info
+                    flex: 1
+                    .name
+                        font-size: 14px
+                        color: $white
+                    .desgn
+                        color: #FFFFFFB2
+                        font-size: 14px
+            .case_tag
+                margin-top: 50px
+                width: max-content
+                background: #FFFFFF33
+                padding: 8px 20px
+                text-align: center
+                font-size: 14px
+                color: $white
+                border-radius: 25px
+                line-height: 1.5
+
+.case_highlights_sec
+    background: #F5F7FA
+    .main_wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        .colA
+            flex: 0 1 40%
+            max-width: 40%
+            width: 100%
+            padding: 110px 70px
+            .heading
+                height: 100%
+                display: flex
+                flex-direction: column
+                align-items: start
+                justify-content: center
+                .btn
+                    margin-top: 40px
+        .colB
+            flex: 1
+            max-width: 55%
+            width: 100%
+            border-left: 1px solid $primary
+            padding: 110px 70px
+            padding-left: 0
+            ul
+                height: 100%
+                margin-left: -9px
+                li
+                    position: relative
+                    padding-left: 70px
+                    color: #000000B2
+                    &:not(:last-child)
+                        margin-bottom: 25px
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: 20%
+                        left: 0
+                        transform: translate(0, -20%)
+                        width: 18px
+                        height: 18px
+                        background: #FAFAFA
+                        border: 1px solid $primary
+                        border-radius: 50%
+
+.case_navigation
+    .scroll_wrap
+        --container: 810px
+        .main_wrapper
+            h6
+                font-size: 14px
+                text-transform: uppercase
+            nav
+                margin-top: 35px
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 40px 60px
+                .nav_item
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    gap: 20px
+                    border-bottom: 1px solid #00000033
+                    padding-bottom: 30px
+                    cursor: pointer
+                    &:hover
+                        p
+                            color: $primary
+                        button
+                            border-color: $primary
+                            background: $primary
+                            transform: translateY(7px)
+                            svg
+                                path
+                                    fill: $white
+                    p
+                        font-size: 32px
+                        color: #00000066
+                        font-weight: 500
+                        transition: .5s ease
+                    button
+                        width: 40px
+                        height: 40px
+                        border-radius: 50%
+                        border: 1px solid #00000066
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        transition: .5s ease
+                        svg
+                            transition: .3s ease
+    .case_nav
+        margin: 80px 0 
+        border-top: 1px solid #00000033
+        border-bottom: 1px solid #00000033
+        position: sticky
+        top: calc( var(--headerfixed) - 2px )
+        background: #fffc
+        backdrop-filter: blur(15px)
+        .nav_wrapper
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+            >ul
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                gap: 45px
+                li
+                    position: relative
+                    padding: 20px 0
+                    font-size: 18px
+                    font-weight: 500
+                    color: #00000066
+                    line-height: 1.2
+                    cursor: pointer
+                    transition: .5s ease
+                    &.active
+                        color: $primary
+                        &::before
+                            width: 100%
+                    &::before
+                        content: ""
+                        position: absolute
+                        left: 0
+                        bottom: 0
+                        background: $primary
+                        height: 2px
+                        width: 0
+                        transition: .5s ease
+            .cta_wrap
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                gap: 40px
+                --btnsize: 40px
+                .share_wrap
+                    position: relative
+                    .shareBtn
+                        width: var(--btnsize)
+                        height: var(--btnsize)
+                        svg
+                            width: 100%
+                            height: 100%
+                    .share_options
+                        transform-origin: top
+                        gap: 20px
+                        margin-right: 10px
+                        transition: all .2s cubic-bezier(.5, 0, 0, 1.25), opacity .15s ease-out
+                        display: flex
+                        position: absolute
+                        top: 50%
+                        right: 100%
+                        transform: scale(.75) translate(0%, -50%)
+                        opacity: 0
+                        &.open
+                            opacity: 1
+                            transform: scale(1) translate(0%, -50%)
+                        li
+                            a
+                                display: block
+                                &:hover
+                                    svg
+                                        path 
+                                            fill: $primary
+                .back_to_top
+                    width: var(--btnsize)
+                    height: var(--btnsize)
+                    border: 1px solid #00000066
+                    border-radius: 50%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    transition: .5s ease
+                    &:hover
+                        background: $primary
+                        border-color: $primary
+                        svg
+                            path
+                                stroke: $white
+    .section_wrap
+        --container: 810px
+        section
+            &:not(:last-child)
+                margin-bottom: 60px
+            .heading
+                margin-bottom: 20px
+                h2
+                    font-size: 14px
+                    font-weight: 400
+                    text-transform: uppercase
+                    margin-bottom: 10px
+                h6
+                    font-size: 32px
+                    line-height: 1.2
+            .content
+                p
+                    line-height: 1.5
+                    &:not(:last-child)
+                        margin-bottom: 10px
+
+.related_sec
+    background: #F5F7FA
+    .upper_sec
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 40px
+    .main_wrapper
+        .related_slider 
+            padding: 12px
+            .swiper-slide
+                height: auto
+            .case_result_col
+                box-shadow: 0px 5px 10px #64646f33
+
+
+.case_result_col
+    width: 100%
+    height: 100%
+    box-shadow: 0 7px 29px 0 #64646F33
+    border-radius: 10px
+    background: $white
+    &:hover
+        figure
+            img
+                transform: scale(1.1)
+    figure
+        height: 254px
+        border-top-left-radius: 10px
+        border-top-right-radius: 10px
+        line-height: 0
+        overflow: hidden
+        @include shine()
+        img
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
+            transition: .8s ease
+    figcaption
+        padding: 23px 25px 
+        h6
+            font-size: 16px
+            line-height: 1.4
+            margin-bottom: 25px
+        .profile_wrap
+            flex: 1
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            gap: 15px
+            padding-bottom: 25px
+            border-bottom: 1px solid #0000001A
+            .user
+                flex: 0 1 auto 
+                width: 37px
+                height: 37px
+                img
+                    border-radius: 50%
+            .info
+                flex: 1
+                .name
+                    font-size: 14px
+                    color: $black
+                    font-weight: 500
+                .desgn
+                    color: $text
+                    font-size: 14px
+        .case_tag
+            width: max-content
+            margin-top: 18px
+            background: #F4F4F4
+            padding: 8px 20px
+            text-align: center
+            font-size: 14px
+            color: $text
+            border-radius: 25px
