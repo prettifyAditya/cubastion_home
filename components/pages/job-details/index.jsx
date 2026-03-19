@@ -2,9 +2,9 @@ import staticData from "@/uploads/data/StaticData.json"
 import HeroSection from "./HeroSection"
 import JobDetailsSec from "./JobDetailsSec"
 import FindJob from "./FindJob"
-import "@/uploads/styles/job/job.css"
 import SimilarVacancies from "./SimilarVacancies"
 import JobForm from "./JobForm"
+import "@/uploads/styles/job/job.css"
 
 
 export default function JobDetailsPage(){

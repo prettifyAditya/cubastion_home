@@ -1584,5 +1584,203 @@
         }
       ]
     }
+  },
+
+  "ServiceListing": {
+    "Section1": {
+      "bgmedia": "/assets/images/service/banner.jpg",
+      "heading": "Services & Solutions",
+      "desc": "End-to-end technology capabilities designed to solve real business challenges."
+    },
+    "Section2": [
+      {
+        "id": "1",
+        "imgSrc": "/assets/images/others/client1.png"
+      },
+      {
+        "id": "2",
+        "imgSrc": "/assets/images/others/client2.png"
+      },
+      {
+        "id": "3",
+        "imgSrc": "/assets/images/others/client3.png"
+      },
+      {
+        "id": "4",
+        "imgSrc": "/assets/images/others/client4.png"
+      },
+      {
+        "id": "5",
+        "imgSrc": "/assets/images/others/client5.png"
+      },
+      {
+        "id": "6",
+        "imgSrc": "/assets/images/others/client6.png"
+      },
+      {
+        "id": "7",
+        "imgSrc": "/assets/images/others/client7.png"
+      }
+    ],
+    "Section3": [
+      {
+        "id": 1,
+        "name": "Automotive",
+        "heading": "Automotive Solutions",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sapiente!",
+        "serviceSlides": [
+          {
+            "id": 1,
+            "bgmedia": "/assets/images/service/service1.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 2,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 3,
+            "bgmedia": "/assets/images/service/service3.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 4,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Home Appliances",
+        "heading": "Home Appliances Solutions",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sapiente!",
+        "serviceSlides": [
+          {
+            "id": 1,
+            "bgmedia": "/assets/images/service/service1.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 2,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 3,
+            "bgmedia": "/assets/images/service/service3.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 4,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Financial",
+        "heading": "Financial Solutions",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sapiente!",
+        "serviceSlides": [
+          {
+            "id": 1,
+            "bgmedia": "/assets/images/service/service1.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 2,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 3,
+            "bgmedia": "/assets/images/service/service3.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 4,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Consumer Durables",
+        "heading": "Consumer Durables Solutions",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sapiente!",
+        "serviceSlides": [
+          {
+            "id": 1,
+            "bgmedia": "/assets/images/service/service1.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 2,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 3,
+            "bgmedia": "/assets/images/service/service3.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 4,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Devices",
+        "heading": "Devices Solutions",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sapiente!",
+        "serviceSlides": [
+          {
+            "id": 1,
+            "bgmedia": "/assets/images/service/service1.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 2,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 3,
+            "bgmedia": "/assets/images/service/service3.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 4,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "US Government",
+        "heading": "US Government",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sapiente!",
+        "serviceSlides": [
+          {
+            "id": 1,
+            "bgmedia": "/assets/images/service/service1.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          },
+          {
+            "id": 2,
+            "bgmedia": "/assets/images/service/service2.jpg",
+            "heading": "Modernising environmental compliance for a global sources"
+          }
+        ]
+      }
+    ]
   }
 }

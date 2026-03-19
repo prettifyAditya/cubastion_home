@@ -2157,6 +2157,9 @@ em {
   position: relative;
   cursor: pointer;
 }
+.side-nav ul li:last-child::after {
+  display: none;
+}
 .side-nav ul li.active::after {
   width: 20px;
   height: 100px;

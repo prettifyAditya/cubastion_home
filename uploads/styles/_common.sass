@@ -956,6 +956,9 @@ em
         li
             position: relative
             cursor: pointer
+            &:last-child
+                &::after 
+                    display: none
             &.active
                 &::after
                     width: 20px

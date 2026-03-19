@@ -1,0 +1,143 @@
+@import '../_var'
+
+.banner.service_banner
+    &::before
+        background: linear-gradient(270deg, #0000 0%, #000000 100%)
+    .banner-wrapper
+        top: unset
+        bottom: 20%
+        transform: translate(0, 20%)
+        .heading
+            max-width: 430px
+            h1
+                color: $secondary
+            p
+                color: #ffffffb3
+
+.service_tabbing_sec
+    .tab-nav
+        display: flex
+        align-items: center
+        gap: 60px
+        justify-content: space-between
+        margin: 40px auto 30px
+        border-bottom: 1px solid #C2C2C2
+        // max-width: 1200px
+        li
+            position: relative
+            padding-bottom: 15px
+            color: #00000066
+            cursor: pointer
+            &.active
+                color: $primary
+                &::before
+                    width: 100%
+            &::before
+                content: ""
+                position: absolute
+                left: 0
+                bottom: 0
+                height: 2px
+                width: 0
+                background-color: var(--secondary)
+                transition: .5s ease
+    .tab-nav-content
+        background: var(--bglight)
+        .container-fluid, .container
+            padding-right: 0
+            position: relative
+            // margin: 0 0 0 auto
+            @include media-min(1336)
+                padding-left: 17%
+        .tabs
+            padding: 100px 0 60px
+            transition: .5s ease
+            &:not(.active)
+                opacity: 0
+                transform: scale(.8)
+                transform-origin: bottom
+            .main_wrapper
+                display: flex
+                flex-wrap: wrap
+                align-items: end
+                --gap: 60px
+                gap: var(--gap)
+                .colA
+                    flex: 0 1 30%
+                    max-width: 30%
+                    width: 100%
+                    .heading
+                        h2
+                            color: $primary
+                            line-height: 1.1
+                        p
+                            color: $black
+                    .swiper-nav
+                        margin-top: 30px
+                        gap: 15px
+                        button
+                            &:hover
+                                svg
+                                    path
+                                        stroke: $white
+                            svg
+                                path
+                                    fill: none
+                .colB
+                    flex: 1
+                    max-width: calc( 70% - var(--gap) )
+                    width: 100%
+                    .service_slider 
+                        transition: .5s ease
+                    .service_col
+                        border-radius: 10px
+                        &:hover
+                            figure
+                                img
+                                    transform: scale(1.1)
+                        &::before
+                            background: linear-gradient(#0000 0%, hsl(0deg 0% 0% / 40%) 100%)
+                            border-radius: 10px
+                        figure
+                            border-radius: 10px
+                            @include shine()
+                            img
+                                border-radius: 10px
+                                transition: .5s ease
+                        figcaption
+                            padding: 0 30px 30px 15px
+                            h5
+                                font-size: 16px
+                                color: $white
+                            .btn
+                                margin-top: 15px
+
+.contact_form_sec
+    .main_wrapper
+        background: var(--gradient-a)
+        border-radius: 20px
+        padding: 70px
+        .heading
+            text-align: center
+            max-width: 590px
+            margin: 0 auto 60px
+            h2
+                color: $white
+        .form
+            max-width: 590px
+            margin: 0 auto
+            .form-grid
+                --item: 2
+                .custom-select
+                    &::before
+                        background-image: url(/assets/icon/arrow-down-white.svg)
+                .submit-grp
+                    .white
+                        border: 1px solid $white
+                        svg
+                            display: none
+                        &::after
+                            display: none
+                        &:hover
+                            background: none
+                            color: $white
