@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react"
 
-export default function CaseNavigation({ data }){
+export default function CaseNavigation({ data, id }){
     if(!data) return null;
     const [activeId, setActiveId] = useState(1);
     const [isShareOpen, setIsShareOpen] = useState(false);
@@ -48,7 +48,7 @@ export default function CaseNavigation({ data }){
     }, []);
 
     return (
-      <div className="case_navigation sec-pad-all">
+      <div className="case_navigation sec-pad-all" id={id}>
         <div className="container scroll_wrap">
           <div className="main_wrapper">
             <h6>{data.heading}</h6>

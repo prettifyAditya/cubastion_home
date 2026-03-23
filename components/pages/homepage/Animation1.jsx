@@ -250,7 +250,6 @@ export default function Animation1({ id }) {
     return () => {
       cancelAnimationFrame(rafId);
       window.removeEventListener("mousemove", onMouseMove);
-      window.removeEventListener("resize", onResize);
       observer.disconnect();
       resizeObserver.disconnect();
       renderer.dispose();

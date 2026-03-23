@@ -7,12 +7,12 @@ import "swiper/css/navigation";
 import SwiperButton from "@/components/atoms/SwiperButton";
 import CaseResultCol from "@/components/molecules/CaseResultCol";
 
-export default function RelatedReadings({ data }){
+export default function RelatedReadings({ data, id }){
     if(!data) return null;
     const swiperRef = useRef(null)
     return(
         <section>
-            <div className="related_sec sec-pad-all">
+            <div className="related_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="upper_sec">
                         <div className="heading">

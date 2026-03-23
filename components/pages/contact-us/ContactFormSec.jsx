@@ -5,7 +5,7 @@ import Textarea from "@/components/atoms/Textarea";
 import Select from "@/components/atoms/Select";
 import Button from "@/components/atoms/Button";
 
-export default function ContactFormSec(){
+export default function ContactFormSec({ id }){
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -22,7 +22,7 @@ export default function ContactFormSec(){
     }
     return(
         <section>
-            <div className="contact_form_sec sec-pad-all">
+            <div className="contact_form_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="main_wrapper">
                         <div className="heading">

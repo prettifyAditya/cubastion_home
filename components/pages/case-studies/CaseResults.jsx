@@ -4,7 +4,7 @@ import { useState } from "react";
 import Select from "@/components/atoms/Select";
 import CaseResultCol from "@/components/molecules/CaseResultCol";
 
-export default function CaseResults({ data }){
+export default function CaseResults({ data, id }){
     if(!data) return null;
     
     const [industry, setIndustry] = useState(null)
@@ -12,7 +12,7 @@ export default function CaseResults({ data }){
         setIndustry(e.target.value)
     }
     return(
-        <div className="case_results_sec">
+        <div className="case_results_sec" id={id}>
             <div className="container">
                 <nav>
                     <div className="results_nav">

@@ -1,3 +1,6 @@
+"use client"
+import { useEffect } from "react"
+import { useSideNav } from "@/context/SideNavContext"
 import staticData from "@/uploads/data/StaticData.json"
 import ClientsSec from "@/components/organisms/ClientsSec";
 import HeroSection from "./HeroSection";
@@ -13,6 +16,16 @@ import "@/uploads/styles/industry-detail/industry-detail.css"
 
 
 export default function IndustryDetailsPage(){
+    const { setSections } = useSideNav()
+    useEffect(() => {
+        setSections([
+            { id: "heroSection", label: "Book a Consultation" },
+            { id: "global", label: "Our Global Presence" },
+            { id: "form", label: "Contact Us" },
+        ])
+
+        return () => setSections([])
+    }, [])
     const heroData = staticData.IndustryDetails.Section1
     const clientsData = staticData.IndustryDetails.Section2
     const AutomativeSolutionData = staticData.IndustryDetails.Section3

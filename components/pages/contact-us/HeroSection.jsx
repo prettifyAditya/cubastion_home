@@ -1,12 +1,12 @@
 "use client"
 import { useModalStore } from "@/store/modalStore";
 
-export default function HeroSection({ data }) {
+export default function HeroSection({ data, id }) {
     if(!data) return null;
     const openRegionPop = useModalStore((state) => state.openRegionPop)
     return(
         <section>
-            <div className="banner contact-banner">
+            <div className="banner contact-banner" id={id}>
                 <div className="bg">
                     <video src={data.bgmedia} autoPlay muted loop playsInline></video>
                     <div className="banner-wrapper">

@@ -1,10 +1,10 @@
 import Button from "@/components/atoms/Button";
 
-export default function CaseHighlights({ data }){
+export default function CaseHighlights({ data, id }){
     if(!data) return null;
     return(
         <section>
-            <div className="case_highlights_sec">
+            <div className="case_highlights_sec" id={id}>
                 <div className="container">
                     <div className="main_wrapper">
                         <div className="colA">

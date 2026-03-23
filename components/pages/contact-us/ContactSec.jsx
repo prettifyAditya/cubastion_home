@@ -3,12 +3,12 @@ import Link from "next/link"
 import Button from "@/components/atoms/Button";
 import { useState } from "react";
 
-export default function ContactSec({ data }) {
+export default function ContactSec({ data, id }) {
     if(!data) return null;
     const [activeContact, setActiveContact] = useState("1")
     return(
         <section>
-            <div className="contact_sec sec-pad-all">
+            <div className="contact_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="tab-nav">
                         {data.map((item) => (

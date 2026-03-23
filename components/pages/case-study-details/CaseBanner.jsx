@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CaseBanner({ data }){
+export default function CaseBanner({ data, id }){
     if(!data) return null;
     return(
         <section>
-            <div className="banner case_details_banner">
+            <div className="banner case_details_banner" id={id}>
                 <div className="bg">
                     <Image src={data.bgmedia} width={1280} height={615} alt="Banner Image" />
                     <div className="banner-wrapper">
