@@ -30,19 +30,21 @@ export default function Homepage() {
 
         return () => setSections([])
     }, [])
+    const heroSecData = staticData.Homepage.Section1
     const aboutSecData = staticData.Homepage.Section2
     const clientsData = staticData.Homepage.Section3
     const servicesData = staticData.Homepage.Section4
+    const industriesData = staticData.Homepage.Section5
     const customerSecData = staticData.Homepage.Section6
     const HighlightsSecData = staticData.Homepage.Section7
     const expertSecData = staticData.Homepage.Section8
     return(
         <main>
-            <HeroSection id="heroSec" />
+            <HeroSection id="heroSec" data={heroSecData} />
             <AboutSec id="aboutSec" data={aboutSecData} />
             <ClientsSec id="clientSec" data={clientsData} />
             <ServicesSec id="serviceSec" data={servicesData} />
-            <IndustriesSec id="industriesSec" />
+            <IndustriesSec id="industriesSec" data={industriesData} />
             <CustomerSec id="customerSec" data={customerSecData} />
             <HighlightsSec id="highlightSec" data={HighlightsSecData} />
             <ExpertInsights id="expertSec" data={expertSecData} />

@@ -1,5 +1,28 @@
 {
   "Homepage": {
+    "Section1": [
+      {
+        "id": 1,
+        "title": "Cubastion Overview",
+        "heading": "Technology that Matters",
+        "desc": "We build purposeful technology that addresses real business challenges, delivers measurable outcomes, and supports long-term growth through reliable, scalable solutions.",
+        "linkHref": "/about-us"
+      },
+      {
+        "id": 2,
+        "title": "Data & AI",
+        "heading": "Technology that Matters",
+        "desc": "We build purposeful technology that addresses real business challenges, delivers measurable outcomes, and supports long-term growth through reliable, scalable solutions.",
+        "linkHref": "/about-us"
+      },
+      {
+        "id": 3,
+        "title": "Fintech",
+        "heading": "Technology that Matters",
+        "desc": "We build purposeful technology that addresses real business challenges, delivers measurable outcomes, and supports long-term growth through reliable, scalable solutions.",
+        "linkHref": "/about-us"
+      }
+    ],
     "Section2": {
       "heading": "19 Years of Delivering",
       "subheading": "With 19 years of consistent delivery, we have helped businesses achieve measurable outcomes through strong execution, proven capability, and dependable processes. Our focus on quality, reliability, and long-term partnerships has enabled us to deliver complex projects with confidence and zero delivery failures.",
@@ -175,6 +198,47 @@
           "bgpattern": "/assets/vector/service_bg1.svg",
           "serviceName": "Data Engineering",
           "vectorImg": "/assets/vector/service_vector1.svg"
+        }
+      ]
+    },
+    "Section5": {
+      "heading": "Industries We Drive Growth In",
+      "industriesData": [
+        {
+          "id": 1,
+          "title": "Automobile",
+          "desc": "We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.",
+          "linkHref": "/"
+        },
+        {
+          "id": 2,
+          "title": "Communications",
+          "desc": "We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.",
+          "linkHref": "/"
+        },
+        {
+          "id": 3,
+          "title": "Financial Services",
+          "desc": "We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.",
+          "linkHref": "/"
+        },
+        {
+          "id": 4,
+          "title": "Consumer Durables",
+          "desc": "We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.",
+          "linkHref": "/"
+        },
+        {
+          "id": 5,
+          "title": "Connected Devices",
+          "desc": "We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.",
+          "linkHref": "/"
+        },
+        {
+          "id": 6,
+          "title": "US Government",
+          "desc": "We build modern automotive applications that connect OEMs, dealers, and customers, improving efficiency, communication, and end-to-end visibility.",
+          "linkHref": "/"
         }
       ]
     },
@@ -916,22 +980,22 @@
         {
           "id": "1",
           "heading": "What is Agentic AI?",
-          "subheading": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
+          "desc": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
         },
         {
           "id": "2",
           "heading": "How is Agentic AI different from traditional AI?",
-          "subheading": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
+          "desc": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
         },
         {
           "id": "3",
           "heading": "What does AI-led mean in this context?",
-          "subheading": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
+          "desc": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
         },
         {
           "id": "4",
           "heading": "What kind of metrics are typically measured?",
-          "subheading": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
+          "desc": "Agentic AI refers to AI systems that can independently plan, decide, and take actions to achieve defined goals, with minimal human intervention."
         }
       ]
     },
@@ -1782,5 +1846,111 @@
         ]
       }
     ]
+  }, 
+
+  "ServiceDetails": {
+    "Section1": {
+      "bgmedia": "/assets/images/service/serviceD-banner.jpg",
+      "heading": "Salesforce Automation",
+      "desc": "Drive Revenue with Intelligent Sales Automation."
+    },
+    "Section2": {
+      "heading": "Automate Sales. Accelerate Growth. Close Smarter.",
+      "desc": "Our Salesforce Automation services help businesses streamline their sales processes, eliminate manual work, and empower sales teams to focus on what matters most—closing deals and building strong customer relationships. By leveraging the full power of Salesforce, we design intelligent, scalable automation tailored to your business goals.",
+      "counterData": [
+        {
+          "id": 1,
+          "count": "100+",
+          "desc": "Global 2000 Clients"
+        },
+        {
+          "id": 2,
+          "count": "$150M",
+          "desc": "Incremental profit identified"
+        }
+      ]
+    }, 
+    "Section3": {
+      "bgmdia": "/assets/images/service/section_img.jpg"
+    }, 
+    "Section4": {
+      "heading": "Salesforce Automation Offerings",
+      "desc": "Our Salesforce Automation empowers your team with efficient lead management, accurate forecasting, and insightful analytics, accelerating sales performance",
+      "offeringData": [
+        {
+          "id": 1,
+          "heading": "Lead & Opportunity Automation",
+          "desc": "Our solutions automatically capture leads from multiple channels, assign them to the right sales representatives based on predefined rules, and score them using smart criteria. As leads progress, we seamlessly convert them into opportunities, ensuring complete visibility across the sales pipeline."
+        },
+        {
+          "id": 2,
+          "heading": "Workflow & Process Automation",
+          "desc": "Our solutions automatically capture leads from multiple channels, assign them to the right sales representatives based on predefined rules, and score them using smart criteria. As leads progress, we seamlessly convert them into opportunities, ensuring complete visibility across the sales pipeline."
+        },
+        {
+          "id": 3,
+          "heading": "Sales Process Optimization",
+          "desc": "Our solutions automatically capture leads from multiple channels, assign them to the right sales representatives based on predefined rules, and score them using smart criteria. As leads progress, we seamlessly convert them into opportunities, ensuring complete visibility across the sales pipeline."
+        },
+        {
+          "id": 4,
+          "heading": "Reporting & Sales Analytics",
+          "desc": "Our solutions automatically capture leads from multiple channels, assign them to the right sales representatives based on predefined rules, and score them using smart criteria. As leads progress, we seamlessly convert them into opportunities, ensuring complete visibility across the sales pipeline."
+        }
+      ]
+    },
+    "Section5": [
+      {
+        "id": 1,
+        "figure": "/assets/images/service/testimonial1.jpg",
+        "content": "Cubastion was instrumental in working with Mars to bring the TREAT TOWN™ idea to life and was uniquely capable to get this first-of-its-kind concept and experience launched in time for the holiday season.",
+        "name": "Name Here",
+        "desgn": "Global Chief Information Officer"
+      },
+      {
+        "id": 2,
+        "figure": "/assets/images/service/testimonial1.jpg",
+        "content": "Cubastion was instrumental in working with Mars to bring the TREAT TOWN™.",
+        "name": "Name Here",
+        "desgn": "Global Chief Technical Officer"
+      },
+      {
+        "id": 3,
+        "figure": "/assets/images/service/testimonial1.jpg",
+        "content": "TREAT TOWN™ idea to life and was uniquely capable to get this first-of-its-kind concept and experience launched in time for the holiday season.",
+        "name": "Name Here",
+        "desgn": "Information Officer"
+      }
+    ],
+    "Section6": {
+      "heading": "More Services",
+      "servicesData": [
+        {
+          "id": 1,
+          "bgmdia": "/assets/images/service/more1.jpg",
+          "title": "Customer Management"
+        },
+        {
+          "id": 2,
+          "bgmdia": "/assets/images/service/more2.jpg",
+          "title": "Data Governance"
+        },
+        {
+          "id": 3,
+          "bgmdia": "/assets/images/service/more3.jpg",
+          "title": "Data Engineering"
+        },
+        {
+          "id": 4,
+          "bgmdia": "/assets/images/service/more1.jpg",
+          "title": "Customer Management"
+        }
+      ]
+    }, 
+    "Section7": {
+      "bgmedia": "/assets/video/partner-banner.mp4",
+      "bgposter": "/assets/video/partner-banner-poster.png",
+      "heading": "Partner With People Who Deliver - Not Just Promise"
+    }
   }
 }

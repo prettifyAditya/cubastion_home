@@ -2,12 +2,12 @@
 import Button from "@/components/atoms/Button";
 import { useState } from "react";
 
-export default function EngineeringSec({ data }){
+export default function EngineeringSec({ data, id }){
     const [activeCol, setActiveCol] = useState(1)
     if (!data) return null;
     return(
         <section>
-            <div className="engineering_sec sec-pad-all">
+            <div className="engineering_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="heading">
                         <h2>{data.heading}</h2>

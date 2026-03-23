@@ -1,9 +1,9 @@
 import staticData from "@/uploads/data/StaticData.json"
-import "@/uploads/styles/service/service.css"
 import HeroSection from "./HeroSection"
 import ClientSec from "./ClientSec"
 import ServiceTabbing from "./ServiceTabbing"
 import ContactFormSec from "../contact-us/ContactFormSec"
+import "@/uploads/styles/service/service.css"
 
 export default function ServiceListingPage(){
     const heroData = staticData.ServiceListing.Section1

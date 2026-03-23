@@ -163,8 +163,11 @@ header {
 .faq_sec .grid .item-content .faq_item.active .faq_item_question {
   color: #fff;
 }
-.faq_sec .grid .item-content .faq_item.active .faq_item_icon {
-  color: #fff;
+.faq_sec .grid .item-content .faq_item.active .faq_item_icon .circle .icon {
+  --bgcolor: var(--white);
+}
+.faq_sec .grid .item-content .faq_item.active .faq_item_icon .circle .icon::after {
+  transform: scaleY(0);
 }
 .faq_sec .grid .item-content .faq_item.active .faq_item_answer {
   color: rgba(255, 255, 255, 0.8);
@@ -187,8 +190,73 @@ header {
   line-height: 1.2;
 }
 .faq_sec .grid .item-content .faq_item_icon {
+  flex: 0 1 auto;
   font-size: 1.4rem;
-  flex-shrink: 0;
+}
+.faq_sec .grid .item-content .faq_item_icon .circle {
+  flex: 0 1 43px;
+  width: 43px;
+  height: 43px;
+  transition: 0.5s ease;
+  position: relative;
+  cursor: pointer;
+}
+.faq_sec .grid .item-content .faq_item_icon .circle .icon {
+  --bgcolor: #00000066;
+  --size: 20px;
+  --border: 2px;
+  height: var(--size);
+  width: var(--size);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+.faq_sec .grid .item-content .faq_item_icon .circle .icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background: var(--bgcolor);
+  transition: 0.5s ease;
+}
+.faq_sec .grid .item-content .faq_item_icon .circle .icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background: var(--bgcolor);
+  transition: 0.5s ease;
+}
+.faq_sec .grid .item-content .faq_item_icon .circle .icon::before, .faq_sec .grid .item-content .faq_item_icon .circle .icon::after {
+  transition: 0.5s ease;
+}
+.faq_sec .grid .item-content .faq_item_icon .circle .icon::before {
+  top: calc(var(--size) / 2 - var(--border) / 2);
+  bottom: auto;
+  height: var(--border);
+  width: 100%;
+}
+.faq_sec .grid .item-content .faq_item_icon .circle .icon::after {
+  left: calc(var(--size) / 2);
+  translate: -50% 0;
+  right: auto;
+  width: var(--border);
+  height: 100%;
 }
 .faq_sec .grid .item-content .faq_item_body {
   display: grid;

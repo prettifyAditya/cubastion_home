@@ -3,42 +3,64 @@
 .hero_sec
     margin-top: calc( var(--headerheight) + 30px)
     height: calc( 100vh - calc( var(--headerheight) + 50px ) )
-    .container
+    .container, .container-fluid
         height: 100%
     .hero_wrapper
         position: relative
         height: 100%
         display: flex
         flex-wrap: wrap
-        align-items: center
         gap: 20px
+        overflow: hidden
+        @keyframes show-content
+            0%
+                opacity: 0
+                transform: translate(0, -30%)
+            100%
+                opacity: 1
+                transform: translate(0, -50%)
         .hero_col
-            flex: 1
             position: relative
-            width: 100%
+            flex: 0 1 120px
             height: 100%
-            overflow: hidden
-            &:not(.active)
-                flex: 0 1 100px
+            transition: all 600ms cubic-bezier(.4, .2, .4, 1)
+            cursor: pointer
+            &.active
+                flex: 1
+                figure
+                    background: #f5f5f5
+                    &::after
+                        display: none
+                    img,video, canvas
+                        display: block !important
                 figcaption
                     .hero_title
-                        transform: translate(0, -10%) rotate(90deg)
+                        left: var(--padding)
+                        transform: rotate(0deg) translate(0, -15%)
+                    .heading
+                        display: block
+                        animation: 240ms cubic-bezier(.4,.2,.4,1) 500ms forwards show-content
+                    .plus-icon
+                        opacity: 0
             figure
                 line-height: 0
                 overflow: hidden
-                width: 100%
                 height: 100%
                 border-radius: 10px
-                @include before()
-                &::before
-                    background: linear-gradient(270deg, #0000 50%, #000 100% 100% ), linear-gradient(0deg, #0000 28%, #000 86%)
+                background: $white
+                @include after(#f5f5f5)
+                &::after
+                    backdrop-filter: blur(10px)
                     border-radius: 10px
-                img,video
-                    height: 100%
+                img,video, canvas
                     width: 100%
-                    border-radius: 10px
+                    height: 100%
                     object-fit: cover
-                    transition: .5s ease
+                    border-radius: 10px
+                    display: none !important
+                    > div
+                        width: 100%
+                        height: 100%
             figcaption
                 position: absolute
                 top: 0
@@ -46,38 +68,60 @@
                 z-index: 2
                 width: 100%
                 height: 100%
+                --padding: 60px
+                padding: var(--padding)
                 .hero_title
                     position: absolute
-                    top: 10%
-                    transform: translate(0, -10%)
+                    top: 15%
+                    left: 50%
+                    transform: translate(-50%, -15%) rotate(90deg)
                     display: flex
                     align-items: center
                     gap: 10px
                     white-space: nowrap
+                    transition: .5s ease
                     .dot
                         width: 11px
                         height: 11px
-                        border: 1px solid $white
+                        border: 1px solid $black
                         border-radius: 50%
                     h6
                         font-size: 14px
-                        color: $white
+                        color: $black
                 .heading
                     position: absolute
                     top: 50%
                     transform: translate(0, -50%)
                     max-width: 510px
+                    display: none
+                    opacity: 0
                     h2
                         font-size: 40px
-                        color: $white
+                        color: $black
                     p
-                        color: rgba(255, 255, 255, 0.7)
+                        color: $text
                         max-width: 395px
                         margin: 10px 0 30px
+                .plus-icon
+                    width: 36px
+                    height: 36px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border: 1px solid $black
+                    border-radius: 50%
+                    position: absolute
+                    left: 50%
+                    bottom: 10%
+                    transform: translate(-50%, 10%)
+                    transition: .5s ease
+                    z-index: 1
+
 
 .about_sec
     @include before-blur
     &::before
+        filter: blur(200px)
         z-index: -1
     .about_wrapper
         display: flex
@@ -145,164 +189,14 @@
                         transform: translate(-29%, 10%)
         .industry_wrapper
             position: relative
-            &.vector
-                figure
-                    background: var(--gradient-a)
-                    height: 500px
-                    overflow: hidden
-                    .animate_wrapper
-                        position: absolute
-                        right: 10%
-                        top: 50%
-                        transform: translate(10%, -50%)
-                        height: 450px
-                        width: 500px
-                        overflow: hidden
-                        .road_line
-                            position: absolute
-                            left: 0
-                            bottom: 38%
-                            width: 0
-                            height: 3px
-                            background-image: repeating-linear-gradient(to right, #fff 0px, #fff 12px, transparent 12px, transparent 24px)
-                            background-size: 24px 2px
-                            background-repeat: repeat-x
-                            transition: width 1.5s ease-in-out
-                            &.road_visible
-                                width: 100%
-                            &.moving
-                                animation: roadMove 0.3s linear infinite
-                        &:not(.active)
-                            .main_wrap
-                                .parts1
-                                    transform: translate(-15%, 0px) scale(.8)
-                                .parts2
-                                    transform: translate(0%, -25%) scale(.8)
-                                .parts3
-                                    transform: translate(-25%, -35%)
-                                .parts4
-                                    transform: translate(-40%, -90%)
-                                .parts5
-                                    transform: translate(-100%, 90%) rotate(90deg)
-                                .parts6
-                                    transform: translate(90%, 90%)
-                                .parts7
-                                    transform: translate(-50%, 20%)
-                        &.active
-                            .hand_top
-                                animation: touch_go 2s ease 1s 
-                            .main_wrap
-                                &::before
-                                    animation: beforeblur 3s ease 1.2s forwards
-                                .parts5, .tire
-                                    animation: tirerun 1.3s linear 3s infinite forwards
-                        .main_wrap
-                            position: absolute
-                            left: 50%
-                            top: 42%
-                            transform: translate(-50%, -42%)
-                            width: 185px
-                            height: 140px
-                            @include before(var(--white))
-                            &::before
-                                border-radius: 50%
-                                filter: blur(10px)
-                                opacity: 0
-                                z-index: -1
-                            .parts1
-                                width: 55%
-                                top: 0
-                                left: 0
-                                transform: translate(0, 0)
-                                transition: 1.5s ease
-                            .parts2
-                                width: 55%
-                                top: 0
-                                left: 3%
-                                transform: translate(-3%, 0)
-                                transition: 1.5s ease
-                            .parts3
-                                width: 42%
-                                top: 65%
-                                left: 98%
-                                transform: translate(-98%, -65%)
-                                transition: 1.5s ease
-                            .parts4
-                                width: 29%
-                                top: 22%
-                                left: 98%
-                                transform: translate(-98%, -22%)
-                                transition: 1.5s ease
-                            .parts5
-                                width: 20%
-                                left: 13%
-                                bottom: 1%
-                                transform: translate(-13%, 1%)
-                                transition: 1.5s ease
-                            .tire
-                                position: absolute
-                                width: 20%
-                                height: 26.43%
-                                right: 22%
-                                bottom: 0%
-                                transform: translate(22%, 0%)
-                            .parts6
-                                height: 48.7%
-                                left: 50% 
-                                bottom: 0
-                                transform: translate(-50%, 0)
-                                transition: 1.5s ease
-                            .parts7
-                                height: 48.7%
-                                left: 50% 
-                                top: 0
-                                transform: translate(-50%, 0)
-                                transition: 1.5s ease
-                        
-                        // Animations keyframes
-                        @keyframes touch_go
-                            0%, 100%
-                                transform: translate(0, 0)
-                            60%      
-                                transform: translate(-83%, -5%)
-                        @keyframes beforeblur
-                            0%
-                                opacity: 0
-                            50%      
-                                opacity: 0.3
-                            100%      
-                                opacity: 0
-                        @keyframes tirerun
-                            0%
-                                transform: rotate(0)
-                            100%      
-                                transform: rotate(360deg)
-                        @keyframes roadMove
-                            from
-                                background-position: 0 0
-                            to
-                                background-position: -24px 0
-                        // Animations keyframes
-                        img
-                            width: auto
-                            height: auto
-                            object-fit: contain
-                            position: absolute
-                            &.hand_top
-                                top: 0
-                                right: 0
-                                transform: translate(0, 0)
-                                width: 150px
-                            &.hand_bottom
-                                bottom: 0
-                                left: 0
-                                transform: translate(0, 0)
-                                width: 150px
             figure
                 position: relative
                 border-radius: 10px
+                background: $white
+                height: 500px
+                overflow: hidden
             figcaption
-                background: var(--white)
+                background: var(--gradient-a)
                 padding: 35px 40px
                 border-radius: 10px
                 max-width: 400px
@@ -314,9 +208,9 @@
                 h3
                     font-weight: 300
                     font-size: 40px
-                    color: $black
+                    color: $white
                 p
-                    color: $text
+                    color: #FFFFFFB2
                     margin: 20px 0 35px
 
 .services_sec

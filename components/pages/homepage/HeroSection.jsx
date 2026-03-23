@@ -1,75 +1,39 @@
-import Image from "next/image"
-import Link from "next/link"
+"use client"
+import Button from "@/components/atoms/Button";
+import { useState } from "react";
+import Animation1 from "./Animation1";
 
-export default function HeroSection({ id }){
+export default function HeroSection({ data, id }){
+    if(!data) return null;
+    const [activeHero, setActiveHero] = useState(1)
     return(
         <section>
             <div className="hero_sec" id={id}>
-                <div className="container">
+                <div className="container-fluid">
                     <div className="hero_wrapper">
-                        <div className="hero_col active">
-                            <figure>
-                                <Image src="/assets/images/home/hero_img.jpg" width="1000" height="600" alt="Hero Image"></Image>
-                            </figure>
-                            <figcaption>
-                                <div className="hero_title">
-                                    <div className="dot"></div>
-                                    <h6>Cubastion Overview</h6>
-                                </div>
-                                <div className="heading">
-                                    <h2>Technology that Matters</h2>
-                                    <p>We build purposeful technology that addresses real business challenges, delivers measurable outcomes, and supports long-term growth through reliable, scalable solutions.</p>
-                                    <Link className="btn white-border" href="">Explore 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 1024 1024">
-                                            <path fill="currentColor" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"></path>
-                                            <path fill="currentColor" d="M777.3 201.3a32 32 0 0 1 45.4 45.4l-544 544a32 32 0 0 1-45.4-45.4z"></path>
+                        {data.map((item) => (
+                            <div className={`hero_col ${activeHero === item.id ? "active" : ""}`} key={item.id} onMouseEnter={() => setActiveHero(item.id)}>
+                                <figure>
+                                    <Animation1 id={item.id} />
+                                </figure>
+                                <figcaption>
+                                    <div className="hero_title">
+                                        <div className="dot"></div>
+                                        <h6>{item.title}</h6>
+                                    </div>
+                                    <div className="heading">
+                                        <h2>{item.heading}</h2>
+                                        <p>{item.desc}</p>
+                                        <Button linkHref={item.linkHref} buttonText="Explore" />
+                                    </div>
+                                    <button type="button" className="plus-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 12h6m6 0h-6m0 0V6m0 6v6"></path>
                                         </svg>
-                                    </Link>
-                                </div>
-                            </figcaption>
-                        </div>
-                        <div className="hero_col">
-                            <figure>
-                                <Image src="/assets/images/home/hero_img.jpg" width="1000" height="600" alt="Hero Image"></Image>
-                            </figure>
-                            <figcaption>
-                                <div className="hero_title">
-                                    <div className="dot"></div>
-                                    <h6>Cubastion Overview</h6>
-                                </div>
-                                <div className="heading">
-                                    <h2>Technology that Matters</h2>
-                                    <p>We build purposeful technology that addresses real business challenges, delivers measurable outcomes, and supports long-term growth through reliable, scalable solutions.</p>
-                                    <Link className="btn white-border" href="">Explore 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 1024 1024">
-                                            <path fill="currentColor" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"></path>
-                                            <path fill="currentColor" d="M777.3 201.3a32 32 0 0 1 45.4 45.4l-544 544a32 32 0 0 1-45.4-45.4z"></path>
-                                        </svg>
-                                    </Link>
-                                </div>
-                            </figcaption>
-                        </div>
-                        <div className="hero_col">
-                            <figure>
-                                <Image src="/assets/images/home/hero_img.jpg" width="1000" height="600" alt="Hero Image"></Image>
-                            </figure>
-                            <figcaption>
-                                <div className="hero_title">
-                                    <div className="dot"></div>
-                                    <h6>Cubastion Overview</h6>
-                                </div>
-                                <div className="heading">
-                                    <h2>Technology that Matters</h2>
-                                    <p>We build purposeful technology that addresses real business challenges, delivers measurable outcomes, and supports long-term growth through reliable, scalable solutions.</p>
-                                    <Link className="btn white-border" href="">Explore 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 1024 1024">
-                                            <path fill="currentColor" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"></path>
-                                            <path fill="currentColor" d="M777.3 201.3a32 32 0 0 1 45.4 45.4l-544 544a32 32 0 0 1-45.4-45.4z"></path>
-                                        </svg>
-                                    </Link>
-                                </div>
-                            </figcaption>
-                        </div>
+                                    </button>
+                                </figcaption>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

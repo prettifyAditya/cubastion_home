@@ -4,13 +4,13 @@ import CommanSlider from "@/components/organisms/CommanSlider";
 import Image from "next/image";
 import { useRef } from "react";
 
-function HeroSection({ data }) {
+function HeroSection({ data, id }) {
   if (!data) return null;
 
   const swiperRef = useRef(null);
   return (
     <section>
-      <div className="banner career-banner">
+      <div className="banner career-banner" id={id}>
         <div className="bg">
           <video src={data.bgmedia} autoPlay muted loop playsInline></video>
           <div className="banner-wrapper">

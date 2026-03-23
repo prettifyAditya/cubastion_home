@@ -1,11 +1,11 @@
 import Button from "@/components/atoms/Button";
 import Image from "next/image";
 
-export default function SocialResponseSec({ data }){
+export default function SocialResponseSec({ data, id }){
     if(!data) return null;
     return(
         <section>
-            <div className="banner social_banner">
+            <div className="banner social_banner" id={id}>
                 <div className="bg">
                     <Image src={data.mediaSrc} width={1280} height={620} alt="Banner Image" />
                     <div className="banner-wrapper">

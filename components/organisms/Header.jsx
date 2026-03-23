@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 export default function Header(){
     // const pathname = usePathname()
     const [headerFixed, setHeaderFixed] = useState(false);
+    const [activeSubcat, setActiveSubcat] = useState("industries");
 
     // const aboutUsPage = pathname.startsWith('/about-us')
     // const contactUsPage = pathname.startsWith('/contact-us')
@@ -33,20 +34,99 @@ export default function Header(){
                     </Link>
                 </div>
                 <div className="colB">
-                    {/* <ul className="nav-items">
-                        <li className="hasDropdown">
-                            <Link href="">What We Do <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"> <path fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="m7 10l5 5l5-5"></path></svg></Link>
+                    <ul className="nav-items">
+                        <li>
+                            <Link href="https://hukmx.ai/" target="_blank">Hukmx</Link>
                         </li>
                         <li className="hasDropdown">
-                            <Link href="">What We Think <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"> <path fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="m7 10l5 5l5-5"></path></svg></Link>
-                        </li>
-                        <li className="hasDropdown">
-                            <Link href="">Who We Are <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"> <path fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="m7 10l5 5l5-5"></path></svg></Link>
+                            <p>What We Do <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"> <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="m7 10l5 5l5-5"></path></svg></p>
+                            <div className="dropdown-menu">
+                                <div className="dropdown-menu-wrap">
+                                    <div className="flex">
+                                        <div className="colA">
+                                            <ul className="subcat-ul">
+                                                <li className={`subcat-li ${activeSubcat === "industries" ? "active" : ""}`} onMouseEnter={() => setActiveSubcat("industries")}> 
+                                                    <p>Industries</p>
+                                                    <div className="col-sub-menu">
+                                                        <ul className="subsubcat-ul">
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Automotive</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Communications</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Financial Services</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Consumer Durables</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Connected Devices</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Public Services</Link>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li className={`subcat-li ${activeSubcat === "services" ? "active" : ""}`} onMouseEnter={() => setActiveSubcat("services")}>
+                                                    <p>Services</p>
+                                                    <div className="col-sub-menu">
+                                                        <ul className="subsubcat-ul">
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">AI & Intelligent Enterprise</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Composable Customer Experience</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Platform Engineering & Modern Architecture</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Legacy Modernization & Cloud Evolution</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Data & Decision Intelligence</Link>
+                                                            </li>
+                                                            <li className="subsubcat-li">
+                                                                <Link href="">Digital Operations & Automation</Link>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <Link href="">Careers</Link>
+                            <Link href="/about-us">Who we are</Link>
                         </li>
-                    </ul> */}
+                        <li className="hasDropdown">
+                            <p>Insights <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"> <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="m7 10l5 5l5-5"></path></svg></p>
+                            <div className="dropdown-menu">
+                                <div className="dropdown-menu-wrap">
+                                    <div className="flex">
+                                        <div className="colA">
+                                            <ul className="subcat-ul">
+                                                <li className="subcat-li">
+                                                    <Link href="">Blogs</Link>
+                                                </li>
+                                                <li className="subcat-li">
+                                                    <Link href="/case-studies">Customer Stories</Link>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <Link href="/career">Careers</Link>
+                        </li>
+                    </ul>
                 </div>
                 <div className="colC">
                     <div className="lang_select">

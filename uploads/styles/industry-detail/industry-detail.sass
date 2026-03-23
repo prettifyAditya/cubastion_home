@@ -133,7 +133,11 @@ header
             color: #fff
 
           .faq_item_icon
-            color: #fff
+            .circle
+                .icon
+                    --bgcolor: var(--white)
+                    &::after
+                        transform: scaleY(0)
 
           .faq_item_answer
             color: rgba(255, 255, 255, 0.80)
@@ -156,8 +160,39 @@ header
           line-height: 1.2
 
         &_icon
+          flex: 0 1 auto
           font-size: 1.4rem
-          flex-shrink: 0
+          .circle
+            flex: 0 1 43px
+            width: 43px
+            height: 43px
+            transition: .5s ease
+            position: relative
+            cursor: pointer
+            .icon
+                --bgcolor: #00000066
+                --size: 20px
+                --border: 2px
+                height: var(--size)
+                width: var(--size)
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                @include before(var(--bgcolor))
+                @include after(var(--bgcolor))
+                &::before,&::after
+                    transition: .5s ease
+                &::before
+                    top: calc(var(--size) / 2 - var(--border) / 2)
+                    bottom: auto
+                    height: var(--border)
+                    width: 100%
+                &::after
+                    left: calc(var(--size) / 2)
+                    translate: -50% 0 
+                    right: auto
+                    width: var(--border)
+                    height: 100%
 
         &_body
           display: grid

@@ -5,14 +5,14 @@ import SwiperButton from "@/components/atoms/SwiperButton";
 import Link from "next/link";
 import Button from "@/components/atoms/Button";
 
-function Opportunities({ data }) {
+function Opportunities({ data, id }) {
   if (!data) return null;
 
   const swiperRef = useRef(null);
 
   return (
     <section>
-      <div className="opportunity_sec sec-pad-all">
+      <div className="opportunity_sec sec-pad-all" id={id}>
         <div className="container">
           <div className="heading">
             <h2>{data.heading}</h2>

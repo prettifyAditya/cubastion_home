@@ -141,3 +141,240 @@
                         &:hover
                             background: none
                             color: $white
+
+// Service Details
+
+.banner.serviceD_banner
+    &::before
+        background: linear-gradient(270deg, #0000 0%, #000000 100%)
+    .banner-wrapper
+        top: unset
+        bottom: 20%
+        transform: translate(0, 20%)
+        .heading
+            max-width: 580px
+            h1
+                color: $secondary
+                font-size: 16px
+                font-weight: 500
+            p
+                font-size: 36px
+                color: $white
+                font-weight: 500
+                line-height: 1.2
+
+.growth_sec
+    @include before-blur()
+    &::before
+        right: 0
+        bottom: 0
+        width: 150px
+        height: 150px
+    .main_wrapper
+        align-items: center
+        .colA
+            flex: 0 1 60%
+            max-width: 60%
+            width: 100%
+            padding: 60px 210px 60px 0
+            border-right: 1px solid #00000042
+            .heading
+                h2 
+                    font-size: 28px
+                p
+                    margin-top: 15px
+        .colB
+            flex: 0 1 40%
+            max-width: 40%
+            width: 100%
+            padding: 30px 0px 30px 100px
+            .counter_wrapper
+                .count_col
+                    &:not(:last-child)
+                        margin-bottom: 50px
+                    h6
+                        font-weight: 200
+                        font-size: 64px
+                        line-height: 1.2
+                    p
+                        font-size: 20px
+                        font-weight: 400
+                        color: $black
+
+.ad_banner
+    position: sticky
+    top: var(--headerfixed)
+    .banner.banner_sec
+        &::before
+            display: none 
+
+.offering_sec
+    position: relative
+    background: $white
+    .main_wrapper
+        --gap: 100px
+        gap: var(--gap)
+        .heading
+            flex: 0 1 40%
+            max-width: 40%
+            width: 100%
+            margin-top: 20px
+            h2
+                font-size: 48px
+                font-weight: 300
+            p
+                font-weight: 400
+        .offering_faqs
+            flex: 1
+            max-width: calc( 60% - var(--gap) )
+            width: 100%
+            border-top: 1px solid #31313159
+            .faq_item
+                border-bottom: 1px solid #31313159
+                &.active
+                    .faq_item_question
+                        .faq_item_text, .faq_item_icon
+                            color: $black
+                        .faq_item_icon
+                            transform: rotate(180deg)
+                .faq_item_question
+                    width: 100%
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    justify-content: space-between
+                    gap: 20px
+                    padding: 25px 0
+                    .faq_item_text
+                        flex: 1
+                        text-align: left
+                        font-size: 24px
+                        color: #00000066
+                        font-weight: 500
+                        transition: .5s ease
+                    .faq_item_icon
+                        flex: 0 1 auto
+                        color: #00000066
+                        transition: .5s ease
+                .faq_item_body
+                    display: grid
+                    grid-template-rows: 0fr
+                    transition: .5s ease
+                    &.active
+                        grid-template-rows: 1fr
+                        padding-bottom: 30px
+                    .faq_item_answer
+                        overflow: hidden
+
+.service_testimonials
+    position: relative
+    background: $white
+    .main_wrapper
+        align-items: center
+        justify-content: center
+        --gap: 100px
+        gap: var(--gap)
+        background: var(--gradient-a)
+        border-radius: 20px
+        padding: 160px 100px 100px
+        @include before(url("/assets/icon/quote.svg"))
+        &::before
+            background-repeat: no-repeat
+            background-position: 45% 18%
+        .colA
+            flex: 0 1 280px
+            max-width: 280px
+            width: 100%
+            .testimonial_figure 
+                height: 290px
+                figure
+                    height: 272px
+                    width: 272px
+                    border-radius: 50%
+                    img
+                        border-radius: 50%
+        .colB
+            flex: 1
+            max-width: calc( 60% - var(--gap) )
+            width: 100%
+            .testimonial_content 
+                figcaption
+                    .desc
+                        margin-bottom: 25px
+                        p
+                            font-size: 24px
+                            line-height: 32px
+                            color: $white
+                            font-weight: 300 
+                            &:not(:last-child)
+                                margin-bottom: 10px
+                    .user_details
+                        position: relative
+                        padding-top: 20px
+                        &::before
+                            content: ""
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 90px
+                            height: 3px
+                            background: $secondary
+                        h6
+                            font-size: 18px
+                            font-weight: 600
+                            color: $white
+                        p
+                            font-weight: 300
+                            color: $white
+                            font-size: 14px
+            .swiper-nav
+                margin-top: 40px
+
+.more_services
+    position: relative
+    background: $white
+    .heading
+        text-align: center
+        margin-bottom: 60px
+        h2
+            font-size: 48px
+    .main_wrapper
+        position: relative
+        .more_services_slider 
+            max-width: 97%
+            .more_col
+                border-radius: 10px
+                &:hover
+                    figure
+                        img
+                            transform: scale(1.1)
+                &::before
+                    background: linear-gradient(#0000 0%, rgb(0 0 0 / 60%) 100%)
+                    border-radius: 10px
+                figure
+                    border-radius: 10px
+                    @include shine()
+                    img
+                        border-radius: 10px
+                        transition: .8s ease
+                figcaption
+                    padding: 0 35px 40px
+                    h6
+                        color: $white
+
+.partner-banner.banner
+    &::before
+        background: linear-gradient(180deg, #0000 0%, #000c 100%)
+    .bg
+        .banner-wrapper
+            .heading
+                max-width: 610px
+                margin: 0 auto
+                text-align: center
+                h2
+                    font-size: 48px
+                    color: $white
+                    font-weight: 200
+                .btn
+                    margin-top: 60px
+

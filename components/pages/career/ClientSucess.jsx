@@ -2,13 +2,13 @@
 import { useModalStore } from "@/store/modalStore";
 import React from "react";
 
-function ClientSucess({ data }) {
+function ClientSucess({ data, id }) {
   const openVideo = useModalStore((state) => state.openVideo)
   if (!data) return null;
 
   return (
     <section>
-      <div className="client_sec sec-pad-all">
+      <div className="client_sec sec-pad-all" id={id}>
         <div className="container">
           <div className="heading">
             <h2>{data.heading}</h2>

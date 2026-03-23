@@ -7,7 +7,7 @@ import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function WorkPlace({ data }) {
+function WorkPlace({ data, id }) {
   if (!data) return null;
   const sectionRef = useRef(null);
   const imageRefs = useRef([]);
@@ -51,7 +51,7 @@ function WorkPlace({ data }) {
 
   return (
     <section>
-      <div className="workplace_sec sec-pad-all" ref={sectionRef}>
+      <div className="workplace_sec sec-pad-all" ref={sectionRef} id={id}>
         <div className="container">
           <div className="workplace_wrapper">
             <figure>

@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-export default function StatsSec({ data }){
+export default function StatsSec({ data, id }){
     if(!data) return null;
     return(
         <section>
-            <div className="stats_sec sec-pad-all">
+            <div className="stats_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="heading">
                         <h2>{data.heading}</h2>
