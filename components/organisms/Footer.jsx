@@ -67,7 +67,7 @@ export default function Footer(){
                                 </ul>
                             </div>
                             <div className="list contact">
-                                <h6>NJ Office</h6>
+                                <h6>US Office</h6>
                                 <ul>
                                     <li>
                                         <div className="icon">
@@ -79,7 +79,7 @@ export default function Footer(){
                                                 </g>
                                             </svg>
                                         </div>
-                                        <p>971 US Highway 202N, STE R, Branchburg, NJ 08876</p>
+                                        <p>1460 Broadway New York NY 100</p>
                                     </li>
                                     <li>
                                         <div className="icon">
@@ -88,6 +88,39 @@ export default function Footer(){
                                             </svg>
                                         </div>
                                         <Link href="tel:+16098743572">+1 609 874 3572</Link>
+                                    </li>
+                                    <li>
+                                        <div className="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                                <path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"></path>
+                                            </svg>
+                                        </div>
+                                        <Link href="mailto:solutions@cubastion.com">solutions@cubastion.com</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="list contact">
+                                <h6>India (Gurugram)</h6>
+                                <ul>
+                                    <li>
+                                        <div className="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                                <g fill="none">
+                                                    <path d="M12 2a8 8 0 0 1 8 8c0 6.5-8 12-8 12s-8-5.5-8-12a8 8 0 0 1 8-8m0 5a3 3 0 1 0 0 6a3 3 0 0 0 0-6" clipRule="evenodd"></path>
+                                                    <path stroke="currentColor" strokeWidth={2} d="M20 10c0 6.5-8 12-8 12s-8-5.5-8-12a8 8 0 1 1 16 0Z"></path>
+                                                    <path stroke="currentColor" strokeWidth={2} d="M15 10a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <p>11th Floor Tower B, Vatika Business Park, Sector 49 Gurugram, Haryana 122018</p>
+                                    </li>
+                                    <li>
+                                        <div className="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                                <path fill="currentColor" d="M3.833 4h4.49L9.77 7.618l-2.325 1.55A1 1 0 0 0 7 10c.003.094 0 .001 0 .001v.021a2 2 0 0 0 .006.134q.008.124.035.33c.039.27.114.642.26 1.08c.294.88.87 2.019 1.992 3.141s2.261 1.698 3.14 1.992c.439.146.81.22 1.082.26a4 4 0 0 0 .463.04l.013.001h.008s.112-.006.001 0a1 1 0 0 0 .894-.553l.67-1.34l4.436.74v4.32c-2.111.305-7.813.606-12.293-3.874S3.527 6.11 3.833 4m5.24 6.486l1.807-1.204a2 2 0 0 0 .747-2.407L10.18 3.257A2 2 0 0 0 8.323 2H3.781c-.909 0-1.764.631-1.913 1.617c-.34 2.242-.801 8.864 4.425 14.09s11.848 4.764 14.09 4.425c.986-.15 1.617-1.004 1.617-1.913v-4.372a2 2 0 0 0-1.671-1.973l-4.436-.739a2 2 0 0 0-2.118 1.078l-.346.693a5 5 0 0 1-.363-.105c-.62-.206-1.481-.63-2.359-1.508s-1.302-1.739-1.508-2.36a5 5 0 0 1-.125-.447z"></path>
+                                            </svg>
+                                        </div>
+                                        <Link href="tel:+917042126789">+91 70421 26789</Link>
                                     </li>
                                     <li>
                                         <div className="icon">
@@ -112,7 +145,7 @@ export default function Footer(){
                                                 </g>
                                             </svg>
                                         </div>
-                                        <p>Kiinko Building 7F 7-3, Kinkocho, Yokohama, Kanagawa, Japan</p>
+                                        <p>Kinko Building 7F 7-3, Kinkocho, Yokohama, Kanagawa, Japan</p>
                                     </li>
                                     <li>
                                         <div className="icon">
@@ -120,7 +153,40 @@ export default function Footer(){
                                                 <path fill="currentColor" d="M3.833 4h4.49L9.77 7.618l-2.325 1.55A1 1 0 0 0 7 10c.003.094 0 .001 0 .001v.021a2 2 0 0 0 .006.134q.008.124.035.33c.039.27.114.642.26 1.08c.294.88.87 2.019 1.992 3.141s2.261 1.698 3.14 1.992c.439.146.81.22 1.082.26a4 4 0 0 0 .463.04l.013.001h.008s.112-.006.001 0a1 1 0 0 0 .894-.553l.67-1.34l4.436.74v4.32c-2.111.305-7.813.606-12.293-3.874S3.527 6.11 3.833 4m5.24 6.486l1.807-1.204a2 2 0 0 0 .747-2.407L10.18 3.257A2 2 0 0 0 8.323 2H3.781c-.909 0-1.764.631-1.913 1.617c-.34 2.242-.801 8.864 4.425 14.09s11.848 4.764 14.09 4.425c.986-.15 1.617-1.004 1.617-1.913v-4.372a2 2 0 0 0-1.671-1.973l-4.436-.739a2 2 0 0 0-2.118 1.078l-.346.693a5 5 0 0 1-.363-.105c-.62-.206-1.481-.63-2.359-1.508s-1.302-1.739-1.508-2.36a5 5 0 0 1-.125-.447z"></path>
                                             </svg>
                                         </div>
-                                        <Link href="tel:+8105068656447">+81 050 686 56447</Link>
+                                        <Link href="tel:+8105068657447">+8105068657447</Link>
+                                    </li>
+                                    <li>
+                                        <div className="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                                <path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"></path>
+                                            </svg>
+                                        </div>
+                                        <Link href="mailto:solutions@cubastion.com">solutions@cubastion.com</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="list contact">
+                                <h6>India (Bangalore)</h6>
+                                <ul>
+                                    <li>
+                                        <div className="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                                <g fill="none">
+                                                    <path d="M12 2a8 8 0 0 1 8 8c0 6.5-8 12-8 12s-8-5.5-8-12a8 8 0 0 1 8-8m0 5a3 3 0 1 0 0 6a3 3 0 0 0 0-6" clipRule="evenodd"></path>
+                                                    <path stroke="currentColor" strokeWidth={2} d="M20 10c0 6.5-8 12-8 12s-8-5.5-8-12a8 8 0 1 1 16 0Z"></path>
+                                                    <path stroke="currentColor" strokeWidth={2} d="M15 10a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <p>5th floor, Trifecta Adatto, 21, ITPL Main Rd, Garudachar Palya, Mahadevapura, Bengaluru, Karnataka 560048</p>
+                                    </li>
+                                    <li>
+                                        <div className="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                                <path fill="currentColor" d="M3.833 4h4.49L9.77 7.618l-2.325 1.55A1 1 0 0 0 7 10c.003.094 0 .001 0 .001v.021a2 2 0 0 0 .006.134q.008.124.035.33c.039.27.114.642.26 1.08c.294.88.87 2.019 1.992 3.141s2.261 1.698 3.14 1.992c.439.146.81.22 1.082.26a4 4 0 0 0 .463.04l.013.001h.008s.112-.006.001 0a1 1 0 0 0 .894-.553l.67-1.34l4.436.74v4.32c-2.111.305-7.813.606-12.293-3.874S3.527 6.11 3.833 4m5.24 6.486l1.807-1.204a2 2 0 0 0 .747-2.407L10.18 3.257A2 2 0 0 0 8.323 2H3.781c-.909 0-1.764.631-1.913 1.617c-.34 2.242-.801 8.864 4.425 14.09s11.848 4.764 14.09 4.425c.986-.15 1.617-1.004 1.617-1.913v-4.372a2 2 0 0 0-1.671-1.973l-4.436-.739a2 2 0 0 0-2.118 1.078l-.346.693a5 5 0 0 1-.363-.105c-.62-.206-1.481-.63-2.359-1.508s-1.302-1.739-1.508-2.36a5 5 0 0 1-.125-.447z"></path>
+                                            </svg>
+                                        </div>
+                                        <Link href="tel:+917042126789">+91 70421 26789</Link>
                                     </li>
                                     <li>
                                         <div className="icon">

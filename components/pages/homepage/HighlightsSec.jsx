@@ -1,9 +1,7 @@
-import AwardsSlider from "@/components/organisms/AwardsSlider";
-
 export default function HighlightsSec({ data, id }){
     if (!data) return null
     return(
-        <main>
+        <section>
             <div className="highlights_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="main_wrapper">
@@ -26,8 +24,7 @@ export default function HighlightsSec({ data, id }){
                         </div>
                     </div>
                 </div>
-                <AwardsSlider data={data.clientData} />
             </div>
-        </main>
+        </section>
     )
 }

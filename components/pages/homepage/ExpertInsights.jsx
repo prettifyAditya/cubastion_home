@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { useRef } from "react"
+import { useRef, useEffect, useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow } from "swiper/modules";
 import Button from "@/components/atoms/Button";
@@ -12,6 +12,18 @@ import SwiperButton from "@/components/atoms/SwiperButton";
 export default function ExpertInsights({ data, id }){
     if (!data) return null;
     const swiperRef = useRef(null)
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        const updateMobile = () => {
+            setIsMobile(window.innerWidth <= 768)
+        }
+
+        updateMobile()
+        window.addEventListener('resize', updateMobile)
+        return () => window.removeEventListener('resize', updateMobile)
+    }, [])
+
     return(
         <section>
             <div className="expert_sec sec-pad-all" id={id}>
@@ -25,36 +37,40 @@ export default function ExpertInsights({ data, id }){
                             <SwiperButton classname="swiper-next expert-next" />
                         </div>
                         <Swiper
+                            key={isMobile ? 'mobile-swiper' : 'desktop-swiper'}
                             className="expert_slider"
-                            loop = {true}
+                            loop={true}
                             ref={swiperRef}
                             modules={[EffectCoverflow, Navigation]}
-                            effect="coverflow"
+                            effect={isMobile ? "slide" : "coverflow"}
                             grabCursor={true}
                             speed={1000}
-                            centeredSlides={true}
+                            // centeredSlides={!isMobile}
                             navigation={{
                                 prevEl: ".expert-prev",
                                 nextEl: ".expert-next"
                             }}
-                            coverflowEffect={{
+                            coverflowEffect={!isMobile ? {
                                 rotate: 50,
                                 stretch: -10,       // space between slides
                                 depth: 280,        // depth of side slides
                                 modifier: 1,
                                 scale: 0.9,
                                 slideShadows: false,
-                            }}
+                            } : null }
                             breakpoints={{
                                 0: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 40,
+                                    centeredSlides: false,
+                                    slidesPerView: 1.2,
+                                    spaceBetween: 10,
                                 },
                                 540: {
-                                    slidesPerView: 1.5,
+                                    centeredSlides: false,
+                                    slidesPerView: 1.2,
                                     spaceBetween: 20,
                                 },
-                                991: {
+                                768: {
+                                    centeredSlides: true,
                                     slidesPerView: "auto",
                                     // spaceBetween: 20,
                                 },

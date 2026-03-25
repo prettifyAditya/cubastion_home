@@ -26,11 +26,11 @@ export default function ClientsSec({ data, id }) {
                         }}
                         breakpoints={{
                             0: {
-                                slidesPerView: 2.2,
+                                slidesPerView: 3,
                                 spaceBetween: 10,
                             },
                             540: {
-                                slidesPerView: 3,
+                                slidesPerView: 4,
                                 spaceBetween: 10,
                             },
                             991: {

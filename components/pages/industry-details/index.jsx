@@ -19,7 +19,7 @@ export default function IndustryDetailsPage(){
     const { setSections } = useSideNav()
     useEffect(() => {
         setSections([
-            { id: "heroSection", label: "Book a Consultation" },
+            { id: "heroSection", label: "" },
             { id: "global", label: "Our Global Presence" },
             { id: "form", label: "Contact Us" },
         ])

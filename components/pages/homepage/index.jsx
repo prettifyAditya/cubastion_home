@@ -12,6 +12,7 @@ import ExpertInsights from "./ExpertInsights";
 import CustomerSec from "../../organisms/CustomerSec";
 import ServicesSec from "./ServicesSec";
 import "@/uploads/styles/home/home.css"
+import AwardsSec from "../about-us/AwardsSec";
 
 export default function Homepage() {
     const { setSections } = useSideNav()
@@ -24,6 +25,7 @@ export default function Homepage() {
             { id: "industriesSec", label: "Our Industries" },
             { id: "customerSec", label: "Our Customers" },
             { id: "highlightSec", label: "Company Highlights" },
+            { id: "awardSec", label: "Awards and Recognition" },
             { id: "expertSec", label: "Expert Insights" },
             { id: "mapSec", label: "Global Presence" },
         ])
@@ -38,6 +40,7 @@ export default function Homepage() {
     const customerSecData = staticData.Homepage.Section6
     const HighlightsSecData = staticData.Homepage.Section7
     const expertSecData = staticData.Homepage.Section8
+    const awardSecData = staticData.Homepage.Section9
     return(
         <main>
             <HeroSection id="heroSec" data={heroSecData} />
@@ -47,6 +50,7 @@ export default function Homepage() {
             <IndustriesSec id="industriesSec" data={industriesData} />
             <CustomerSec id="customerSec" data={customerSecData} />
             <HighlightsSec id="highlightSec" data={HighlightsSecData} />
+            <AwardsSec classname="home_awards" id="awardSec" data={awardSecData} />
             <ExpertInsights id="expertSec" data={expertSecData} />
             <MapSec id="mapSec" />
         </main>

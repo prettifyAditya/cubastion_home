@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 export default function Animation1({ id }) {
+  return null; 
   const containerRef = useRef(null);
 
   useEffect(() => {

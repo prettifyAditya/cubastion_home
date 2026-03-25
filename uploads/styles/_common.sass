@@ -99,6 +99,8 @@ p
     color: var(--text)
     font-weight: 300
     line-height: 1.4
+    @include media(540)
+        font-size: 14px
     
 a[href]
     text-decoration: none
@@ -154,7 +156,12 @@ h3
         font-size: 36px
         font-weight: 500
         line-height: 1.2
-
+        @include media(991)
+            font-size: 32px
+        @include media(768)
+            font-size: 28px
+        @include media(540)
+            font-size: 24px
     >p
         margin-top: 10px
     &.normal
@@ -453,7 +460,7 @@ img, video
     @include media(540)
         font-size: 12px
         --padding: 12px
-        --height: 33px
+        --height: 32px
 
 .form-grid
     --item: 1
@@ -519,6 +526,8 @@ img, video
 
 .swiper-nav
     line-height: 0
+    @include media(540)
+        display: none !important
     &.center-full
         position: absolute
         top: 50%
@@ -965,6 +974,8 @@ em
     left: 0
     transform: translate(0, -50%)
     z-index: 10
+    @include media(768)
+        display: none
     ul
         padding: 18px 22px 12px 14px
         li
@@ -995,7 +1006,7 @@ em
             .number
                 font-size: 16px
                 color: #00000066
-                font-weight: 900
+                font-weight: 600
                 transition: .5s ease
             .label
                 position: absolute

@@ -30,6 +30,8 @@ header
         gap: 4rem
         @include media(1336)
             gap: 2rem
+        @include media(991)
+        justify-content: space-between
         @include media(540)
             gap: 1rem
         .colA, .colB, .colC
@@ -37,8 +39,10 @@ header
             display: flex
         .colA
             flex: 0 1 200px
+            @include media(1170)
+                flex: 0 1 170px
             @include media(540)
-                flex: 0 1 106px
+                flex: 0 1 108px 
             .logo
                 height: 100%
                 width: 100%
@@ -50,7 +54,7 @@ header
             flex: 1
             align-items: center
             justify-content: center
-            @include media(768) 
+            @include media(991) 
                 display: none
             .nav-items
                 display: flex
@@ -60,6 +64,8 @@ header
                 height: 100%
                 @include media(1336)
                     gap: 30px
+                @include media(1170)
+                    gap: 15px
                 @include media(768)
                     gap: 20px
                 @include media(540)
@@ -99,6 +105,8 @@ header
                             pointer-events: none
                             --triangle: 10px
                             opacity: 0
+                            @include media(1170)
+                                left: 100%
                             &::-webkit-scrollbar
                                 width: 4px
                                 height: 3px
@@ -202,6 +210,8 @@ header
                         align-items: center
                         gap: 5px
                         position: relative
+                        @include media(1170)
+                            font-size: 14px
                         &::before
                             content: ""
                             position: absolute
@@ -221,8 +231,10 @@ header
             gap: 20px
             @include media(1336)
                 gap: 30px
+            @include media(1170)
+                gap: 10px
             @include media(991)
-                flex: 0 1 auto
+                gap: 20px
                 justify-content: end
             @include media(768) 
                 flex: 1
@@ -861,17 +873,20 @@ footer
             @include media(1280) 
                 --gap: 70px
                 padding-bottom: 40px
+            @include media(1170)
+                --gap: 60px
             @include media(991)
                 --gap: 40px
-                
             @include media(540)
-                padding-bottom: 30px
+                padding-bottom: 20px
                 --gap: 30px
             .colA
                 flex: 0 1 25%
                 @include media(991)
                     margin: 0 auto
                     flex: 0 1 45%
+                @include media(768)  
+                    flex: 0 1 80%
                 @include media(540)
                     width: 100%
                     flex: 1
@@ -886,6 +901,8 @@ footer
                         margin: 0 auto
                 .news_letter
                     margin-top: 30px
+                    @include media(540)
+                        margin-top: 20px
                     .form-group
                         .joinBtn
                             position: absolute
@@ -901,7 +918,7 @@ footer
                 .list
                     margin-top: 40px
                     @include media(540)
-                        margin-top: 30px
+                        margin-top: 20px
                     h6
                         font-size: 16px
                         padding-bottom: 10px
@@ -938,18 +955,23 @@ footer
                 @include media(991)
                     flex: 0 1 100%
                     justify-content: space-between
-
-                    max-width: 60%
+                    max-width: 90%
+                    gap: 40px
                     margin: auto
                 @include media(768)
-                    gap: 30px
+                    max-width: 100%
                 @include media(540)
                     max-width: 100%
+                    gap: 15px
 
                 .list
                     flex: 0 1 auto
+                    @include media(540)
+                        flex: 0 1 100%
                     &.contact
                         flex: 1
+                        @include media(540)
+                            flex: 0 1 100%
                     @include media(768)
                         &:last-child
                             flex: 0 1 100%
@@ -961,7 +983,7 @@ footer
                         margin-top: 20px
                         li
                             display: flex
-                            align-items: center
+                            align-items: start
                             gap: 10px
                             color: $primary
                             &:not(:last-child)
@@ -993,7 +1015,7 @@ footer
                 flex-direction: column
             @include media(540) 
                 flex-direction: column-reverse
-                gap: 20px
+                gap: 15px
             p
                 font-size: 14px
                 color: #000000B2

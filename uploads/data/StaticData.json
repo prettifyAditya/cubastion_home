@@ -307,36 +307,6 @@
           "countHeading": "Projects Delivered",
           "countSubHeading": "Proven track record of successfully delivered projects."
         }
-      ],
-      "clientData": [
-        {
-          "id": "1",
-          "imgSrc": "/assets/images/others/client1.png"
-        },
-        {
-          "id": "2",
-          "imgSrc": "/assets/images/others/client2.png"
-        },
-        {
-          "id": "3",
-          "imgSrc": "/assets/images/others/client3.png"
-        },
-        {
-          "id": "4",
-          "imgSrc": "/assets/images/others/client4.png"
-        },
-        {
-          "id": "5",
-          "imgSrc": "/assets/images/others/client5.png"
-        },
-        {
-          "id": "6",
-          "imgSrc": "/assets/images/others/client6.png"
-        },
-        {
-          "id": "7",
-          "imgSrc": "/assets/images/others/client7.png"
-        }
       ]
     },
     "Section8": {
@@ -383,6 +353,39 @@
           "heading": "Software Product Development",
           "desc": "Turn your idea into a live software product tailored to fit your customers & business needs and delivered within a short time-to-market.",
           "btnText": "Read More"
+        }
+      ]
+    }, 
+    "Section9": {
+      "heading": "Awards and Recognition",
+      "awardsData": [
+        {
+          "id": "1",
+          "imgSrc": "/assets/images/others/client1.png"
+        },
+        {
+          "id": "2",
+          "imgSrc": "/assets/images/others/client2.png"
+        },
+        {
+          "id": "3",
+          "imgSrc": "/assets/images/others/client3.png"
+        },
+        {
+          "id": "4",
+          "imgSrc": "/assets/images/others/client4.png"
+        },
+        {
+          "id": "5",
+          "imgSrc": "/assets/images/others/client5.png"
+        },
+        {
+          "id": "6",
+          "imgSrc": "/assets/images/others/client6.png"
+        },
+        {
+          "id": "7",
+          "imgSrc": "/assets/images/others/client7.png"
         }
       ]
     }
