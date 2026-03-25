@@ -41,7 +41,7 @@
   height: 100%;
   position: relative;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .hero_sec .container, .hero_sec .container-fluid {
     padding-right: 0;
   }
@@ -91,6 +91,11 @@
 @media only screen and (max-width: 991px) {
   .hero_sec .hero_wrapper .hero_col {
     flex: 0 1 55px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .hero_sec .hero_wrapper .hero_col {
+    flex: 0 1 100%;
   }
 }
 .hero_sec .hero_wrapper .hero_col.active {
@@ -261,7 +266,7 @@
 }
 @media only screen and (max-width: 540px) {
   .hero_sec .hero_wrapper .hero_col figcaption .heading {
-    max-width: calc(100% - var(--padding));
+    max-width: 290px;
     top: 65%;
     transform: translate(0, -65%);
   }
@@ -451,7 +456,7 @@
 }
 @media only screen and (max-width: 540px) {
   .industry_sec .heading {
-    max-width: 235px;
+    max-width: 220px;
     margin: 0 auto;
   }
 }
@@ -647,6 +652,11 @@
 .services_sec {
   background: #F5F7FA;
 }
+@media only screen and (max-width: 768px) {
+  .services_sec .container, .services_sec .container-fluid {
+    padding-right: 0;
+  }
+}
 .services_sec .heading {
   text-align: center;
   max-width: 500px;
@@ -690,6 +700,12 @@
   .services_sec .service_wrapper .filter_wrapper {
     flex: 0 1 100%;
     max-width: 100%;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .services_sec .service_wrapper .filter_wrapper {
+    padding-right: 10px;
   }
 }
 .services_sec .service_wrapper .filter_wrapper .filter_col {
@@ -916,6 +932,8 @@
 @media only screen and (max-width: 768px) {
   .services_sec .service_wrapper .filter_service_wrap {
     max-width: 100%;
+    display: block;
+    position: relative;
   }
 }
 .services_sec .service_wrapper .filter_service_wrap .service_col {
@@ -936,9 +954,14 @@
     --padtb: 16px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .services_sec .service_wrapper .filter_service_wrap .service_col {
+    min-height: 300px;
+  }
+}
 @media only screen and (max-width: 540px) {
   .services_sec .service_wrapper .filter_service_wrap .service_col {
-    min-height: 210px;
+    min-height: 270px;
   }
 }
 .services_sec .service_wrapper .filter_service_wrap .service_col {
@@ -997,6 +1020,11 @@
   filter: brightness(1);
   opacity: 1;
 }
+@media only screen and (max-width: 768px) {
+  .services_sec .service_wrapper .filter_service_wrap .service_col:hover figcaption .vector_img {
+    transform: scale(0.6) translate(0px, calc(-1 * var(--padtb) * 4.5));
+  }
+}
 .services_sec .service_wrapper .filter_service_wrap .service_col:hover figcaption .btn {
   opacity: 1;
 }
@@ -1015,6 +1043,14 @@
   z-index: 2;
   width: 100%;
   height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .services_sec .service_wrapper .filter_service_wrap .service_col figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: var(--padtb) var(--padlr);
+  }
 }
 .services_sec .service_wrapper .filter_service_wrap .service_col figcaption h6 {
   font-size: 16px;
@@ -1036,6 +1072,12 @@
   opacity: 0.1;
   transition: 0.5s ease;
 }
+@media only screen and (max-width: 768px) {
+  .services_sec .service_wrapper .filter_service_wrap .service_col figcaption .vector_img {
+    bottom: var(--padtb);
+    left: var(--padlr);
+  }
+}
 .services_sec .service_wrapper .filter_service_wrap .service_col figcaption .btn {
   width: 100%;
   position: absolute;
@@ -1053,10 +1095,23 @@
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .services_sec .service_wrapper .filter_service_wrap .service_col figcaption .btn {
+    bottom: 20px;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
 @media only screen and (max-width: 540px) {
   .services_sec .service_wrapper .filter_service_wrap .service_col figcaption .btn {
     font-size: 12px;
   }
+}
+.services_sec .service_wrapper .filter_service_wrap .swiper-nav {
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: end;
+  margin-right: 20px;
 }
 
 .highlights_sec {
@@ -1194,6 +1249,11 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .expert_sec .container, .expert_sec container-fluid {
+    padding-right: 0;
+  }
+}
 .expert_sec .heading {
   text-align: center;
   margin-bottom: 60px;
@@ -1418,6 +1478,11 @@
   .map_sec .heading {
     max-width: 340px;
     margin: 0 auto 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .map_sec .heading {
+    max-width: 260px;
   }
 }
 .map_sec .heading h2 {

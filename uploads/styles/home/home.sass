@@ -16,7 +16,7 @@
     .container, .container-fluid
         height: 100%
         position: relative
-        @include media(540)
+        @include media(768)
             padding-right: 0
         .swiper-nav
             position: absolute
@@ -50,6 +50,8 @@
                 flex: 0 1 110px
             @include media(991)
                 flex: 0 1 55px
+            @include media(540)
+                flex: 0 1 100%
             &.active
                 flex: 1
                 figure
@@ -151,7 +153,7 @@
                         display: block
                         opacity: 1
                     @include media(540)
-                        max-width: calc( 100% - var(--padding) )
+                        max-width: 290px
                         top: 65%
                         transform: translate(0, -65%)
                     h2
@@ -258,7 +260,7 @@
     .heading
         text-align: center
         @include media(540)
-            max-width: 235px
+            max-width: 220px
             margin: 0 auto 
     .tab-nav
         display: flex
@@ -371,6 +373,9 @@
 
 .services_sec
     background: #F5F7FA
+    .container, .container-fluid
+        @include media(768)
+            padding-right: 0
     .heading
         text-align: center
         max-width: 500px
@@ -398,6 +403,9 @@
             @include media(768)
                 flex: 0 1 100%
                 max-width: 100%
+                padding-right: 15px
+            @include media(540)
+                padding-right: 10px
             .filter_col
                 cursor: pointer
                 border-radius: 10px
@@ -533,6 +541,8 @@
                 grid-template-columns: repeat(2, 1fr)
             @include media(768)
                 max-width: 100%
+                display: block
+                position: relative
             .service_col
                 position: relative
                 border: 1px solid #D2D2D2
@@ -547,8 +557,10 @@
                 @include media(1170)
                     --padlr: 15px
                     --padtb: 16px
+                @include media(768)
+                    min-height: 300px
                 @include media(540)
-                    min-height: 210px
+                    min-height: 270px
                 @include before(var(--white))
                 @include after(var(--gradient-a))
                 &::after
@@ -570,6 +582,8 @@
                             transform: scale(.6) translate(0px, calc( -1 * calc( var(--padtb) * 2.5) ))
                             filter: brightness(1)
                             opacity: 1
+                            @include media(768)
+                                transform: scale(.6) translate(0px, calc(-1 * var(--padtb) * 4.5))
                         .btn
                             opacity: 1
                 .bg_pattern
@@ -586,6 +600,11 @@
                     z-index: 2
                     width: 100%
                     height: 100%
+                    @include media(768)
+                        position: absolute
+                        top: 0
+                        left: 0
+                        padding: var(--padtb) var(--padlr)
                     h6
                         font-size: 16px
                         opacity: .7s ease
@@ -601,6 +620,9 @@
                         filter: brightness(0)
                         opacity: 0.1
                         transition: .5s ease
+                        @include media(768)
+                            bottom: var(--padtb)
+                            left: var(--padlr)
                     .btn
                         width: 100%
                         position: absolute
@@ -614,8 +636,16 @@
                             --padding: 8px
                             gap: 5px
                             font-size: 14px
+                        @include media(768)
+                            bottom: 20px
+                            max-width: max-content
                         @include media(540)
                             font-size: 12px
+            .swiper-nav
+                gap: 15px
+                margin-top: 20px
+                justify-content: end
+                margin-right: 20px
 
 .highlights_sec
     background: var(--bglight)
@@ -697,6 +727,9 @@
         text-align: center
 
 .expert_sec
+    .container, container-fluid
+        @include media(768)
+            padding-right: 0
     .heading
         text-align: center
         margin-bottom: 60px
@@ -814,6 +847,8 @@
         @include media(768)
             max-width: 340px
             margin: 0 auto 30px
+        @include media(540)
+            max-width: 260px
         h2
             font-size: 36px
             padding-bottom: 5px

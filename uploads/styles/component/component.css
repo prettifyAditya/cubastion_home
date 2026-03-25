@@ -49,6 +49,11 @@
      object-fit: contain;
 }
 
+@media only screen and (max-width: 768px) {
+  .customer_sec .container, .customer_sec container-fluid {
+    padding-right: 0;
+  }
+}
 .customer_sec .heading {
   text-align: center;
   margin-bottom: 60px;

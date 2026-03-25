@@ -1022,17 +1022,24 @@ footer
                 font-weight: 500
                 display: flex
                 align-items: center
-                gap: 10px
+                gap: 7px
                 @include media(540)
-                    max-width: 80%
-                    margin: auto
                     flex-direction: column
                     text-align: center
                     gap: 0
                 a
-                    display: block
+                    color: #000000B2
+                    display: flex
+                    align-items: center
+                    gap: 8px
                     line-height: 0
-                    width: 60px
+                    @include media(540)
+                        gap: 5px
+                    img
+                        line-height: 0
+                        width: 60px
+                        height: 20px
+                        object-fit: contain
             .links
                 display: flex
                 align-items: center

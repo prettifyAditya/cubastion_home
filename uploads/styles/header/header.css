@@ -3688,21 +3688,33 @@ footer .container-fluid .lower-footer p, footer .container .lower-footer p {
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 @media only screen and (max-width: 540px) {
   footer .container-fluid .lower-footer p, footer .container .lower-footer p {
-    max-width: 80%;
-    margin: auto;
     flex-direction: column;
     text-align: center;
     gap: 0;
   }
 }
 footer .container-fluid .lower-footer p a, footer .container .lower-footer p a {
-  display: block;
+  color: rgba(0, 0, 0, 0.6980392157);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 0;
+}
+@media only screen and (max-width: 540px) {
+  footer .container-fluid .lower-footer p a, footer .container .lower-footer p a {
+    gap: 5px;
+  }
+}
+footer .container-fluid .lower-footer p a img, footer .container .lower-footer p a img {
   line-height: 0;
   width: 60px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 footer .container-fluid .lower-footer .links, footer .container .lower-footer .links {
   display: flex;
