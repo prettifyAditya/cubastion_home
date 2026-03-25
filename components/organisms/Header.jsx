@@ -2,13 +2,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import "@/uploads/styles/header/header.css"
 import Button from "../atoms/Button";
 import { usePathname } from "next/navigation";
+import { useModalStore } from "@/store/modalStore";
+import "@/uploads/styles/header/header.css"
 export default function Header(){
     // const pathname = usePathname()
     const [headerFixed, setHeaderFixed] = useState(false);
     const [activeSubcat, setActiveSubcat] = useState("industries");
+    const openHam = useModalStore((state) => state.openHam);
 
     // const aboutUsPage = pathname.startsWith('/about-us')
     // const contactUsPage = pathname.startsWith('/contact-us')
@@ -141,6 +143,11 @@ export default function Header(){
                         linkHref="/contact-us"
                         buttonText="Contact Us"
                     />
+                    <button type="button" className="ham-btn" onClick={openHam}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </header>

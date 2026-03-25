@@ -42,7 +42,7 @@ header
             @include media(1170)
                 flex: 0 1 170px
             @include media(540)
-                flex: 0 1 108px 
+                flex: 0 1 150px
             .logo
                 height: 100%
                 width: 100%
@@ -239,7 +239,7 @@ header
             @include media(768) 
                 flex: 1
             @include media(540)
-                gap: 10px
+                gap: 15px
             .lang_select
                 position: relative
                 cursor: pointer
@@ -261,11 +261,25 @@ header
                         width: 24px
                         height: 24px
             .btn
+                @include media(768)
+                    display: none
                 @include media(540)
                     gap: 5px
                     svg
                         width: 15px
                         height: 15px
+            .ham-btn
+                display: none
+                @include media(768)
+                    display: block
+                span
+                    display: block
+                    width: 35px
+                    height: 2px
+                    background: $black
+                    transition: .5s ease
+                    &:not(:last-child)
+                        margin-bottom: 6px
             
 header
     &.header-fixed
@@ -1085,11 +1099,6 @@ footer
         bottom: 0
         width: 100%
         height: 100%
-        // background: url(../../assets/images/logo-dark.svg) no-repeat $white
-        background-position: 190% 110%
-        opacity: 0.1
-        @include media(540)
-            background-size: 80%
     &.is-open
         transform: translateX(0%)
     .close
@@ -1112,69 +1121,65 @@ footer
         display: flex
         flex-direction: column
         position: relative
-        @include scrollbar(0px,$black,#fff,0px)
+        @include scrollbar(0px)
         @include media(540)
             padding: 0 20px 20px
             margin-top: 40px
-        .icon
-            margin-bottom: 30px
-            line-height: 0
-            img,svg
-                width: 100px
-                height: 100px
-                animation: rotateicon 20s ease infinite forwards
-                @keyframes rotateicon
-                    0%
-                        transform: rotate(0)
-                    100%
-                        transform: rotate(360deg)
         .nav-list
             width: 100%
             >li
                 &:not(:last-child)
                     margin-bottom: 15px
-                &:hover
-                    h5, >a 
-                        transform: translateX(5px)
-                        transition: .5s ease
-                        @include media(540)
-                            transform: translateX(0px)
-                &.desktop-non
-                    display: none
                 &.hasDropdown
                     position: relative
                     cursor: pointer
-                    &:hover
-                        .title
-                            h5
-                                color: $primary
-                    .title
-                        display: flex
-                        justify-content: space-between
-                        align-items: center
-                        &.active
-                            h5 
-                                color: var(--primary)
-                            svg
-                                transform: rotate(90deg)
-                        h5
-                            font-size: 22px
-                            color: #000
-                            transition: .3s ease
-                        .arrow
-                            width: 30px
-                            transition: .5s ease
-                        svg
-                            transition: .5s ease
-                            width: 16px
+                    &.active
+                        .dropdown-menu-ham
+                            display: block
                     .dropdown-menu-ham
                         display: none
                         padding-top: 15px
-                        ul
+                        >ul
                             border-top: 1px solid #dadada   
                             border-bottom: 1px solid #dadada   
-                            padding: 10px
+                            padding: 10px 0
                             li
+                                &.hasSubDropdown
+                                    &:not(:last-child)
+                                        margin-bottom: 15px
+                                    &.active
+                                        .sub-dropdown-menu
+                                            display: block
+                                    p, a 
+                                        font-size: 20px
+                                        color: $text
+                                    .icon
+                                        --bgcolor: #00000066
+                                        --size: 18px
+                                        --border: 2px
+                                        height: var(--size)
+                                        width: var(--size)
+                                        @include before(var(--bgcolor))
+                                        @include after(var(--bgcolor))
+                                        &::before,&::after
+                                            transition: .5s ease
+                                        &::before
+                                            top: calc(var(--size) / 2 - var(--border) / 2)
+                                            bottom: auto
+                                            height: var(--border)
+                                            width: 100%
+                                        &::after
+                                            left: calc(var(--size) / 2)
+                                            translate: -50% 0 
+                                            right: auto
+                                            width: var(--border)
+                                            height: 100%
+                                    .sub-dropdown-menu
+                                        display: none
+                                        padding: 10px 10px 0
+                                        .subsubcat-li
+                                            a, p
+                                                font-size: 14px
                                 a
                                     display: block
                                     font-size: 16px
@@ -1183,15 +1188,16 @@ footer
                                     transition: .5s ease
                                     &:hover
                                         color: $primary
-                >a
-                    display: block
+                >a, p
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
                     font-size: 22px
                     color: #000
-                    text-transform: uppercase
                     transition: .3s ease
                     @include font(500)
                     &:hover
-                        color: $primary
+                        color: $secondary
         .bottom-list
             margin-top: 2rem
             padding-top: 1rem
@@ -1200,19 +1206,22 @@ footer
             gap: 1rem
             border-top: 1px solid #dadada   
             .social-icons
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                gap: 15px
                 a
                     display: inline-flex
                     vertical-align: middle
                     align-items: center
                     justify-content: center
+                    border: 1px solid $text
                     height: 40px
                     width: 40px
                     border-radius: 50%
-                    color: #000
+                    color: $text
                     line-height: 0
                     overflow: hidden
-                    &:not(:last-child)
-                        margin-right: 4px
                     svg
                         width: 20px
                         height: 20px
@@ -1223,7 +1232,8 @@ footer
                             &[fill]
                                 fill: currentColor
                     &:hover
-                        background-color: $primary
+                        background-color: $secondary
+                        border-color: $secondary
                         color: $white
 
 .enquire-pop
