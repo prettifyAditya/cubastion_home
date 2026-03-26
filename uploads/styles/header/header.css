@@ -2222,6 +2222,10 @@ em {
 }
 .side-nav ul li:hover .label {
   opacity: 1;
+  pointer-events: all;
+  -webkit-user-select: all;
+     -moz-user-select: all;
+          user-select: all;
 }
 .side-nav ul li.active .number {
   color: var(--primary);
@@ -2245,6 +2249,10 @@ em {
   font-size: 14px;
   opacity: 0;
   transition: 0.5s ease;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 header {

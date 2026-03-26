@@ -390,16 +390,11 @@
 }
 .about_sec .about_wrapper {
   position: relative;
-  height: 650px;
+  height: 400px;
 }
 @media only screen and (max-width: 1170px) {
   .about_sec .about_wrapper {
-    height: 550px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .about_sec .about_wrapper {
-    height: 500px;
+    height: 450px;
   }
 }
 @media only screen and (max-width: 768px) {

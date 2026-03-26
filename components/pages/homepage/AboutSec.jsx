@@ -6,7 +6,7 @@ export default function AboutSec({ data, id }){
     if (!data) return null
     return(
         <section>
-            <div className="about_sec sec-pad-all" id={id}>
+            <div className="about_sec sec-pad" id={id}>
                 <div className="container">
                     <div className="about_wrapper">
                         <figure>

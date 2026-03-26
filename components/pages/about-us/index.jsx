@@ -42,7 +42,7 @@ export default function AboutUsPage() {
             <ClientSec id="clientSec" data={clientSecData} />
             <TeamSec id="teamSec" data={teamSecData} />
             <VisionSec id="visionSec" data={visionSecData} />
-            <AwardsSec id="awardsSec" data={awardSecData} />
+            <AwardsSec id="awardsSec" data={awardSecData} classname="about_clients" />
             <BrandJourney id="journeySec" data={journeySecData} />
             <CustomerSec id="customerSec" data={customerSecData} />
         </main>

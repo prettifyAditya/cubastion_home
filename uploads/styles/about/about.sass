@@ -3,6 +3,15 @@
 .about-banner.banner
     &::before
         background: linear-gradient(0deg, hsl(0deg 0% 100% / 60%) 0%, #fff 100%)
+    .bg
+        @include media(1170)
+            height: 600px
+        @include media(991)
+            height: 530px
+        @include media(768)
+            height: 500px 
+        @include media(540)
+            height: 450px
     .banner-wrapper
         .container
             --container: 560px
@@ -10,10 +19,23 @@
             h1
                 font-size: 20px
                 color: var(--secondary)
+                @include media(768)
+                    font-size: 18px
+                @include media(540)
+                    font-size: 16px
             p
                 font-size: 36px
                 color: $black
                 font-weight: 500 
+                @include media(1170)
+                    line-height: 1.3
+                @include media(991)
+                    font-size: 30px
+                @include media(768)
+                    font-size: 26px
+                    max-width: 430px
+                @include media(540)
+                    font-size: 22px
         .ceo_details
             display: flex
             flex-wrap: wrap
@@ -22,17 +44,28 @@
             max-width: max-content
             margin-top: 30px
             margin-left: auto
+            @include media(768)
+                margin-top: 25px
+            @include media(540)
+                gap: 12px
             figure
                 flex: 0 1 auto
                 width: 52px
                 height: 52px
+                @include media(540)
+                    width: 47px
+                    height: 47px
             figcaption
                 flex: 1
                 line-height: 1.2
                 h6
                     font-size: 16px
+                    @include media(540)
+                        font-size: 14px
                 p
                     color: #000000B2
+                    @include media(540)
+                        font-size: 12px
 
 .client_sec
     .main_wrapper
@@ -41,9 +74,26 @@
         display: grid
         grid-template-columns: repeat(4, 1fr)
         grid-gap: 70px
+        @include media(1170)
+            grid-gap: 60px
+            padding: 60px 120px
+        @include media(991)
+            grid-gap: 40px
+            padding: 50px 60px
+        @include media(768)
+            grid-gap: 30px
+            padding: 30px 
+        @include media(540)     
+            grid-gap: 20px
+            padding: 20px
+            grid-template-columns: repeat(3, 1fr)
         figure
             width: 100%
             height: 64px
+            @include media(991)
+                height: 60px
+            @include media(540)     
+                height: 40px
             img
                 object-fit: contain
 
@@ -59,9 +109,24 @@
             max-width: 50%
             width: 100%
             padding: 60px
+            @include media(1170)
+                padding: 40px
+            @include media(991)
+                padding: 30px
+                max-width: 100%
+                flex: 0 1 100%
+                padding-bottom: 40px
+            @include media(768)
+                padding: 25px
+                padding-bottom: 30px
+            @include media(540)     
+                padding: 20px
+                padding-bottom: 25px
             .heading
                 h2
                     margin-bottom: 15px
+                    @include media(768)
+                        margin-bottom: 0
                 p
                     line-height: 1.5
         .colB
@@ -72,10 +137,29 @@
             padding: 60px 40px
             border-top-right-radius: 10px
             border-bottom-right-radius: 10px
+            @include media(1170)
+                padding: 50px 30px
+            @include media(991)
+                padding: 35px 20px 
+                max-width: 100%
+                flex: 0 1 100%
+                border-radius: 0
+                border-bottom-left-radius: 10px
+                border-bottom-right-radius: 10px
+            @include media(768)
+                padding: 30px 20px
+            @include media(540)     
+                padding: 25px 20px
             .team_wrapper
                 display: grid
                 grid-template-columns: repeat(3, 1fr)
                 grid-gap: 30px 20px
+                @include media(1170)
+                    grid-gap: 25px 15px
+                @include media(991)
+                    grid-gap: 20px 15px
+                @include media(540)     
+                    grid-template-columns: repeat(2, 1fr)
                 .team_col
                     &:hover
                         figure
@@ -96,6 +180,8 @@
                             bottom: 10px
                             opacity: 0
                             transition: .5s ease
+                            @include media(540)     
+                                opacity: 1
                         img
                             transition: 1s ease
                     figcaption
@@ -103,20 +189,42 @@
                         h6
                             font-size: 16px
                             color: $white
+                            @include media(991)
+                                line-height: 1.1
                         p
                             font-size: 14px
                             color: #FFFFFFB2
+                            @include media(540)     
+                                font-size: 12px
 
-.awards_sec
+
+.awards_sec.about_clients
+    .container
+        overflow-x: hidden
     .heading
         text-align: center
+        
 
 .vision_sec
+    overflow: hidden
+    .container
+        @include media(768)     
+            padding-right: 0
     .heading
         display: flex
         align-items: start
         gap: 90px
         margin-bottom: 50px
+        @include media(991)
+            gap: 60px
+            margin-bottom: 40px
+        @include media(768)
+            flex-direction: column
+            gap: 0
+            padding-right: 20px
+        @include media(540)     
+            padding-right: 15px
+            margin-bottom: 30px
         h2
             flex: 0 1 auto
         p
@@ -125,6 +233,9 @@
         display: flex
         flex-wrap: wrap
         gap: 10px
+        @include media(768)
+            display: block
+            position: relative
         @keyframes show-content
             0%
                 opacity: 0
@@ -132,39 +243,57 @@
             100%
                 opacity: 1
                 transform: translateY(0)
+        .swiper-nav
+            position: absolute
+            bottom: 10%
+            right: 10%
+            z-index: 2
+            transform: translate(10%, 10%)
         .vision_col
             position: relative
             flex: 0 1 165px
             transition: all 400ms cubic-bezier(.4, .2, .4, 1)
+            @include media(1170)
+                flex: 0 1 120px
+            @include media(991)
+                flex: 0 1 60px
+            @include media(768)
+                flex: 1
             &.active
                 flex: 1
-                figure
-                    &::after
-                        backdrop-filter: blur(0)
-                    .plus-icon
-                        opacity: 0
-                    .video_tag
-                        opacity: 1
-                figcaption
-                    visibility: visible
-                    animation: 600ms cubic-bezier(.4,.2,.4,1) 400ms forwards show-content
+                @include media-min(769)
+                    figure
+                        &::after
+                            backdrop-filter: blur(0)
+                        .plus-icon
+                            opacity: 0
+                        .video_tag
+                            opacity: 1
+                    figcaption
+                        visibility: visible
+                        animation: 600ms cubic-bezier(.4,.2,.4,1) 400ms forwards show-content
             &:not(.active)
-                figure
-                    .video_tag
-                        transform: translateY(20px)
-                figcaption
-                    visibility: hidden
-                    opacity: 0
+                @include media-min(769)
+                    figure
+                        .video_tag
+                            transform: translateY(20px)
+                    figcaption
+                        visibility: hidden
+                        opacity: 0
             figure
                 position: relative
                 overflow: hidden
                 line-height: 0
                 border-radius: 10px
                 height: 510px
+                @include media(540)     
+                    height: 410px
                 @include before(linear-gradient(0deg, hsl(0deg 0% 0% / 70%) 0%, #0000 100%))
                 @include after(#0000001A)
                 &::after
                     backdrop-filter: blur(10px)
+                    @include media(768)
+                        display: none
                 img, video
                     border-radius: 10px
                 .video_tag
@@ -181,6 +310,18 @@
                     left: 30px
                     transition: 1s ease
                     opacity: 0
+                    @include media(991)
+                        top: 25px
+                        left: 25px
+                    @include media(768)
+                        opacity: 1
+                        top: 20px
+                        left: 20px
+                    @include media(540)     
+                        font-size: 12px
+                        padding: 6px 15px
+                        top: 15px
+                        left: 15px
                 .plus-icon
                     width: 36px
                     height: 36px
@@ -195,6 +336,8 @@
                     transform: translate(-50%, 10%)
                     transition: .5s ease
                     z-index: 1
+                    @include media(768)
+                        display: none
             figcaption
                 position: absolute
                 width: 100%
@@ -207,11 +350,23 @@
                 opacity: 0
                 transition: visibility 0s linear 400ms
                 transition: .5s ease
+                @include media(991)
+                    padding: 0 30px 40px
+                @include media(768)
+                    visibility: visible
+                    opacity: 1
+                @include media(540)     
+                    padding: 0 15px 20px
                 h4
                     font-size: 24px
                     font-weight: 600
                     margin-bottom: 10px
                     color: $white
+                    @include media(768)     
+                        font-size: 22px
+                    @include media(540)     
+                        font-size: 20px
+                        margin-bottom: 5px
                 p
                     color: #FFFFFFB2
                     font-weight: 300 
@@ -221,6 +376,10 @@
         display: grid
         grid-template-columns: repeat(5, 1fr)
         grid-gap: 15px
+        @include media(1170)
+            grid-gap: 10px
+        @include media(768)
+            grid-template-columns: repeat(2, 1fr)
         .high_col
             position: relative
             width: 100%
@@ -229,6 +388,8 @@
             border-radius: 10px
             min-height: 140px
             &.slider
+                @include media(540)
+                    min-height: 200px
                 figcaption
                     height: 100%
                     .software_slider 
@@ -241,6 +402,8 @@
                             transition-timing-function: linear
                             figure
                                 height: 35px
+                                @include media(540)     
+                                    height: 28px
                                 img
                                     object-fit: contain
             &.media
@@ -250,31 +413,70 @@
                 figcaption
                     top: 0
                     transform: translate(-50%, 0%)
+                    @include media(991)
+                        padding: 20px 
+                    @include media(540)
+                        padding: 15px
                     .count
                         font-size: 48px
                         color: $white
+                        @include media(1170)
+                            font-size: 44px
+                        @include media(991)
+                            font-size: 40px
+                        @include media(540)
+                            font-size: 32px
                     p
                         color: $white
                         font-size: 20px
                         font-weight: 500 
+                        @include media(1170)
+                            font-size: 18px
+                        @include media(540)
+                            font-size: 16px
             &:nth-child(2), &:nth-child(3), &:nth-child(6)  
                 grid-column: span 2
                 grid-row: span 2
+            &:nth-child(4)
+                @include media(768)
+                    grid-column: span 2
             &:nth-child(5)
                 grid-column: span 3
                 grid-row: span 2
+                @include media(1170)
+                    min-height: 280px
+                @include media(991)
+                    min-height: 250px
+                @include media(540)
+                    min-height: 350px
                 figure
                     &::before
                         background: var(--gradient-a)
                 figcaption
                     height: 100%
+                    @include media(991)
+                        padding: 20px 
+                    @include media(540)
+                        padding: 15px
                     .count
                         font-size: 48px
                         color: $white
+                        @include media(1170)
+                            font-size: 44px
+                        @include media(991)
+                            font-size: 40px
+                        @include media(540)
+                            font-size: 32px
                     p
                         font-size: 20px
                         color: $white
                         max-width: 160px
+                        @include media(1170)
+                            font-size: 18px
+                        @include media(991)
+                            max-width: 120px
+                        @include media(540)
+                            max-width: 100%
                     .btn
                         position: absolute
                         left: 30px
@@ -287,16 +489,19 @@
                         transform: translate(0, -50%)
                         max-width: 100%
                         z-index: 1
+                        @include media(540)
+                            top: 60%
+                            transform: translate(0, -60%)
                         .map-image
                             width: 424px
                             height: 280px
                             object-fit: contain
-                            @include media(768)            
-                                width: 700px
-                                height: 300px
-                            @include media(540)
-                                width: 100%
-                                height: 165px
+                            @include media(1170)
+                                width: 360px
+                                height: 240px
+                            @include media(991)
+                                width: 260px
+                                height: 200px
                         .pointer
                             position: absolute
                             cursor: pointer
@@ -318,9 +523,6 @@
                                     animation: blink 2s .2s infinite
                                     position: relative
                                     z-index: 1
-                                    @include media(540)
-                                        width: 20px
-                                        height: 20px
                                     svg
                                         width: 60%
                                         height: 60%
@@ -376,14 +578,29 @@
                                 top: 38%
 
             &:nth-child(2)
+                @include media(768)
+                    grid-area: auto
                 figcaption
                     text-align: center
+                    @include media(768)
+                        text-align: left
                     .count
                         font-size: 48px
+                        @include media(1170)
+                            font-size: 44px
+                        @include media(991)
+                            font-size: 40px
+                        @include media(768)
+                            font-size: 24px
                     p
                         font-size: 20px
                         max-width: 300px
                         margin: 0 auto
+                        @include media(1170)
+                            font-size: 18px
+                            line-height: 1.2
+                        @include media(768)
+                            font-size: 14px
             >figure
                 height: 100%
                 line-height: 0
@@ -403,24 +620,58 @@
                 transform: translate(-50%, -50%)
                 z-index: 1
                 padding: 30px 25px
+                @include media(1170)
+                    padding: 20px 15px
+                @include media(991)
+                    padding: 10px
                 .count
                     font-weight: 400
                     font-size: 32px
                     margin-bottom: 10px
+                    @include media(1170)
+                        font-size: 28px
+                    @include media(991)
+                        font-size: 24px
+                        margin-bottom: 5px
                 p
                     font-size: 14px
+                    @include media(991)
+                        line-height: 1.2
 
 .journey_sec
     .heading
         text-align: center
-        margin-bottom: 130px
+        margin-bottom: 180px
+        @include media(1170)
+            margin-bottom: 160px
+        @include media(768)
+            margin-bottom: 40px
+        @include media(540)     
+            margin-bottom: 30px
     .main_wrapper
         height: 300px
+        // max-width: 1280px
+        margin: 0 auto
+        @include media(1336)
+            max-width: 1200px
+        @include media(1200)
+            max-width: 1150px
+        @include media(1170)
+            max-width: 990px
+        @include media(768)
+            height: 100%
+            overflow-y: auto
+            @include scrollbar($width: 3px,$background: transparent,$color : $secondary, $radius: 2px)
         .timeline
             position: relative
             display: flex
             justify-content: space-between
             padding: 70px 0
+            @include media(768)
+                flex-direction: column
+                padding: 20px 0 
+                gap: 10px
+                height: auto
             &::before 
                 content: ""
                 position: absolute
@@ -431,6 +682,15 @@
                 height: 2px
                 background: #d0d0d0
                 z-index: 1
+                @include media(768)
+                    left: 30px
+                    right: auto
+                    top: 0
+                    transform: none
+                    width: 2px
+                    height: 100%
+                @include media(540)     
+                    left: 8px
             .time_col
                 position: relative
                 flex: 1
@@ -441,8 +701,12 @@
                     ~ .time-item
                         .year
                             color: $secondary
+                            @include media(768)     
+                                color: $text
                         .dot
                             background: $secondary
+                            @include media(768)     
+                                background: #d0d0d0
                             &::before
                                 height: 160px
                                 background: $secondary
@@ -453,25 +717,52 @@
                             transform: translateY(0)
             .time_col
                 &:nth-of-type(odd) 
-                    .time-item
-                        .year
-                            bottom: calc(50% + 30px)
-                        .dot
-                            top: 100%
-                        .content
-                            top: calc(50% + 80px)
+                    @include media-min(768)
+                        .time-item
+                            .year
+                                bottom: calc(50% + 30px)
+                            .dot
+                                top: 100%
+                            .content
+                                top: calc(50% + 80px)
                 &:nth-of-type(even) 
-                    .time-item
-                        .dot
-                            &::before
-                                bottom: 100%
-                        .year
-                            top: calc(50% + 30px)
-                        .content
-                            bottom: calc(50% + 80px)
+                    @include media-min(768)
+                        .time-item
+                            .dot
+                                &::before
+                                    bottom: 100%
+                            .year
+                                top: calc(50% + 30px)
+                            .content
+                                bottom: calc(50% + 80px)
+                &:last-of-type
+                    @include media-min(768)
+                        .time-item
+                            .content
+                                left: -50%
+                                padding-left: 0
+                                padding-right: 15px
+                                @include media(1170)
+                                    left: unset
+                                    right: 60%
+                &:nth-last-of-type(2)
+                    @include media-min(768)
+                        .time-item
+                            .content
+                                padding-left: 0
+                                padding-right: 15px
+                                @include media(991)
+                                    left: unset
+                                    right: 60%
+                    
             .time-item
                 position: relative
                 z-index: 2
+                @include media(768)
+                    display: flex
+                    align-items: start
+                    text-align: left
+                    margin-bottom: 12px
                 .year
                     position: absolute
                     left: 50%
@@ -482,6 +773,15 @@
                     white-space: nowrap
                     transition: color 0.3s ease
                     z-index: 4
+                    @include media(768) 
+                        position: relative
+                        left: 12px
+                        bottom: 2px
+                        transform: none
+                        margin-left: 30px
+                    @include media(540)     
+                        left: 8px
+                        margin-left: 20px
                 .dot
                     position: absolute
                     left: 50%
@@ -502,22 +802,46 @@
                         height: 0
                         background: transparent
                         transition: height 0.3s ease
+                        @include media(768)
+                            display: none
+                    @include media(768)
+                        left: 30px
+                        top: 3px
+                        transform: translate(-50%, 0)
+                    @include media(540)     
+                        left: 9px
                 .content
                     position: absolute
                     left: 50%
                     transform: translateY(10px)
-                    width: 310px
-                    padding-left: 30px
+                    width: 100%
+                    padding-left: 15px
                     opacity: 0
                     visibility: hidden
                     pointer-events: none
                     transition: all 0.4s ease
                     z-index: 5
+                    @include media(1170)
+                        width: 180px
+                    @include media(768)
+                        position: relative
+                        left: 0
+                        transform: none
+                        width: 100%
+                        padding-left: 0
+                        margin-left: 30px
+                        display: block
+                        opacity: 1
+                        visibility: visible
+                    @include media(540)     
+                        margin-left: 25px
                     h4
-                        font-size: 20px
+                        font-size: 18px
                         font-weight: 600
                         line-height: 1.2
-                        margin-bottom: 10px
+                        margin-bottom: 6px
+                        @include media(768)         
+                            color: $primary
                     p
                         font-size: 14px
             

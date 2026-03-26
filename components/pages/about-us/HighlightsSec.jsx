@@ -142,7 +142,7 @@ export default function HighlightsSec({ id }){
                                             spaceBetween: 15,
                                         },
                                         540: {
-                                            slidesPerView: 2.2,
+                                            slidesPerView: 3,
                                             spaceBetween: 20,
                                         },
                                         768: {
