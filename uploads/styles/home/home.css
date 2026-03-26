@@ -375,38 +375,61 @@
     display: none;
   }
 }
-@media only screen and (max-width: 768px) {
-  .about_sec {
-    display: none;
-  }
-}
 .about_sec .about_wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  --gap: 100px;
+  position: relative;
+  height: 650px;
 }
 @media only screen and (max-width: 1170px) {
   .about_sec .about_wrapper {
-    --gap: 70px;
+    height: 550px;
   }
 }
 @media only screen and (max-width: 991px) {
   .about_sec .about_wrapper {
-    --gap: 40px;
-    gap: var(--gap);
+    height: 500px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .about_sec .about_wrapper {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .about_sec .about_wrapper {
+    height: 500px;
+  }
+}
+.about_sec .about_wrapper figure {
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 0;
+}
 .about_sec .about_wrapper figcaption {
-  flex: 0 1 40%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
   max-width: 40%;
   width: 100%;
+  padding: 20px;
+}
+@media only screen and (max-width: 1170px) {
+  .about_sec .about_wrapper figcaption {
+    max-width: 50%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .about_sec .about_wrapper figcaption {
-    flex: 1;
-    max-width: 100%;
+    max-width: 424px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about_sec .about_wrapper figcaption {
+    text-align: center;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
   }
 }
 .about_sec .about_wrapper figcaption .heading h1 {
@@ -417,6 +440,16 @@
     font-size: 32px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .about_sec .about_wrapper figcaption .heading h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .about_sec .about_wrapper figcaption .heading h1 {
+    font-size: 24px;
+  }
+}
 .about_sec .about_wrapper figcaption .heading p {
   margin: 10px 0 30px;
 }
@@ -424,27 +457,6 @@
   .about_sec .about_wrapper figcaption .heading p {
     margin: 10px 0 20px;
   }
-}
-.about_sec .about_wrapper figure {
-  flex: 0 1 auto;
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-}
-@media only screen and (max-width: 1170px) {
-  .about_sec .about_wrapper figure {
-    width: 300px;
-    height: 300px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .about_sec .about_wrapper figure {
-    width: 270px;
-    height: 270px;
-  }
-}
-.about_sec .about_wrapper figure img {
-  border-radius: 50%;
 }
 
 .industry_sec {

@@ -1,5 +1,6 @@
 import Button from "@/components/atoms/Button";
 import Image from "next/image";
+import Animation1 from "./Animation1";
 
 export default function AboutSec({ data, id }){
     if (!data) return null
@@ -8,6 +9,10 @@ export default function AboutSec({ data, id }){
             <div className="about_sec sec-pad-all" id={id}>
                 <div className="container">
                     <div className="about_wrapper">
+                        <figure>
+                            <Animation1 />
+                            {/* <Image src={data.imgSrc} width="325" height="325" alt="About Image"></Image> */}
+                        </figure>
                         <figcaption>
                             <div className="heading">
                                 <h1>{data.heading}</h1>
@@ -15,9 +20,6 @@ export default function AboutSec({ data, id }){
                                 <Button linkHref="/about-us" buttonText={data.buttonText} />
                             </div>
                         </figcaption>
-                        <figure>
-                            <Image src={data.imgSrc} width="325" height="325" alt="About Image"></Image>
-                        </figure>
                     </div>
                 </div>
             </div>
