@@ -3872,12 +3872,15 @@ footer .container-fluid .lower-footer .links a, footer .container .lower-footer 
 .model.ham-pop .model-body .nav-list > li.hasDropdown .dropdown-menu-ham > ul li.hasSubDropdown:not(:last-child) {
   margin-bottom: 15px;
 }
+.model.ham-pop .model-body .nav-list > li.hasDropdown .dropdown-menu-ham > ul li.hasSubDropdown.active > p, .model.ham-pop .model-body .nav-list > li.hasDropdown .dropdown-menu-ham > ul li.hasSubDropdown.active > a {
+  color: var(--secondary);
+}
 .model.ham-pop .model-body .nav-list > li.hasDropdown .dropdown-menu-ham > ul li.hasSubDropdown.active .sub-dropdown-menu {
   padding: 10px 10px 0;
   grid-template-rows: 1fr;
 }
 .model.ham-pop .model-body .nav-list > li.hasDropdown .dropdown-menu-ham > ul li.hasSubDropdown.active .icon {
-  --bgcolor: var(--black);
+  --bgcolor: var(--secondary);
 }
 .model.ham-pop .model-body .nav-list > li.hasDropdown .dropdown-menu-ham > ul li.hasSubDropdown.active .icon::after {
   transform: scaleY(0);
@@ -3890,7 +3893,7 @@ footer .container-fluid .lower-footer .links a, footer .container .lower-footer 
   transition: 0.5s ease;
 }
 .model.ham-pop .model-body .nav-list > li.hasDropdown .dropdown-menu-ham > ul li.hasSubDropdown .icon {
-  --bgcolor: #00000066;
+  --bgcolor: var(--text);
   --size: 18px;
   --border: 2px;
   height: var(--size);
