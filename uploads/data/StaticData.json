@@ -461,42 +461,48 @@
           "imgSrc": "/assets/images/about-us/team1.jpg",
           "memname": "Ravi Kumar",
           "memdesgn": "Chief Executive officer",
-          "linkedin": ""
+          "linkedin": "",
+          "details": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla autem, nihil quod officiis harum fugiat laboriosam voluptatem necessitatibus sint, fugit, facere odit quidem distinctio totam maiores quaerat ex. Reprehenderit saepe deleniti non repellendus culpa, quam officia dignissimos ad commodi, odio vitae, placeat eaque ipsum expedita architecto? Optio, ex doloremque odit, ducimus quas architecto voluptate adipisci illo libero amet reprehenderit rem?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum iure expedita accusamus placeat ad labore adipisci? Dolorem excepturi optio omnis, dicta odit quidem ullam mollitia. Cum quaerat voluptatem laudantium nesciunt officiis fuga, reprehenderit est hic accusamus dignissimos, necessitatibus consequatur veniam!</p>"
         },
         {
           "id": "2",
           "imgSrc": "/assets/images/about-us/team2.jpg",
           "memname": "Kumar Harsh",
           "memdesgn": "Delivery Director",
-          "linkedin": ""
+          "linkedin": "",
+          "details": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla autem, nihil quod officiis harum fugiat laboriosam voluptatem necessitatibus sint, fugit, facere odit quidem distinctio totam maiores quaerat ex. Reprehenderit saepe deleniti non repellendus culpa, quam officia dignissimos ad commodi, odio vitae, placeat eaque ipsum expedita architecto? Optio, ex doloremque odit, ducimus quas architecto voluptate adipisci illo libero amet reprehenderit rem?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum iure expedita accusamus placeat ad labore adipisci? Dolorem excepturi optio omnis, dicta odit quidem ullam mollitia. Cum quaerat voluptatem laudantium nesciunt officiis fuga, reprehenderit est hic accusamus dignissimos, necessitatibus consequatur veniam!</p>"
         },
         {
           "id": "3",
           "imgSrc": "/assets/images/about-us/team3.jpg",
           "memname": "Umesh Sharma",
           "memdesgn": "Chief People Officer",
-          "linkedin": ""
+          "linkedin": "",
+          "details": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla autem, nihil quod officiis harum fugiat laboriosam voluptatem necessitatibus sint, fugit, facere odit quidem distinctio totam maiores quaerat ex. Reprehenderit saepe deleniti non repellendus culpa, quam officia dignissimos ad commodi, odio vitae, placeat eaque ipsum expedita architecto? Optio, ex doloremque odit, ducimus quas architecto voluptate adipisci illo libero amet reprehenderit rem?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum iure expedita accusamus placeat ad labore adipisci? Dolorem excepturi optio omnis, dicta odit quidem ullam mollitia. Cum quaerat voluptatem laudantium nesciunt officiis fuga, reprehenderit est hic accusamus dignissimos, necessitatibus consequatur veniam!</p>"
         },
         {
           "id": "4",
           "imgSrc": "/assets/images/about-us/team1.jpg",
           "memname": "Ravi Kumar",
           "memdesgn": "Chief Executive officer",
-          "linkedin": ""
+          "linkedin": "",
+          "details": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla autem, nihil quod officiis harum fugiat laboriosam voluptatem necessitatibus sint, fugit, facere odit quidem distinctio totam maiores quaerat ex. Reprehenderit saepe deleniti non repellendus culpa, quam officia dignissimos ad commodi, odio vitae, placeat eaque ipsum expedita architecto? Optio, ex doloremque odit, ducimus quas architecto voluptate adipisci illo libero amet reprehenderit rem?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum iure expedita accusamus placeat ad labore adipisci? Dolorem excepturi optio omnis, dicta odit quidem ullam mollitia. Cum quaerat voluptatem laudantium nesciunt officiis fuga, reprehenderit est hic accusamus dignissimos, necessitatibus consequatur veniam!</p>"
         },
         {
           "id": "5",
           "imgSrc": "/assets/images/about-us/team2.jpg",
           "memname": "Kumar Harsh",
           "memdesgn": "Delivery Director",
-          "linkedin": ""
+          "linkedin": "",
+          "details": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla autem, nihil quod officiis harum fugiat laboriosam voluptatem necessitatibus sint, fugit, facere odit quidem distinctio totam maiores quaerat ex. Reprehenderit saepe deleniti non repellendus culpa, quam officia dignissimos ad commodi, odio vitae, placeat eaque ipsum expedita architecto? Optio, ex doloremque odit, ducimus quas architecto voluptate adipisci illo libero amet reprehenderit rem?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum iure expedita accusamus placeat ad labore adipisci? Dolorem excepturi optio omnis, dicta odit quidem ullam mollitia. Cum quaerat voluptatem laudantium nesciunt officiis fuga, reprehenderit est hic accusamus dignissimos, necessitatibus consequatur veniam!</p>"
         },
         {
           "id": "6",
           "imgSrc": "/assets/images/about-us/team3.jpg",
           "memname": "Umesh Sharma",
           "memdesgn": "Chief People Officer",
-          "linkedin": ""
+          "linkedin": "",
+          "details": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla autem, nihil quod officiis harum fugiat laboriosam voluptatem necessitatibus sint, fugit, facere odit quidem distinctio totam maiores quaerat ex. Reprehenderit saepe deleniti non repellendus culpa, quam officia dignissimos ad commodi, odio vitae, placeat eaque ipsum expedita architecto? Optio, ex doloremque odit, ducimus quas architecto voluptate adipisci illo libero amet reprehenderit rem?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum iure expedita accusamus placeat ad labore adipisci? Dolorem excepturi optio omnis, dicta odit quidem ullam mollitia. Cum quaerat voluptatem laudantium nesciunt officiis fuga, reprehenderit est hic accusamus dignissimos, necessitatibus consequatur veniam!</p>"
         }
       ]
     },

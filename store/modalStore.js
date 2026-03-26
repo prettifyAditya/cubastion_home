@@ -6,6 +6,7 @@ export const useModalStore = create((set) => {
       isHamOpen: false,
       isEnquireOpen: false,
       isVideoOpen: false,
+      isTeamPopOpen: false,
       isThankyouOpen: false,
       isRegionPopOpen: false, 
       isJobFormOpen: false
@@ -15,9 +16,17 @@ export const useModalStore = create((set) => {
     isHamOpen: false,
     isEnquireOpen: false,
     isVideoOpen: false,
+    isTeamPopOpen: false,
     isThankyouOpen: false,
     isRegionPopOpen: false, 
     isJobFormOpen: false,
+    selectedTeamMember: null,
+
+    openTeamPop: (teamMember) => {
+      closeAll();
+      set({ isTeamPopOpen: true, selectedTeamMember: teamMember });
+    },
+    closeTeamPop: () => set({ isTeamPopOpen: false, selectedTeamMember: null }),
 
     openJobForm: () => {
       closeAll();

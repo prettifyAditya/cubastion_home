@@ -1,8 +1,11 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { useModalStore } from "@/store/modalStore";
 
 export default function TeamSec({ data, id }){
     if(!data) return null;
+    const openTeamPop = useModalStore((state) => state.openTeamPop)
     return(
         <section>
             <div className="team_sec sec-pad" id={id}>
@@ -16,19 +19,19 @@ export default function TeamSec({ data, id }){
                         </div>
                         <div className="colB">
                             <div className="team_wrapper">
-                                {data.teamData.map((data) => (
-                                    <div className="team_col" key={data.id}>
+                                {data.teamData.map((teamMember) => (
+                                    <div className="team_col" key={teamMember.id} onClick={() => openTeamPop(teamMember)}>
                                         <figure>
-                                            <Image src={data.imgSrc} width={160} height={180} alt="Team Img"></Image>
-                                            <Link href={data.linkedin} className="linkedin">
+                                            <Image src={teamMember.imgSrc} width={160} height={180} alt="Team Img"></Image>
+                                            <Link href={teamMember.linkedin} className="linkedin">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
                                                     <path fill="#fff" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"></path>
                                                 </svg>
                                             </Link>
                                         </figure>
                                         <figcaption>
-                                            <h6>{data.memname}</h6>
-                                            <p>{data.memdesgn}</p>
+                                            <h6>{teamMember.memname}</h6>
+                                            <p>{teamMember.memdesgn}</p>
                                         </figcaption>
                                     </div>
                                 ))}

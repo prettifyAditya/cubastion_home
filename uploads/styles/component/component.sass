@@ -305,3 +305,104 @@
             margin-top: 24px
             border-radius: 50px
             font-size: 14px
+
+.team-pop.model
+    max-width: 800px
+    height: fit-content
+    left: 50%
+    top: 50%
+    border-radius: 15px
+    transform: translate(-50%, 100vh)
+    transition: 0.6s ease
+    @include media(768)
+        height: 100%
+        border-radius: 0
+        overflow-y: auto
+    &.is-open
+        transform: translate(-50%, -50%)
+        transition: 0.6s ease
+    .close:not(.btn)
+        top: 20px
+        right: 20px
+        z-index: 1
+        svg
+            width: 20px
+            height: 20px
+    .model-body
+        padding: 0 30px 50px
+        margin-top: 30px
+        border-radius: 15px
+        background: $white
+        @include before(url(/assets/images/about/team_bg.svg)) 
+        &::before
+            background-repeat: no-repeat
+            background-position: 95% 100% 
+            background-size: 140px
+        @include media(768)
+            padding: 0 20px 20px  
+            margin-top: 50px
+        @include media(540)
+            overflow-y: auto    
+        .team_wrapper
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            gap: 30px
+            @include media(768)
+                flex-direction: column
+            @include media(540) 
+                gap: 20px
+            figure
+                flex: 0 1 40%
+                position: relative
+                line-height: 0
+                border-radius: 10px
+                overflow: hidden
+                @include media(768) 
+                    flex: 0 1 50%
+                    width: 50%
+                @include media(540) 
+                    flex: 0 1 100%
+                    width: 100%
+                &:hover
+                    img
+                        transform: scale(1.1)
+                img
+                    border-radius: 10px
+                .linkedin
+                    width: 30px
+                    height: 30px
+                    position: absolute
+                    top: 5%
+                    right: 5%
+                    z-index: 0
+                    img, svg
+                        width: 100%
+                        height: 100%
+            figcaption
+                flex: 1
+                .heading
+                    padding-bottom: 10px
+                    border-bottom: 2px solid #D2D2D2
+                    h6
+                        font-size: 24px
+                        color: $black
+                        @include media(991)  
+                            font-size: 22px
+                        @include media(540) 
+                            font-size: 20px
+                    p
+                        color: $black
+                        margin-top: 0
+                .team_details
+                    padding: 15px 15px 15px 0
+                    max-height: 240px
+                    overflow-y: auto
+                    @include scrollbar($width: 4px,$background: #D9D9D9,$color: $primary,)
+                    @include media(768) 
+                        max-height: 100%
+                        overflow-y: visible
+                    p
+                        font-size: 14px
+                        &:not(:last-child)
+                            margin-bottom: 10px

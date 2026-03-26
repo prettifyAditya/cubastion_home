@@ -29,6 +29,10 @@
   color: rgba(255, 255, 255, 0.7019607843);
 }
 
+.service_clients .service_awards {
+  margin-top: 0;
+}
+
 .service_tabbing_sec .tab-nav {
   display: flex;
   align-items: center;

@@ -11,6 +11,7 @@ import CustomerSec from "../../organisms/CustomerSec";
 import VisionSec from "./VisionSec";
 import BrandJourney from "./BrandJourney";
 import "@/uploads/styles/about/about.css"
+import TeamPop from "@/components/organisms/TeamPop";
 
 export default function AboutUsPage() {
     const { setSections } = useSideNav()
@@ -45,6 +46,7 @@ export default function AboutUsPage() {
             <AwardsSec id="awardsSec" data={awardSecData} classname="about_clients" />
             <BrandJourney id="journeySec" data={journeySecData} />
             <CustomerSec id="customerSec" data={customerSecData} />
+            <TeamPop />
         </main>
     )
 }

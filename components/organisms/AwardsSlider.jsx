@@ -7,12 +7,12 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import "@/uploads/styles/component/component.css"
 
-export default function AwardsSlider({ data }){
+export default function AwardsSlider({ data, classname="" }){
     if (!data) return null
     const swiperRef = useRef(null)
     return(
         <Swiper
-            className="awards_slider"
+            className={`awards_slider ${classname}`}
             loop = {true}
             ref={swiperRef}
             modules={[Autoplay]}
