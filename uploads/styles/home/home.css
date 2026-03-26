@@ -27,13 +27,13 @@
 }
 @media only screen and (max-width: 768px) {
   .hero_sec {
-    height: 380px;
+    height: 450px;
     padding-bottom: 50px;
   }
 }
 @media only screen and (max-width: 540px) {
   .hero_sec {
-    height: 350px;
+    height: 420px;
     padding-bottom: 30px;
   }
 }
@@ -93,7 +93,7 @@
     flex: 0 1 55px;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .hero_sec .hero_wrapper .hero_col {
     flex: 0 1 100%;
   }
@@ -222,6 +222,7 @@
     left: var(--padding);
     transform: rotate(0deg) translate(0, 0%);
     top: 5%;
+    display: none;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -261,14 +262,18 @@
 @media only screen and (max-width: 768px) {
   .hero_sec .hero_wrapper .hero_col figcaption .heading {
     display: block;
+    width: 100%;
+    text-align: center;
     opacity: 1;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
   }
 }
 @media only screen and (max-width: 540px) {
   .hero_sec .hero_wrapper .hero_col figcaption .heading {
-    max-width: 290px;
-    top: 65%;
-    transform: translate(0, -65%);
+    max-width: 370px;
+    padding: 0 10px;
   }
 }
 .hero_sec .hero_wrapper .hero_col figcaption .heading h2 {
@@ -288,12 +293,14 @@
 }
 @media only screen and (max-width: 768px) {
   .hero_sec .hero_wrapper .hero_col figcaption .heading h2 {
+    margin: 0 auto;
     font-size: 28px;
+    line-height: 1.1;
   }
 }
 @media only screen and (max-width: 540px) {
   .hero_sec .hero_wrapper .hero_col figcaption .heading h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 .hero_sec .hero_wrapper .hero_col figcaption .heading p {
@@ -311,8 +318,14 @@
     margin: 10px 0 20px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .hero_sec .hero_wrapper .hero_col figcaption .heading p {
+    margin: 10px auto 20px;
+  }
+}
 @media only screen and (max-width: 540px) {
   .hero_sec .hero_wrapper .hero_col figcaption .heading p {
+    margin: 10px auto 15px;
     font-size: 14px;
   }
 }

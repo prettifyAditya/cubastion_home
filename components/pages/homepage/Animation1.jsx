@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 export default function Animation1({ id }) {
-  return null; 
+  // return null; 
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -19,8 +19,15 @@ export default function Animation1({ id }) {
 
     // ── Camera ─────────────────────────────────────────────────────────────
     const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 1000);
-    camera.position.z = 80;
-    camera.position.x = -25;
+
+    if (window.innerWidth < 769) {
+      camera.position.z = 120;
+      camera.position.x = 0;
+      camera.position.y = -30;
+    } else {
+      camera.position.z = 80;
+      camera.position.x = -25;
+    }
 
     // ── Renderer ───────────────────────────────────────────────────────────
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });

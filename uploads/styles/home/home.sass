@@ -8,10 +8,10 @@
     @include media(991)
         height: 400px
     @include media(768)
-        height: 380px
+        height: 450px
         padding-bottom: 50px
     @include media(540)
-        height: 350px
+        height: 420px 
         padding-bottom: 30px
     .container, .container-fluid
         height: 100%
@@ -50,7 +50,7 @@
                 flex: 0 1 110px
             @include media(991)
                 flex: 0 1 55px
-            @include media(540)
+            @include media(768)
                 flex: 0 1 100%
             &.active
                 flex: 1
@@ -127,6 +127,7 @@
                         left: var(--padding)
                         transform: rotate(0deg) translate(0, 0%)
                         top: 5%
+                        display: none
                     @include media(540)
                         gap: 8px
                     .dot
@@ -151,11 +152,15 @@
                     opacity: 0
                     @include media(768)
                         display: block
+                        width: 100%
+                        text-align: center
                         opacity: 1
+                        top: 85%
+                        left: 50%
+                        transform: translate(-50%, -85%)
                     @include media(540)
-                        max-width: 290px
-                        top: 65%
-                        transform: translate(0, -65%)
+                        max-width: 370px
+                        padding: 0 10px
                     h2
                         font-size: 40px
                         color: $black
@@ -165,9 +170,11 @@
                         @include media(991)
                             font-size: 32px
                         @include media(768)
+                            margin: 0 auto
                             font-size: 28px
+                            line-height: 1.1
                         @include media(540)
-                            font-size: 24px
+                            font-size: 22px
                     p
                         color: $text
                         max-width: 395px
@@ -176,7 +183,10 @@
                             max-width: 360px
                         @include media(991)
                             margin: 10px 0 20px
+                        @include media(768)
+                            margin: 10px auto 20px
                         @include media(540)
+                            margin: 10px auto 15px
                             font-size: 14px
                     .btn
                         @include media(991)
