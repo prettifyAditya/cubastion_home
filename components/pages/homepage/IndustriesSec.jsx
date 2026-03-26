@@ -28,7 +28,7 @@ export default function IndustriesSec({ id, data }){
                                 <div className={`tabs ${activeIndustry === item.id ? "active" : ""}`} key={item.id}>
                                     <div className="industry_wrapper">
                                         <figure>
-                                            <Animation1 id={item.id} />
+                                            {item.id === 1 ? <Animation1 id={item.id} /> : <></>}
                                         </figure>
                                         <figcaption>
                                             <h3>{item.title}</h3>

@@ -31,7 +31,7 @@ export default function HeroSection({ data, id }){
             onMouseEnter={!isMobile ? () => setActiveHero(item.id) : undefined}
         >
             <figure>
-                <Animation1 id={item.id} />
+                {item.id === 1 ? <Animation1 id={item.id} /> : <></>}
             </figure>
             <figcaption>
                 <div className="hero_title">
