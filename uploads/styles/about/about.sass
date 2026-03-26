@@ -372,6 +372,11 @@
                     font-weight: 300 
 
 .highlights_sec
+    padding-bottom: 60px
+    @include media(991) 
+        padding-bottom: 40px
+    @include media(768) 
+        padding-bottom: 0
     .highlights_grid
         display: grid
         grid-template-columns: repeat(5, 1fr)

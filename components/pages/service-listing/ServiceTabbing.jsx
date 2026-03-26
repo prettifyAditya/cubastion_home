@@ -14,7 +14,7 @@ export default function ServiceTabbing({ data, id }){
     const [activeService, setActiveService] = useState(1)
     return(
         <section>
-            <div className="service_tabbing_sec sec-pad-all" id={id}>
+            <div className="service_tabbing_sec sec-pad" id={id}>
                 <div className="container">
                     <ul className="tab-nav service-nav">
                         {data.map((item) => (
@@ -40,7 +40,7 @@ export default function ServiceTabbing({ data, id }){
                                     <div className="colB">
                                         <Swiper
                                             className="service_slider"
-                                            // loop = {true}
+                                            loop = {true}
                                             ref={swiperRef}
                                             modules={[Navigation]}
                                             speed={1000}
@@ -50,14 +50,18 @@ export default function ServiceTabbing({ data, id }){
                                             }}
                                             breakpoints={{
                                                 0: {
-                                                    slidesPerView: 3,
-                                                    spaceBetween: 40,
+                                                    slidesPerView: 1.3,
+                                                    spaceBetween: 10,
                                                 },
                                                 540: {
                                                     slidesPerView: 1.5,
                                                     spaceBetween: 20,
                                                 },
                                                 991: {
+                                                    slidesPerView: 1.7,
+                                                    spaceBetween: 20,
+                                                },
+                                                1170: {
                                                     slidesPerView: 1.7,
                                                     spaceBetween: 40,
                                                 },

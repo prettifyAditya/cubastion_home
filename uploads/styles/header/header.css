@@ -347,6 +347,11 @@
   text-align: center;
   margin-top: 23px;
 }
+@media only screen and (max-width: 540px) {
+  .form .submit-grp:not(.text-left) {
+    margin-top: 10px;
+  }
+}
 
 .custom-select {
   max-width: 100%;

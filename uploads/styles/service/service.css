@@ -14,6 +14,16 @@
 .banner.service_banner::before {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
+@media only screen and (max-width: 768px) {
+  .banner.service_banner .bg {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .banner.service_banner .bg {
+    height: 300px;
+  }
+}
 .banner.service_banner .banner-wrapper {
   top: unset;
   bottom: 20%;
@@ -41,11 +51,58 @@
   margin: 40px auto 30px;
   border-bottom: 1px solid #C2C2C2;
 }
+@media only screen and (max-width: 1170px) {
+  .service_tabbing_sec .tab-nav {
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service_tabbing_sec .tab-nav {
+    overflow-x: auto;
+    width: 100%;
+  }
+  .service_tabbing_sec .tab-nav::-webkit-scrollbar {
+    width: 0;
+    background: none;
+    height: 0;
+  }
+  .service_tabbing_sec .tab-nav::-webkit-scrollbar-track {
+    box-shadow: none;
+  }
+  .service_tabbing_sec .tab-nav::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .service_tabbing_sec .tab-nav {
+    padding: 0 20px 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service_tabbing_sec .tab-nav {
+    margin: 20px auto 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .service_tabbing_sec .tab-nav {
+    gap: 25px;
+  }
+}
 .service_tabbing_sec .tab-nav li {
   position: relative;
   padding-bottom: 15px;
   color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
+}
+@media only screen and (max-width: 1170px) {
+  .service_tabbing_sec .tab-nav li {
+    white-space: nowrap;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .service_tabbing_sec .tab-nav li {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
 }
 .service_tabbing_sec .tab-nav li.active {
   color: var(--primary);
@@ -79,6 +136,21 @@
   padding: 100px 0 60px;
   transition: 0.5s ease;
 }
+@media only screen and (max-width: 1170px) {
+  .service_tabbing_sec .tab-nav-content .tabs {
+    padding: 80px 0 60px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service_tabbing_sec .tab-nav-content .tabs {
+    padding: 60px 0 50px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .service_tabbing_sec .tab-nav-content .tabs {
+    padding: 40px 0;
+  }
+}
 .service_tabbing_sec .tab-nav-content .tabs:not(.active) {
   opacity: 0;
   transform: scale(0.8);
@@ -91,10 +163,38 @@
   --gap: 60px;
   gap: var(--gap);
 }
+@media only screen and (max-width: 1170px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper {
+    --gap: 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper {
+    --gap: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper {
+    --gap: 30px;
+  }
+}
 .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colA {
   flex: 0 1 30%;
   max-width: 30%;
   width: 100%;
+}
+@media only screen and (max-width: 1170px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colA {
+    flex: 0 1 35%;
+    max-width: 35%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colA {
+    flex: 0 1 100%;
+    max-width: 100%;
+    padding-right: 20px;
+  }
 }
 .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colA .heading h2 {
   color: var(--primary);
@@ -107,6 +207,11 @@
   margin-top: 30px;
   gap: 15px;
 }
+@media only screen and (max-width: 768px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colA .swiper-nav {
+    margin-top: 20px;
+  }
+}
 .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colA .swiper-nav button:hover svg path {
   stroke: var(--white);
 }
@@ -118,11 +223,31 @@
   max-width: calc(70% - var(--gap));
   width: 100%;
 }
+@media only screen and (max-width: 1170px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB {
+    max-width: calc(65% - var(--gap));
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB {
+    max-width: 100%;
+  }
+}
 .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB .service_slider {
   transition: 0.5s ease;
 }
+@media only screen and (max-width: 1170px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB .service_slider {
+    height: 300px;
+  }
+}
 .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB .service_col {
   border-radius: 10px;
+}
+@media only screen and (max-width: 1170px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB .service_col {
+    height: 100%;
+  }
 }
 .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB .service_col:hover figure img {
   transform: scale(1.1);
@@ -160,6 +285,11 @@
 .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB .service_col figcaption {
   padding: 0 30px 30px 15px;
 }
+@media only screen and (max-width: 540px) {
+  .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB .service_col figcaption {
+    padding: 0 15px 20px;
+  }
+}
 .service_tabbing_sec .tab-nav-content .tabs .main_wrapper .colB .service_col figcaption h5 {
   font-size: 16px;
   color: var(--white);
@@ -173,10 +303,38 @@
   border-radius: 20px;
   padding: 70px;
 }
+@media only screen and (max-width: 991px) {
+  .contact_form_sec .main_wrapper {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact_form_sec .main_wrapper {
+    padding: 40px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact_form_sec .main_wrapper {
+    padding: 30px 25px;
+  }
+}
 .contact_form_sec .main_wrapper .heading {
   text-align: center;
   max-width: 590px;
   margin: 0 auto 60px;
+}
+@media only screen and (max-width: 991px) {
+  .contact_form_sec .main_wrapper .heading {
+    max-width: 400px;
+    margin: 0 auto 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact_form_sec .main_wrapper .heading {
+    max-width: 325px;
+    margin: 0 auto 30px;
+  }
 }
 .contact_form_sec .main_wrapper .heading h2 {
   color: var(--white);
@@ -187,6 +345,11 @@
 }
 .contact_form_sec .main_wrapper .form .form-grid {
   --item: 2;
+}
+@media only screen and (max-width: 540px) {
+  .contact_form_sec .main_wrapper .form .form-grid {
+    --item: 1;
+  }
 }
 .contact_form_sec .main_wrapper .form .form-grid .custom-select::before {
   background-image: url(/assets/icon/arrow-down-white.svg);
