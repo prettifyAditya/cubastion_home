@@ -1,10 +1,24 @@
 "use client"
 import Link from "next/link";
+import { useState } from "react";
 import { useModalStore } from "@/store/modalStore";
 
 export default function Hamburger(){
     const isHamOpen = useModalStore((state) => state.isHamOpen);
     const closeHam = useModalStore((state) => state.closeHam);
+    const [activeDropdown, setActiveDropdown] = useState(null);
+    const [activeSubDropdown, setActiveSubDropdown] = useState(null);
+
+    const toggleDropdown = (dropdownName) => (e) => {
+        e.stopPropagation();
+        setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+    };
+
+    const toggleSubDropdown = (subDropdownName) => (e) => {
+        e.stopPropagation();
+        setActiveSubDropdown(activeSubDropdown === subDropdownName ? null : subDropdownName);
+    };
+
     return(
         <div className={`model ham-pop ${isHamOpen ? "is-open" : ""}`}>
             <button className="close" onClick={closeHam}><svg width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 0.5L25.5 25.5M0.5 25.5L25.5 0.5" stroke="black" strokeLinecap="round" strokeLinejoin="round"/></svg></button>
@@ -13,15 +27,15 @@ export default function Hamburger(){
                     <li>
                         <Link href="https://www.hukmx.ai/" target="_blank">Hukmx</Link>
                     </li>
-                    <li className="hasDropdown">
+                    <li className={`hasDropdown ${activeDropdown === 'what-we-do' ? 'active' : ''}`} onClick={toggleDropdown('what-we-do')}>
                         <p>
                             What we do
                             <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"> <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="m7 10l5 5l5-5"></path></svg>
                         </p>
                         <div className="dropdown-menu-ham">
                             <ul>
-                                <li className="hasSubDropdown">
-                                    <p>Industries <div className="icon"></div></p>
+                                <li className={`hasSubDropdown ${activeSubDropdown === 'industries' ? 'active' : ''}`} onClick={toggleSubDropdown('industries')}>
+                                    <p>Industries <span className="icon"></span></p>
                                     <div className="sub-dropdown-menu">
                                         <ul>
                                             <li className="subsubcat-li">
@@ -45,8 +59,8 @@ export default function Hamburger(){
                                         </ul>
                                     </div>
                                 </li>
-                                <li className="hasSubDropdown">
-                                    <p>Services <div className="icon"></div></p>
+                                <li className={`hasSubDropdown ${activeSubDropdown === 'services' ? 'active' : ''}`} onClick={toggleSubDropdown('services')}>
+                                    <p>Services <span className="icon"></span></p>
                                     <div className="sub-dropdown-menu">
                                         <ul>
                                             <li className="subsubcat-li">
@@ -76,7 +90,7 @@ export default function Hamburger(){
                     <li>
                         <Link href="/about-us">Who we are</Link>
                     </li>
-                    <li className="hasDropdown">
+                    <li className={`hasDropdown ${activeDropdown === 'insights' ? 'active' : ''}`} onClick={toggleDropdown('insights')}>
                         <p>
                             Insights 
                             <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"> <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="m7 10l5 5l5-5"></path></svg>

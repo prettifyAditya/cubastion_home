@@ -1134,25 +1134,42 @@ footer
                     position: relative
                     cursor: pointer
                     &.active
+                        p, a
+                            svg
+                                transform: rotate(-90deg)
                         .dropdown-menu-ham
-                            display: block
+                            grid-template-rows: 1fr
+                            >ul
+                                border-bottom: 1px solid #dadada   
+                                padding: 10px 0
                     .dropdown-menu-ham
-                        display: none
+                        display: grid
+                        grid-template-rows: 0fr
                         padding-top: 15px
+                        transition: .5s ease
                         >ul
                             border-top: 1px solid #dadada   
-                            border-bottom: 1px solid #dadada   
-                            padding: 10px 0
+                            // border-bottom: 1px solid #dadada   
+                            // padding: 10px 0
+                            transition: .5s ease
+                            overflow: hidden
                             li
                                 &.hasSubDropdown
                                     &:not(:last-child)
                                         margin-bottom: 15px
                                     &.active
                                         .sub-dropdown-menu
-                                            display: block
+                                            padding: 10px 10px 0
+                                            grid-template-rows: 1fr
+                                        .icon
+                                            --bgcolor: var(--black)
+                                            &::after
+                                                transform: scaleY(0)
                                     p, a 
                                         font-size: 20px
                                         color: $text
+                                        svg
+                                            transition: .5s ease
                                     .icon
                                         --bgcolor: #00000066
                                         --size: 18px
@@ -1175,8 +1192,13 @@ footer
                                             width: var(--border)
                                             height: 100%
                                     .sub-dropdown-menu
-                                        display: none
-                                        padding: 10px 10px 0
+                                        display: grid
+                                        grid-template-rows: 0fr
+                                        padding: 0 10px
+                                        transition: .5s ease
+                                        ul
+                                            transition: .5s ease
+                                            overflow: hidden
                                         .subsubcat-li
                                             a, p
                                                 font-size: 14px
@@ -1198,6 +1220,8 @@ footer
                     @include font(500)
                     &:hover
                         color: $secondary
+                    svg
+                        transition: .5s ease
         .bottom-list
             margin-top: 2rem
             padding-top: 1rem
