@@ -17,12 +17,42 @@
 .job_banner.banner .bg {
   height: 400px;
 }
+@media only screen and (max-width: 991px) {
+  .job_banner.banner .bg {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .job_banner.banner .bg {
+    height: 280px;
+  }
+}
 .job_banner.banner .banner-wrapper .heading {
   text-align: center;
 }
 .job_banner.banner .banner-wrapper .heading h1 {
   color: var(--white);
   font-size: 48px;
+}
+@media only screen and (max-width: 1170px) {
+  .job_banner.banner .banner-wrapper .heading h1 {
+    font-size: 42px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .job_banner.banner .banner-wrapper .heading h1 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .job_banner.banner .banner-wrapper .heading h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .job_banner.banner .banner-wrapper .heading h1 {
+    font-size: 24px;
+  }
 }
 
 .job_details .container-fluid {
@@ -39,9 +69,37 @@
   padding: 50px;
   background: #FAFAFA;
 }
+@media only screen and (max-width: 1170px) {
+  .job_details .main_wrapper .colA {
+    padding: 40px 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .job_details .main_wrapper .colA {
+    flex: 0 1 35%;
+    max-width: 35%;
+    padding: 30px 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .job_details .main_wrapper .colA {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .job_details .main_wrapper .colA {
+    padding: 20px 15px;
+  }
+}
 .job_details .main_wrapper .colA .nav_wrapper {
   position: sticky;
   top: calc(var(--headerheight) + 20px);
+}
+@media only screen and (max-width: 768px) {
+  .job_details .main_wrapper .colA .nav_wrapper {
+    position: static;
+  }
 }
 .job_details .main_wrapper .colA .nav_wrapper .title {
   font-weight: 500;
@@ -57,7 +115,6 @@
 }
 .job_details .main_wrapper .colA .nav_wrapper .recruiter_details .contact_list li {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
 }
@@ -101,6 +158,28 @@
   max-width: 70%;
   width: 100%;
   padding: 50px;
+}
+@media only screen and (max-width: 1170px) {
+  .job_details .main_wrapper .colB {
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .job_details .main_wrapper .colB {
+    flex: 0 1 65%;
+    padding: 30px 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .job_details .main_wrapper .colB {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .job_details .main_wrapper .colB {
+    padding: 20px 15px;
+  }
 }
 .job_details .main_wrapper .colB .content_details .tags_wrapper {
   display: flex;
@@ -228,18 +307,48 @@
 .similar_vacancies_sec {
   background: #F5F7FA;
 }
+@media only screen and (max-width: 540px) {
+  .similar_vacancies_sec .upper-sec {
+    margin-bottom: 1rem;
+  }
+}
 .similar_vacancies_sec .upper-sec .heading {
   text-align: left;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 540px) {
+  .similar_vacancies_sec .upper-sec .heading {
+    margin-bottom: 1rem;
+  }
+}
 .similar_vacancies_sec .main_wrapper .vacancies_slider {
   padding: 20px;
+}
+@media only screen and (max-width: 1170px) {
+  .similar_vacancies_sec .main_wrapper .vacancies_slider {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .similar_vacancies_sec .main_wrapper .vacancies_slider {
+    padding: 10px;
+  }
 }
 .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card {
   box-shadow: 0 3px 18px rgba(149, 157, 165, 0.2);
   background: var(--white);
   border-radius: 10px;
   padding: 30px 35px 40px;
+}
+@media only screen and (max-width: 1170px) {
+  .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card {
+    padding: 25px 20px 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card {
+    padding: 20px 15px 25px;
+  }
 }
 .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card span {
   font-size: 14px;
@@ -251,8 +360,23 @@
   font-weight: 500;
   margin: 8px 0 0;
 }
+@media only screen and (max-width: 1170px) {
+  .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card p {
+    margin: 6px 0 0;
+  }
+}
 .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card ul {
   margin: 15px 0 20px;
+}
+@media only screen and (max-width: 1170px) {
+  .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card ul {
+    margin: 15px 0 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card ul {
+    margin: 10px 0 15px;
+  }
 }
 .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card ul li {
   display: flex;
@@ -272,12 +396,32 @@
   font-size: 14px;
   font-weight: 400;
 }
+@media only screen and (max-width: 1170px) {
+  .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card .btn {
+    --height: 36px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .similar_vacancies_sec .main_wrapper .vacancies_slider .swiper-wrapper .career_card .btn {
+    --height: 30px;
+  }
+}
 
 .findjob_banner.banner::before {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3215686275) 100%);
 }
 .findjob_banner.banner .bg {
   height: 500px;
+}
+@media only screen and (max-width: 991px) {
+  .findjob_banner.banner .bg {
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .findjob_banner.banner .bg {
+    height: 350px;
+  }
 }
 .findjob_banner.banner .banner-wrapper .heading {
   text-align: center;
@@ -287,10 +431,30 @@
 .findjob_banner.banner .banner-wrapper .heading h2 {
   color: var(--white);
 }
+@media only screen and (max-width: 540px) {
+  .findjob_banner.banner .banner-wrapper .heading h2 {
+    font-size: 24px;
+  }
+}
 .findjob_banner.banner .banner-wrapper .heading p {
   color: rgba(255, 255, 255, 0.6980392157);
   margin: 24px 0 30px;
   font-weight: 300;
+}
+@media only screen and (max-width: 991px) {
+  .findjob_banner.banner .banner-wrapper .heading p {
+    margin: 20px 0 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .findjob_banner.banner .banner-wrapper .heading p {
+    margin: 15px 0 20px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .findjob_banner.banner .banner-wrapper .heading p {
+    margin: 15px 0;
+  }
 }
 
 .jobform-pop {
