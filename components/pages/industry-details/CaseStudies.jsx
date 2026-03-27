@@ -45,7 +45,15 @@ function CaseStudies({ data }) {
                 slidesPerView: 1.5,
                 spaceBetween: 20,
               },
+              768: {
+                slidesPerView: 2.2,
+                spaceBetween: 15,
+              },
               991: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+              },
+              1170: {
                 slidesPerView: 3,
                 spaceBetween: 25,
               },

@@ -39,7 +39,7 @@ export default function IndustryDetailsPage(){
     return(
         <main>
             <HeroSection data={heroData} />
-            <ClientsSec data={clientsData} />
+            <ClientsSec data={clientsData} classname="industry_clients" />
             <AutomativeSolution  data={AutomativeSolutionData} />
             <BusinessImpact  data={BusinessImpactData} />
             <CaseStudies data={CaseStudiesData} />

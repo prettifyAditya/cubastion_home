@@ -1,8 +1,5 @@
 @import '../_var'
 
-header
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
-
 .industry-banner
     margin-top: calc(var(--headerheight) + 20px)
     .grid
@@ -14,9 +11,25 @@ header
         padding: 50px 50px 114px
         border-radius: 10px
         background: var(--gradient-c)
+        @include media(1170) 
+            padding: 50px 50px 80px
+        @include media(991) 
+            padding: 40px 35px 60px
+            gap: 1rem
+            align-items: unset
+        @include media(768) 
+            padding: 40px 25px 
+            gap: 2rem
         .item-content
             flex: 1
             max-width: 420px
+            @include media(1170) 
+                max-width: 500px
+            @include media(991) 
+                width: 60%
+            @include media(768) 
+                width: 100%
+                max-width: 100%
             .name
                 margin-top: 0
                 font-size: 14px
@@ -36,18 +49,40 @@ header
             h1
                 color: var(--white)
                 margin: 80px 0 20px
+                @include media(1170) 
+                    margin: 60px 0 20px
+                @include media(991) 
+                    margin: 40px 0 20px
+                @include media(768) 
+                    margin: 30px 0 20px
             p:not(.name)
                 color: #FFFFFFB2
                 width: 100%
                 max-width: 415px
                 line-height: 1.5
                 font-weight: 400 
+                @include media(1170) 
+                    margin-top: 0
+                @include media(991) 
+                    line-height: 1.4
             .btn
                 margin-top: 70px
+                @include media(1170) 
+                    margin-top: 35px
+                @include media(991) 
+                    margin-top: 30px
         .item-media
             flex: 0 1 auto
             width: 527px
-        
+            @include media(1170) 
+                width: 400px
+            @include media(991) 
+                width: 40%
+            @include media(768) 
+                width: 100%
+
+.client_sec.industry_clients
+    padding-bottom: 0
         
 .automation_sec ,
 .business_sec
@@ -56,22 +91,42 @@ header
         width: 100%
         max-width: 650px
         margin: 0 auto 50px
+        @include media(991) 
+            margin: 0 auto 40px
 
     .grid
         display: grid
         grid-template-columns: repeat(4, 1fr)
         gap: 40px
+        @include media(1170) 
+            grid-gap: 20px 15px
+        @include media(991) 
+            grid-template-columns: repeat(3, 1fr)
 
 .business_sec
+    .heading
+        @include media(991)     
+            max-width: 460px
     .grid
+        @include media(1170) 
+            grid-gap: 30px
+        @include media(991) 
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 20px
         .card
             padding: 28px 20px
+            @include media(1170) 
+                padding: 25px 20px
+            @include media(991) 
+                padding: 20px 0
             &:not(:last-child)
                 border-top: 1px solid rgba(240, 142, 29, 1)
                 border-bottom: 1px solid rgba(240, 142, 29, 1)
             p
                 margin: 8px 0 12px
                 color: var(--black)
+                @include media(991) 
+                    margin: 5px 0 7px
             span
                 display: block
                 font-size: 14px
@@ -82,6 +137,10 @@ header
                 background: var(--gradient-a)
                 padding: 30px 35px
                 border-radius: 10px
+                @include media(1170) 
+                    padding: 25px 20px
+                @include media(991) 
+                    padding: 20px 15px
                 h2,p
                     color: var(--white)
                 span
@@ -92,10 +151,21 @@ header
 .case_sec
     .container-fluid
         padding: 0
+        .upper-sec
+            @include media(1170) 
+                margin-bottom: 2.5rem
     .case_slider
         padding: 30px 15px
+        @include media(1170) 
+            padding: 15px
 
 .related_sec
+    .container
+        @include media(991)
+            padding-right: 0
+    .upper-sec
+        @include media(1170) 
+            margin-bottom: 2.5rem
     .related_slider
         padding: 15px
 
@@ -111,11 +181,21 @@ header
     align-items: start
     border-radius: 10px
     padding: 60px 50px
+    @include media(1170) 
+        padding: 50px 40px
+    @include media(991)
+        padding: 40px 30px
+        grid-template-columns: repeat(1, 1fr)
+        grid-gap: 40px
     .heading
       position: sticky
       top: calc( var(--headerheight) + 20px)
+      @include media(991)
+        position: static
       .btn
         margin-top: 30px
+        @include media(991)
+            margin-top: 20px
     .item-content
       display: flex
       flex-direction: column
@@ -153,11 +233,16 @@ header
           cursor: pointer
           color: rgba(0, 0, 0, 0.4)
           transition: color 0.35s
+          @include media(1170) 
+            padding: 20px
+          @include media(991)
+            padding: 15px 20px
 
         &_text
           font-size: 18px
           font-weight: 500
           line-height: 1.2
+          text-align: left
 
         &_icon
           flex: 0 1 auto
@@ -199,9 +284,13 @@ header
           grid-template-rows: 0fr
           padding: 0 22px 0
           transition: .5s ease
+          @include media(1170) 
+            padding: 0 20px 0
           &.active
             padding: 0 22px 22px
             grid-template-rows: 1fr
+            @include media(1170) 
+                padding: 0 20px 22px
 
         &_answer
           font-size: 16px
@@ -218,10 +307,21 @@ header
         align-items: center
         border-radius: 10px
         padding: 45px
+        @include media(1170) 
+            padding: 40px
+            gap: 3rem
+        @include media(991) 
+            grid-template-columns: repeat(1, 1fr)
+            padding: 40px 30px
+            gap: 2.5rem
         .heading
             p:not( .card-profile figcaption > p)
                 margin: 20px 0 45px
                 line-height: 1.5
+                @include media(1170) 
+                    margin: 20px 0 40px
+                @include media(991) 
+                    margin: 20px 0 30px
             .card-profile
                 display: flex
                 flex-wrap: wrap
@@ -237,7 +337,6 @@ header
                     line-height: 1.2
                     h6
                         font-size: 14px
-                        margin-bottom: 4px
                     p
                         color: #000000B2
                         font-size: 14px
@@ -246,6 +345,8 @@ header
             background: var(--gradient-a)
             padding: 45px 40px
             border-radius: 10px
+            @include media(1170) 
+                padding: 40px 35px
             .form-grid
                 --item: 2
 

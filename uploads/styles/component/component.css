@@ -387,6 +387,11 @@
      object-fit: contain;
   background-blend-mode: multiply;
 }
+@media only screen and (max-width: 991px) {
+  .client_sec .main_wrapper .client_slider figure img {
+    height: 60px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .client_sec .main_wrapper .client_slider figure img {
     height: 50px;
@@ -461,6 +466,11 @@
   width: 100%;
   max-width: 100%;
 }
+@media only screen and (max-width: 991px) {
+  .card.card-case .card-profile {
+    padding: 15px 0;
+  }
+}
 .card.card-case .card-profile figure {
   flex: 0 1 auto;
   width: 52px;
@@ -485,6 +495,12 @@
   margin-top: 24px;
   border-radius: 50px;
   font-size: 14px;
+}
+@media only screen and (max-width: 991px) {
+  .card.card-case .tags {
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
 }
 
 .team-pop.model {

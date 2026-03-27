@@ -11,10 +11,6 @@
     left: 100%;
   }
 }
-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
 .industry-banner {
   margin-top: calc(var(--headerheight) + 20px);
 }
@@ -28,9 +24,43 @@ header {
   border-radius: 10px;
   background: var(--gradient-c);
 }
+@media only screen and (max-width: 1170px) {
+  .industry-banner .grid {
+    padding: 50px 50px 80px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .industry-banner .grid {
+    padding: 40px 35px 60px;
+    gap: 1rem;
+    align-items: unset;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .industry-banner .grid {
+    padding: 40px 25px;
+    gap: 2rem;
+  }
+}
 .industry-banner .grid .item-content {
   flex: 1;
   max-width: 420px;
+}
+@media only screen and (max-width: 1170px) {
+  .industry-banner .grid .item-content {
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .industry-banner .grid .item-content {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .industry-banner .grid .item-content {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .industry-banner .grid .item-content .name {
   margin-top: 0;
@@ -54,6 +84,21 @@ header {
   color: var(--white);
   margin: 80px 0 20px;
 }
+@media only screen and (max-width: 1170px) {
+  .industry-banner .grid .item-content h1 {
+    margin: 60px 0 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .industry-banner .grid .item-content h1 {
+    margin: 40px 0 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .industry-banner .grid .item-content h1 {
+    margin: 30px 0 20px;
+  }
+}
 .industry-banner .grid .item-content p:not(.name) {
   color: rgba(255, 255, 255, 0.6980392157);
   width: 100%;
@@ -61,12 +106,51 @@ header {
   line-height: 1.5;
   font-weight: 400;
 }
+@media only screen and (max-width: 1170px) {
+  .industry-banner .grid .item-content p:not(.name) {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .industry-banner .grid .item-content p:not(.name) {
+    line-height: 1.4;
+  }
+}
 .industry-banner .grid .item-content .btn {
   margin-top: 70px;
+}
+@media only screen and (max-width: 1170px) {
+  .industry-banner .grid .item-content .btn {
+    margin-top: 35px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .industry-banner .grid .item-content .btn {
+    margin-top: 30px;
+  }
 }
 .industry-banner .grid .item-media {
   flex: 0 1 auto;
   width: 527px;
+}
+@media only screen and (max-width: 1170px) {
+  .industry-banner .grid .item-media {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .industry-banner .grid .item-media {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .industry-banner .grid .item-media {
+    width: 100%;
+  }
+}
+
+.client_sec.industry_clients {
+  padding-bottom: 0;
 }
 
 .automation_sec .heading,
@@ -76,15 +160,59 @@ header {
   max-width: 650px;
   margin: 0 auto 50px;
 }
+@media only screen and (max-width: 991px) {
+  .automation_sec .heading,
+  .business_sec .heading {
+    margin: 0 auto 40px;
+  }
+}
 .automation_sec .grid,
 .business_sec .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
+@media only screen and (max-width: 1170px) {
+  .automation_sec .grid,
+  .business_sec .grid {
+    grid-gap: 20px 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .automation_sec .grid,
+  .business_sec .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
+@media only screen and (max-width: 991px) {
+  .business_sec .heading {
+    max-width: 460px;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .business_sec .grid {
+    grid-gap: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .business_sec .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}
 .business_sec .grid .card {
   padding: 28px 20px;
+}
+@media only screen and (max-width: 1170px) {
+  .business_sec .grid .card {
+    padding: 25px 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .business_sec .grid .card {
+    padding: 20px 0;
+  }
 }
 .business_sec .grid .card:not(:last-child) {
   border-top: 1px solid rgb(240, 142, 29);
@@ -93,6 +221,11 @@ header {
 .business_sec .grid .card p {
   margin: 8px 0 12px;
   color: var(--black);
+}
+@media only screen and (max-width: 991px) {
+  .business_sec .grid .card p {
+    margin: 5px 0 7px;
+  }
 }
 .business_sec .grid .card span {
   display: block;
@@ -106,6 +239,16 @@ header {
   padding: 30px 35px;
   border-radius: 10px;
 }
+@media only screen and (max-width: 1170px) {
+  .business_sec .grid .card:last-child {
+    padding: 25px 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .business_sec .grid .card:last-child {
+    padding: 20px 15px;
+  }
+}
 .business_sec .grid .card:last-child h2, .business_sec .grid .card:last-child p {
   color: var(--white);
 }
@@ -118,10 +261,30 @@ header {
 .case_sec .container-fluid {
   padding: 0;
 }
+@media only screen and (max-width: 1170px) {
+  .case_sec .container-fluid .upper-sec {
+    margin-bottom: 2.5rem;
+  }
+}
 .case_sec .case_slider {
   padding: 30px 15px;
 }
+@media only screen and (max-width: 1170px) {
+  .case_sec .case_slider {
+    padding: 15px;
+  }
+}
 
+@media only screen and (max-width: 991px) {
+  .related_sec .container {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .related_sec .upper-sec {
+    margin-bottom: 2.5rem;
+  }
+}
 .related_sec .related_slider {
   padding: 15px;
 }
@@ -138,12 +301,34 @@ header {
   border-radius: 10px;
   padding: 60px 50px;
 }
+@media only screen and (max-width: 1170px) {
+  .faq_sec .grid {
+    padding: 50px 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .faq_sec .grid {
+    padding: 40px 30px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+}
 .faq_sec .grid .heading {
   position: sticky;
   top: calc(var(--headerheight) + 20px);
 }
+@media only screen and (max-width: 991px) {
+  .faq_sec .grid .heading {
+    position: static;
+  }
+}
 .faq_sec .grid .heading .btn {
   margin-top: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .faq_sec .grid .heading .btn {
+    margin-top: 20px;
+  }
 }
 .faq_sec .grid .item-content {
   display: flex;
@@ -184,10 +369,21 @@ header {
   color: rgba(0, 0, 0, 0.4);
   transition: color 0.35s;
 }
+@media only screen and (max-width: 1170px) {
+  .faq_sec .grid .item-content .faq_item_question {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .faq_sec .grid .item-content .faq_item_question {
+    padding: 15px 20px;
+  }
+}
 .faq_sec .grid .item-content .faq_item_text {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
+  text-align: left;
 }
 .faq_sec .grid .item-content .faq_item_icon {
   flex: 0 1 auto;
@@ -264,9 +460,19 @@ header {
   padding: 0 22px 0;
   transition: 0.5s ease;
 }
+@media only screen and (max-width: 1170px) {
+  .faq_sec .grid .item-content .faq_item_body {
+    padding: 0 20px 0;
+  }
+}
 .faq_sec .grid .item-content .faq_item_body.active {
   padding: 0 22px 22px;
   grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 1170px) {
+  .faq_sec .grid .item-content .faq_item_body.active {
+    padding: 0 20px 22px;
+  }
 }
 .faq_sec .grid .item-content .faq_item_answer {
   font-size: 16px;
@@ -283,9 +489,32 @@ header {
   border-radius: 10px;
   padding: 45px;
 }
+@media only screen and (max-width: 1170px) {
+  .speak_sec .grid {
+    padding: 40px;
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .speak_sec .grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px 30px;
+    gap: 2.5rem;
+  }
+}
 .speak_sec .grid .heading p:not(.card-profile figcaption > p) {
   margin: 20px 0 45px;
   line-height: 1.5;
+}
+@media only screen and (max-width: 1170px) {
+  .speak_sec .grid .heading p:not(.card-profile figcaption > p) {
+    margin: 20px 0 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .speak_sec .grid .heading p:not(.card-profile figcaption > p) {
+    margin: 20px 0 30px;
+  }
 }
 .speak_sec .grid .heading .card-profile {
   display: flex;
@@ -306,7 +535,6 @@ header {
 }
 .speak_sec .grid .heading .card-profile figcaption h6 {
   font-size: 14px;
-  margin-bottom: 4px;
 }
 .speak_sec .grid .heading .card-profile figcaption p {
   color: rgba(0, 0, 0, 0.6980392157);
@@ -316,6 +544,11 @@ header {
   background: var(--gradient-a);
   padding: 45px 40px;
   border-radius: 10px;
+}
+@media only screen and (max-width: 1170px) {
+  .speak_sec .grid .form {
+    padding: 40px 35px;
+  }
 }
 .speak_sec .grid .form .form-grid {
   --item: 2;

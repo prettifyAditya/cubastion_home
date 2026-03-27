@@ -234,6 +234,8 @@
                     transform: skewX(-15deg)
                     object-fit: contain
                     background-blend-mode: multiply
+                    @include media(991)
+                        height: 60px
                     @include media(768)
                         height: 50px
                     @include media(540)
@@ -283,7 +285,8 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.1)
             width: 100%
             max-width: 100%
-
+            @include media(991)
+                padding: 15px 0
             figure
                 flex: 0 1 auto
                 width: 52px
@@ -305,6 +308,9 @@
             margin-top: 24px
             border-radius: 50px
             font-size: 14px
+            @include media(991)
+                margin-top: 20px
+                padding: 10px 20px
 
 .team-pop.model
     max-width: 800px
