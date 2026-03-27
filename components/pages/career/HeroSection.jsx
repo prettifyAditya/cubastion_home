@@ -68,6 +68,24 @@ function HeroSection({ data, id }) {
                   cardType="roleCard"
                   classname = "role_slider"
                   speed={2000}
+                  breakpoints={{
+                    0: {
+                        slidesPerView: 1.7,
+                        spaceBetween: 10,
+                    },
+                    540: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    991: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                  }}
                   autoplay = {true}
                   onSwiper={(swiper) => (swiperRef.current = swiper)}
                 />

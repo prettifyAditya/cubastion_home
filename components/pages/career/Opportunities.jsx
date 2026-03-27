@@ -25,7 +25,24 @@ function Opportunities({ data, id }) {
               cardType="CareerCard"
               loop={true}
               speed={800}
-              slidesPerView={4}
+              breakpoints={{
+                0: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 10,
+                },
+                540: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                991: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+              }}
               classname="career_slider"
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               progressBar={true}

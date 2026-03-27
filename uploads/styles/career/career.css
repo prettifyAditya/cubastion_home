@@ -14,14 +14,49 @@
 .career-banner.banner::before {
   background: linear-gradient(0deg, hsla(0, 0%, 100%, 0.6) 0%, #fff 100%);
 }
+@media only screen and (max-width: 768px) {
+  .career-banner.banner .bg {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-banner.banner .bg {
+    height: 450px;
+  }
+}
 .career-banner.banner .banner-wrapper .heading {
   width: 100%;
   max-width: 680px;
   margin: 0 auto 30px;
 }
+@media only screen and (max-width: 991px) {
+  .career-banner.banner .banner-wrapper .heading {
+    max-width: 480px;
+  }
+}
 .career-banner.banner .banner-wrapper .heading h1 {
   font-size: 48px;
   text-align: center;
+}
+@media only screen and (max-width: 1170px) {
+  .career-banner.banner .banner-wrapper .heading h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .career-banner.banner .banner-wrapper .heading h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .career-banner.banner .banner-wrapper .heading h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-banner.banner .banner-wrapper .heading h1 {
+    font-size: 24px;
+  }
 }
 .career-banner.banner .banner-wrapper .search-wrapper .form {
   display: flex;
@@ -31,11 +66,27 @@
   max-width: 540px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 540px) {
+  .career-banner.banner .banner-wrapper .search-wrapper .form {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 .career-banner.banner .banner-wrapper .search-wrapper .form .form-group {
   padding: 10px 10px 10px 60px;
   border-radius: 10px;
   background: var(--white);
   position: relative;
+}
+@media only screen and (max-width: 1170px) {
+  .career-banner.banner .banner-wrapper .search-wrapper .form .form-group {
+    padding: 10px 10px 10px 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .career-banner.banner .banner-wrapper .search-wrapper .form .form-group {
+    --inputsize: 36px;
+  }
 }
 .career-banner.banner .banner-wrapper .search-wrapper .form .form-group::before {
   background: none;
@@ -52,14 +103,57 @@
   background-size: 20px;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 540px) {
+  .career-banner.banner .banner-wrapper .search-wrapper .form .form-group::after {
+    width: 20px;
+    height: 20px;
+    left: 15px;
+  }
+}
 .career-banner.banner .banner-wrapper .search-wrapper .form .sbt {
   padding: 15px 34px;
   background: var(--secondary);
   color: var(--white);
   border-radius: 50px;
 }
+@media only screen and (max-width: 1170px) {
+  .career-banner.banner .banner-wrapper .search-wrapper .form .sbt {
+    border-radius: 25px;
+    padding: 15px 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .career-banner.banner .banner-wrapper .search-wrapper .form .sbt {
+    padding: 12px 25px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-banner.banner .banner-wrapper .search-wrapper .form .sbt {
+    padding: 8px 25px;
+  }
+}
 .career-banner.banner .role_wrapper {
   margin-top: 120px;
+}
+@media only screen and (max-width: 1170px) {
+  .career-banner.banner .role_wrapper {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .career-banner.banner .role_wrapper {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .career-banner.banner .role_wrapper {
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-banner.banner .role_wrapper {
+    margin-top: 50px;
+  }
 }
 .career-banner.banner .role_wrapper .role_slider .swiper-wrapper {
   transition-timing-function: linear;
@@ -69,15 +163,48 @@
   align-items: center;
   gap: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .career-banner.banner .role_wrapper .role_slider .role_col {
+    gap: 15px;
+  }
+}
 .career-banner.banner .role_wrapper .role_slider .role_col img {
   width: 88px;
   height: 88px;
   border-radius: 5px;
 }
+@media only screen and (max-width: 991px) {
+  .career-banner.banner .role_wrapper .role_slider .role_col img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .career-banner.banner .role_wrapper .role_slider .role_col img {
+    width: 60px;
+    height: 60px;
+  }
+}
 .career-banner.banner .role_wrapper .role_slider .role_col p {
   font-size: 20px;
   font-weight: 400;
   color: var(--black);
+}
+@media only screen and (max-width: 1170px) {
+  .career-banner.banner .role_wrapper .role_slider .role_col p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .career-banner.banner .role_wrapper .role_slider .role_col p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-banner.banner .role_wrapper .role_slider .role_col p {
+    font-size: 14px;
+  }
 }
 
 .client_sec {
@@ -103,16 +230,55 @@
   top: 0;
   transform: translate(10%, 0);
 }
+@media only screen and (max-width: 1170px) {
+  .client_sec::before {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .client_sec::before {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .client_sec::before {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .client_sec::before {
+    width: 150px;
+    height: 150px;
+  }
+}
 .client_sec .heading {
   max-width: 550px;
   margin: 0 auto 40px;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .client_sec .heading {
+    max-width: 470px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .client_sec .heading {
+    margin: 0 auto 30px;
+  }
 }
 .client_sec .media {
   width: 100%;
   max-width: 853px;
   margin: 0 auto;
   position: relative;
+}
+@media only screen and (max-width: 1170px) {
+  .client_sec .media {
+    max-width: 800px;
+  }
 }
 .client_sec .media video {
   border-radius: 10px;
@@ -126,6 +292,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 1170px) {
+  .client_sec .media .play {
+    width: 100px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .client_sec .media .play {
+    width: 80px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .client_sec .media .play {
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .client_sec .media .play svg {
+    width: 20px;
+    height: 20px;
+  }
+}
 .client_sec .media .play svg path {
   fill: var(--primary);
 }
@@ -133,6 +322,11 @@
 .workplace_sec {
   background: var(--bglight);
   height: 100vh;
+}
+@media only screen and (max-width: 768px) {
+  .workplace_sec {
+    height: 100%;
+  }
 }
 .workplace_sec .container {
   height: 100%;
@@ -145,6 +339,21 @@
   gap: var(--gap);
   height: 100%;
 }
+@media only screen and (max-width: 1170px) {
+  .workplace_sec .workplace_wrapper {
+    --gap: 60px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .workplace_sec .workplace_wrapper {
+    --gap: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .workplace_sec .workplace_wrapper {
+    --gap: 40px;
+  }
+}
 .workplace_sec .workplace_wrapper figure {
   flex: 1;
   max-width: 50%;
@@ -153,9 +362,30 @@
   overflow: hidden;
   position: relative;
 }
+@media only screen and (max-width: 1170px) {
+  .workplace_sec .workplace_wrapper figure {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .workplace_sec .workplace_wrapper figure {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .workplace_sec .workplace_wrapper figure {
+    height: 100%;
+  }
+}
 .workplace_sec .workplace_wrapper figure img:not(.active), .workplace_sec .workplace_wrapper figure video:not(.active) {
   opacity: 0;
   transform: translateY(80px);
+}
+@media only screen and (max-width: 768px) {
+  .workplace_sec .workplace_wrapper figure img:not(.active), .workplace_sec .workplace_wrapper figure video:not(.active) {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .workplace_sec .workplace_wrapper figure img, .workplace_sec .workplace_wrapper figure video {
   position: absolute;
@@ -165,6 +395,15 @@
   transition: transform 1s ease;
   border-radius: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .workplace_sec .workplace_wrapper figure img, .workplace_sec .workplace_wrapper figure video {
+    position: static;
+    transform: none;
+  }
+  .workplace_sec .workplace_wrapper figure img:not(:last-child), .workplace_sec .workplace_wrapper figure video:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 .workplace_sec .workplace_wrapper figcaption {
   flex: 1;
   max-width: 50%;
@@ -172,6 +411,17 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .workplace_sec .workplace_wrapper figcaption {
+    max-width: 100%;
+  }
+}
+.workplace_sec .workplace_wrapper figcaption .flex:not(:last-child) {
+  margin-bottom: 30px;
+}
+.workplace_sec .workplace_wrapper figcaption .flex img {
+  border-radius: 10px;
 }
 .workplace_sec .workplace_wrapper figcaption .heading {
   max-width: 465px;
@@ -185,16 +435,52 @@
   opacity: 0;
   transform: translateY(150px);
 }
+@media only screen and (max-width: 768px) {
+  .workplace_sec .workplace_wrapper figcaption .heading:not(.active) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .workplace_sec .workplace_wrapper figcaption .heading {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .workplace_sec .workplace_wrapper figcaption .heading {
+    margin-top: 20px;
+  }
+}
 .workplace_sec .workplace_wrapper figcaption .heading p {
   margin-top: 15px;
   color: rgba(0, 0, 0, 0.6980392157);
   line-height: 1.4;
+}
+@media only screen and (max-width: 1170px) {
+  .workplace_sec .workplace_wrapper figcaption .heading p {
+    margin-top: 10px;
+  }
 }
 
 .opportunity_sec .heading {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .opportunity_sec .heading {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .opportunity_sec .heading {
+    margin-bottom: 20px;
+  }
 }
 .opportunity_sec .btn-group {
   display: flex;
@@ -215,11 +501,31 @@
 .opportunity_sec .opportunities_wrapper .career_slider {
   padding: 20px;
 }
+@media only screen and (max-width: 1170px) {
+  .opportunity_sec .opportunities_wrapper .career_slider {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .opportunity_sec .opportunities_wrapper .career_slider {
+    padding: 10px;
+  }
+}
 .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card {
   box-shadow: 0 3px 18px rgba(149, 157, 165, 0.2);
   background: var(--white);
   border-radius: 10px;
   padding: 30px 35px 40px;
+}
+@media only screen and (max-width: 1170px) {
+  .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card {
+    padding: 25px 20px 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card {
+    padding: 20px 15px 25px;
+  }
 }
 .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card span {
   font-size: 14px;
@@ -231,8 +537,23 @@
   font-weight: 500;
   margin: 8px 0 0;
 }
+@media only screen and (max-width: 1170px) {
+  .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card p {
+    margin: 6px 0 0;
+  }
+}
 .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card ul {
   margin: 15px 0 20px;
+}
+@media only screen and (max-width: 1170px) {
+  .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card ul {
+    margin: 15px 0 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card ul {
+    margin: 10px 0 15px;
+  }
 }
 .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card ul li {
   display: flex;
@@ -252,25 +573,75 @@
   font-size: 14px;
   font-weight: 400;
 }
+@media only screen and (max-width: 1170px) {
+  .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card .btn {
+    --height: 36px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .opportunity_sec .opportunities_wrapper .career_slider .swiper-wrapper .career_card .btn {
+    --height: 30px;
+  }
+}
 
 .stats_sec {
   background: var(--bglight);
   padding-bottom: 140px;
+}
+@media only screen and (max-width: 540px) {
+  .stats_sec {
+    padding-bottom: 90px;
+  }
 }
 .stats_sec .heading {
   text-align: center;
   max-width: 360px;
   margin: 0 auto 60px;
 }
+@media only screen and (max-width: 1170px) {
+  .stats_sec .heading {
+    margin: 0 auto 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .stats_sec .heading {
+    margin: 0 auto 40px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .stats_sec .heading {
+    margin: 0 auto 30px;
+  }
+}
 .stats_sec .stats_wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .stats_sec .stats_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .stats_sec .stats_wrapper {
+    grid-gap: 15px;
+  }
+}
 .stats_sec .stats_wrapper .stas_col {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .stats_sec .stats_wrapper .stas_col {
+    gap: 15px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .stats_sec .stats_wrapper .stas_col {
+    gap: 10px;
+  }
 }
 .stats_sec .stats_wrapper .stas_col:nth-child(even) {
   transform: translateY(60px);
@@ -287,12 +658,43 @@
   padding: 35px 40px;
   box-shadow: 0 8px 24px 0 rgba(149, 157, 165, 0.2);
 }
+@media only screen and (max-width: 1170px) {
+  .stats_sec .stats_wrapper .stas_col figcaption {
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .stats_sec .stats_wrapper .stas_col figcaption {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .stats_sec .stats_wrapper .stas_col figcaption {
+    padding: 15px;
+    border-radius: 5px;
+  }
+}
 .stats_sec .stats_wrapper .stas_col figcaption .count {
   font-size: 40px;
   font-weight: 400;
 }
+@media only screen and (max-width: 991px) {
+  .stats_sec .stats_wrapper .stas_col figcaption .count {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .stats_sec .stats_wrapper .stas_col figcaption .count {
+    font-size: 28px;
+  }
+}
 .stats_sec .stats_wrapper .stas_col figcaption p {
   color: rgba(0, 0, 0, 0.6980392157);
+}
+@media only screen and (max-width: 991px) {
+  .stats_sec .stats_wrapper .stas_col figcaption p {
+    line-height: 1.2;
+  }
 }
 .stats_sec .stats_wrapper .stas_col figure {
   border-radius: 10px;
@@ -317,21 +719,62 @@
   animation: shine 0.4s linear;
   animation-fill-mode: none;
 }
+@media only screen and (max-width: 540px) {
+  .stats_sec .stats_wrapper .stas_col figure {
+    border-radius: 5px;
+  }
+}
 .stats_sec .stats_wrapper .stas_col figure img, .stats_sec .stats_wrapper .stas_col figure video {
   border-radius: 10px;
   transition: 0.5s ease;
+}
+@media only screen and (max-width: 540px) {
+  .stats_sec .stats_wrapper .stas_col figure img, .stats_sec .stats_wrapper .stas_col figure video {
+    border-radius: 5px;
+  }
 }
 
 .social_banner.banner::before {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, hsla(0, 0%, 0%, 0.81) 100%);
 }
+@media only screen and (max-width: 991px) {
+  .social_banner.banner .bg {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .social_banner.banner .bg {
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .social_banner.banner .bg {
+    height: 400px;
+  }
+}
 .social_banner.banner .banner-wrapper {
   margin-left: 170px;
   max-width: 500px;
 }
+@media only screen and (max-width: 1170px) {
+  .social_banner.banner .banner-wrapper {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .social_banner.banner .banner-wrapper {
+    margin-left: 0;
+  }
+}
 .social_banner.banner .banner-wrapper h2 {
   margin-bottom: 16px;
   color: var(--white);
+}
+@media only screen and (max-width: 540px) {
+  .social_banner.banner .banner-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 }
 .social_banner.banner .banner-wrapper p {
   color: rgba(255, 255, 255, 0.6980392157);
@@ -339,6 +782,16 @@
 }
 .social_banner.banner .banner-wrapper .btn {
   margin-top: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .social_banner.banner .banner-wrapper .btn {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .social_banner.banner .banner-wrapper .btn {
+    margin-top: 20px;
+  }
 }
 
 .engineering_sec .heading {
@@ -348,9 +801,29 @@
   justify-content: center;
   margin-bottom: 60px;
 }
+@media only screen and (max-width: 1170px) {
+  .engineering_sec .heading {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .engineering_sec .heading {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .engineering_sec .heading {
+    margin-bottom: 30px;
+  }
+}
 .engineering_sec .heading h2 {
   flex: 1;
   text-align: center;
+}
+@media only screen and (max-width: 1170px) {
+  .engineering_sec .heading h2 {
+    text-align: left;
+  }
 }
 .engineering_sec .heading .btn {
   flex: 0 1 auto;
@@ -368,6 +841,46 @@
 }
 .engineering_sec .main_wrapper .engineer_col:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+@media only screen and (max-width: 1170px) {
+  .engineering_sec .main_wrapper .engineer_col {
+    flex: 0 1 33.33%;
+    padding: 20px;
+  }
+  .engineering_sec .main_wrapper .engineer_col:nth-child(3) {
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .engineering_sec .main_wrapper .engineer_col {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .engineering_sec .main_wrapper .engineer_col {
+    flex: 0 1 50%;
+  }
+  .engineering_sec .main_wrapper .engineer_col:nth-child(even) {
+    border-right: none;
+  }
+  .engineering_sec .main_wrapper .engineer_col:nth-child(odd) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1019607843);
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 540px) {
+  .engineering_sec .main_wrapper .engineer_col:nth-child(odd) {
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .engineering_sec .main_wrapper .engineer_col {
+    flex: 0 1 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+    padding: 20px 0;
+  }
+  .engineering_sec .main_wrapper .engineer_col:first-child {
+    padding-top: 0;
+  }
 }
 .engineering_sec .main_wrapper .engineer_col.active {
   flex: 1;
@@ -391,15 +904,44 @@
   border: 1px solid #C8D0E5;
   border-radius: 5px;
 }
+@media only screen and (max-width: 768px) {
+  .engineering_sec .main_wrapper .engineer_col .count {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
 .engineering_sec .main_wrapper .engineer_col h6 {
   margin: 20px 0 15px;
   font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .engineering_sec .main_wrapper .engineer_col h6 {
+    margin: 15px 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .engineering_sec .main_wrapper .engineer_col h6 {
+    margin: 10px 0;
+  }
 }
 .engineering_sec .main_wrapper .engineer_col .desc {
   transition: 0.5s ease;
   opacity: 0;
   visibility: hidden;
   transform: scale(0.5);
+}
+@media only screen and (max-width: 1170px) {
+  .engineering_sec .main_wrapper .engineer_col .desc {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .engineering_sec .main_wrapper .engineer_col .desc {
+    font-size: 14px;
+  }
 }
 .engineering_sec .main_wrapper .engineer_col .toggleBtn {
   width: 36px;
@@ -413,4 +955,9 @@
   position: absolute;
   left: 25px;
   bottom: 10px;
+}
+@media only screen and (max-width: 1170px) {
+  .engineering_sec .main_wrapper .engineer_col .toggleBtn {
+    display: none;
+  }
 }/*# sourceMappingURL=career.css.map */
