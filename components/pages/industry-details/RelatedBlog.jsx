@@ -33,8 +33,8 @@ function RelatedBlog({ data }) {
             loop={true}
             breakpoints= {{
               0: {
-                slidesPerView: 3,
-                spaceBetween: 40,
+                slidesPerView: 1.2,
+                spaceBetween: 15,
               },
               540: {
                 slidesPerView: 1.5,

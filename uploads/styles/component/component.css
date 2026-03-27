@@ -441,9 +441,24 @@
 .card.card-comman .card-content, .card.card-btn .card-content, .card.card-case .card-content {
   padding: 16px 30px 30px 20px;
 }
+@media only screen and (max-width: 768px) {
+  .card.card-comman .card-content, .card.card-btn .card-content, .card.card-case .card-content {
+    padding: 15px 20px 25px 20px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .card.card-comman .card-content, .card.card-btn .card-content, .card.card-case .card-content {
+    padding: 15px 15px 20px;
+  }
+}
 .card.card-comman .card-content h6, .card.card-btn .card-content h6, .card.card-case .card-content h6 {
   font-size: 16px;
   margin-bottom: 8px;
+}
+@media only screen and (max-width: 540px) {
+  .card.card-comman .card-content h6, .card.card-btn .card-content h6, .card.card-case .card-content h6 {
+    line-height: 1.4;
+  }
 }
 .card.card-comman .card-content p, .card.card-btn .card-content p, .card.card-case .card-content p {
   width: 100%;
@@ -471,10 +486,22 @@
     padding: 15px 0;
   }
 }
+@media only screen and (max-width: 540px) {
+  .card.card-case .card-profile {
+    padding: 10px 0 15px;
+    gap: 10px;
+  }
+}
 .card.card-case .card-profile figure {
   flex: 0 1 auto;
   width: 52px;
   height: 52px;
+}
+@media only screen and (max-width: 540px) {
+  .card.card-case .card-profile figure {
+    width: 45px;
+    height: 45px;
+  }
 }
 .card.card-case .card-profile figcaption {
   flex: 1;
@@ -483,6 +510,11 @@
 .card.card-case .card-profile figcaption h6 {
   font-size: 14px;
   margin-bottom: 4px;
+}
+@media only screen and (max-width: 540px) {
+  .card.card-case .card-profile figcaption h6 {
+    margin-bottom: 0;
+  }
 }
 .card.card-case .card-profile figcaption p {
   color: rgba(0, 0, 0, 0.6980392157);
@@ -500,6 +532,13 @@
   .card.card-case .tags {
     margin-top: 20px;
     padding: 10px 20px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .card.card-case .tags {
+    margin-top: 15px;
+    padding: 7px 12px;
+    font-size: 12px;
   }
 }
 

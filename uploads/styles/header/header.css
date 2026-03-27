@@ -2151,6 +2151,16 @@ em {
 .blog_card .blog_content {
   padding: 25px 10px 27px;
 }
+@media only screen and (max-width: 768px) {
+  .blog_card .blog_content {
+    padding: 20px 10px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .blog_card .blog_content {
+    padding: 15px 10px;
+  }
+}
 .blog_card .blog_content p {
   font-weight: 400;
   width: 100%;
@@ -2160,11 +2170,21 @@ em {
   font-weight: 500;
   margin: 12px 0 20px;
 }
+@media only screen and (max-width: 540px) {
+  .blog_card .blog_content h6 {
+    margin: 10px 0 15px;
+  }
+}
 .blog_card .blog_content .btns {
   display: flex;
   gap: 8px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 20px;
+}
+@media only screen and (max-width: 540px) {
+  .blog_card .blog_content .btns {
+    padding-top: 15px;
+  }
 }
 .blog_card .blog_content .btns .tags {
   border: 1px solid var(--text);
@@ -2173,6 +2193,18 @@ em {
   border-radius: 25px;
   font-size: 14px;
   font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .blog_card .blog_content .btns .tags {
+    padding: 6px 18px;
+    line-height: 1.2;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .blog_card .blog_content .btns .tags {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
 }
 
 .error {

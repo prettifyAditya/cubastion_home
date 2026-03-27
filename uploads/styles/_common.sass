@@ -936,6 +936,10 @@ em
             display: block
     .blog_content
         padding: 25px 10px 27px
+        @include media(768) 
+            padding: 20px 10px
+        @include media(540)
+            padding: 15px 10px
         p
             font-weight: 400 
             width: 100%
@@ -943,11 +947,15 @@ em
             font-size: 16px
             font-weight: 500
             margin: 12px 0 20px
+            @include media(540)
+                margin: 10px 0 15px
         .btns
             display: flex
             gap: 8px
             border-top: 1px solid rgba(0, 0, 0, 0.1)
             padding-top: 20px
+            @include media(540)
+                padding-top: 15px
             .tags
                 border: 1px solid $text
                 color: $text
@@ -955,6 +963,12 @@ em
                 border-radius: 25px
                 font-size: 14px
                 font-weight: 400 
+                @include media(768) 
+                    padding: 6px 18px
+                    line-height: 1.2
+                @include media(540)
+                    font-size: 12px
+                    padding: 6px 15px
 
 .error
     color: red

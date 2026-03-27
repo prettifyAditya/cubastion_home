@@ -20,6 +20,8 @@
         @include media(768) 
             padding: 40px 25px 
             gap: 2rem
+        @include media(540) 
+            padding: 25px 15px
         .item-content
             flex: 1
             max-width: 420px
@@ -36,6 +38,8 @@
                 color: $white
                 position: relative
                 padding-left: 30px
+                @include media(540) 
+                    padding-left: 20px
                 &::before
                     content: ""
                     position: absolute
@@ -55,6 +59,8 @@
                     margin: 40px 0 20px
                 @include media(768) 
                     margin: 30px 0 20px
+                @include media(540) 
+                    margin: 20px 0 15px
             p:not(.name)
                 color: #FFFFFFB2
                 width: 100%
@@ -71,6 +77,10 @@
                     margin-top: 35px
                 @include media(991) 
                     margin-top: 30px
+                @include media(768) 
+                    margin-top: 25px
+                @include media(540) 
+                    margin-top: 20px
         .item-media
             flex: 0 1 auto
             width: 527px
@@ -93,6 +103,9 @@
         margin: 0 auto 50px
         @include media(991) 
             margin: 0 auto 40px
+        @include media(540) 
+            margin: 0 auto 30px
+            max-width: 260px
 
     .grid
         display: grid
@@ -102,6 +115,11 @@
             grid-gap: 20px 15px
         @include media(991) 
             grid-template-columns: repeat(3, 1fr)
+        @include media(768) 
+            grid-template-columns: repeat(2, 1fr)
+        @include media(540) 
+            grid-template-columns: repeat(1, 1fr)
+            grid-gap: 15px
 
 .business_sec
     .heading
@@ -113,12 +131,16 @@
         @include media(991) 
             grid-template-columns: repeat(4, 1fr)
             grid-gap: 20px
+        @include media(768) 
+            grid-template-columns: repeat(2, 1fr)
         .card
             padding: 28px 20px
             @include media(1170) 
                 padding: 25px 20px
             @include media(991) 
                 padding: 20px 0
+            @include media(540) 
+                padding: 15px 0
             &:not(:last-child)
                 border-top: 1px solid rgba(240, 142, 29, 1)
                 border-bottom: 1px solid rgba(240, 142, 29, 1)
@@ -133,6 +155,8 @@
                 font-weight: 400
                 color: $text
                 line-height: 1.4
+                @include media(540) 
+                    font-size: 12px
             &:last-child
                 background: var(--gradient-a)
                 padding: 30px 35px
@@ -141,12 +165,16 @@
                     padding: 25px 20px
                 @include media(991) 
                     padding: 20px 15px
+                @include media(540) 
+                    padding: 15px
                 h2,p
                     color: var(--white)
                 span
                     color: var(--para)
                     font-size: 14px
                     font-weight: 400 
+                    @include media(540) 
+                        font-size: 12px
            
 .case_sec
     .container-fluid
@@ -154,6 +182,14 @@
         .upper-sec
             @include media(1170) 
                 margin-bottom: 2.5rem
+            @include media(768) 
+                margin-bottom: 2rem
+            @include media(540) 
+                margin-bottom: 1rem
+            .heading
+                p
+                    @include media(540)
+                        margin-top: 0
     .case_slider
         padding: 30px 15px
         @include media(1170) 
@@ -166,8 +202,14 @@
     .upper-sec
         @include media(1170) 
             margin-bottom: 2.5rem
+        @include media(768) 
+            margin-bottom: 2rem
+        @include media(540)
+            margin-bottom: 1rem
     .related_slider
         padding: 15px
+        @include media(768) 
+            padding: 10px
 
 
 .awards_slider
@@ -187,6 +229,11 @@
         padding: 40px 30px
         grid-template-columns: repeat(1, 1fr)
         grid-gap: 40px
+    @include media(768) 
+        padding: 35px 30px
+    @include media(540)
+        padding: 25px 15px
+        grid-gap: 30px
     .heading
       position: sticky
       top: calc( var(--headerheight) + 20px)
@@ -196,6 +243,8 @@
         margin-top: 30px
         @include media(991)
             margin-top: 20px
+        @include media(540)
+            margin-top: 15px
     .item-content
       display: flex
       flex-direction: column
@@ -237,12 +286,17 @@
             padding: 20px
           @include media(991)
             padding: 15px 20px
+          @include media(768) 
+            font-size: 16px
+            padding: 15px
 
         &_text
           font-size: 18px
           font-weight: 500
           line-height: 1.2
           text-align: left
+          @include media(540)
+            font-size: 16px
 
         &_icon
           flex: 0 1 auto
@@ -263,6 +317,8 @@
                 top: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
+                @include media(768) 
+                    --size: 18px
                 @include before(var(--bgcolor))
                 @include after(var(--bgcolor))
                 &::before,&::after
@@ -286,16 +342,22 @@
           transition: .5s ease
           @include media(1170) 
             padding: 0 20px 0
+          @include media(768) 
+            padding: 0 15px
           &.active
             padding: 0 22px 22px
             grid-template-rows: 1fr
             @include media(1170) 
                 padding: 0 20px 22px
+            @include media(768) 
+                padding: 0 15px 20px
 
         &_answer
           font-size: 16px
           color: rgba(15, 27, 53, 0.65)
           overflow: hidden
+          @include media(540)
+            font-size: 14px
             
 
 .speak_sec
@@ -314,6 +376,11 @@
             grid-template-columns: repeat(1, 1fr)
             padding: 40px 30px
             gap: 2.5rem
+        @include media(768) 
+            padding: 35px 30px
+        @include media(540)
+            padding: 25px 15px
+            gap: 2rem
         .heading
             p:not( .card-profile figcaption > p)
                 margin: 20px 0 45px
@@ -322,16 +389,27 @@
                     margin: 20px 0 40px
                 @include media(991) 
                     margin: 20px 0 30px
+                @include media(768) 
+                    margin: 15px 0 20px
+                @include media(540)
+                    margin: 10px 0 15px
             .card-profile
                 display: flex
                 flex-wrap: wrap
                 align-items: center
                 gap: 18px
                 max-width: max-content
+                @include media(768) 
+                    gap: 15px
+                @include media(540)
+                    gap: 10px
                 figure
                     flex: 0 1 auto
                     width: 52px
                     height: 52px
+                    @include media(540)
+                        width: 45px
+                        height: 45px
                 figcaption
                     flex: 1
                     line-height: 1.2
@@ -347,7 +425,19 @@
             border-radius: 10px
             @include media(1170) 
                 padding: 40px 35px
+            @include media(768) 
+                padding: 35px 30px
+            @include media(540)
+                padding: 20px 15px
             .form-grid
                 --item: 2
+                @include media(540)
+                    --item: 1
+                .submit-grp:not(.text-left)
+                    @include media(768) 
+                        margin-top: 0
+                .check_term
+                    @include media(540)
+                        margin: 0
 
 
