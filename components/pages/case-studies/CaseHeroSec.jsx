@@ -37,11 +37,15 @@ export default function CaseHeroSec({ data, id }){
                             }}
                             breakpoints={{
                                 0: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 40,
+                                    slidesPerView: 1.2,
+                                    spaceBetween: 15,
                                 },
                                 540: {
                                     slidesPerView: 1.5,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 2.95,
                                     spaceBetween: 20,
                                 },
                                 991: {

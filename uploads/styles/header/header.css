@@ -1677,11 +1677,6 @@ img, video {
   align-items: center;
   gap: 0 10px;
 }
-@media only screen and (max-width: 1152px) {
-  .swiper-nav.group {
-    gap: 0 8px;
-  }
-}
 .swiper-nav.icon-width-auto .swiper-next svg, .swiper-nav.icon-width-auto .swiper-prev svg {
   width: auto;
   height: auto;
