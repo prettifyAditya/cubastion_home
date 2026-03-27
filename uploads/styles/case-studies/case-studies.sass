@@ -241,22 +241,37 @@
     &::before
         background: linear-gradient(270deg, #0000 65%, #000c 100%)
     .bg
+        @include media(768)
+            height: 500px
+        @include media(540)
+            height: 400px
         .banner-wrapper
             .heading
                 max-width: 600px
                 margin: 40px 0
+                @include media(991)
+                    margin: 30px 0
+                @include media(540)
+                    margin: 0 0 20px 0 
                 h1
                     color: $white
+                    @include media(540)
+                        font-size: 20px
             .profile_wrap
                 display: flex
                 flex-wrap: wrap
                 align-items: center
                 max-width: max-content
                 gap: 15px
+                @include media(540)
+                    gap: 10px
                 .user
                     flex: 0 1 auto 
                     width: 37px
                     height: 37px
+                    @include media(540)
+                        width: 32px
+                        height: 32px
                     img
                         border-radius: 50%
                 .info
@@ -267,6 +282,8 @@
                     .desgn
                         color: #FFFFFFB2
                         font-size: 14px
+                        @include media(540)
+                            font-size: 12px
             .case_tag
                 margin-top: 50px
                 width: max-content
@@ -277,6 +294,15 @@
                 color: $white
                 border-radius: 25px
                 line-height: 1.5
+                @include media(1170)
+                    margin-top: 40px
+                @include media(768) 
+                    margin-top: 30px
+                @include media(540)
+                    margin-top: 25px
+                    padding: 6px 15px
+                    font-size: 12px
+                    font-weight: 400
 
 .case_highlights_sec
     background: #F5F7FA
@@ -289,14 +315,32 @@
             max-width: 40%
             width: 100%
             padding: 110px 70px
+            @include media(1170)
+                padding: 70px 50px
+            @include media(991)
+                padding: 60px 50px
+            @include media(768)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 40px 0 20px
+            @include media(540)
+                padding: 30px 0 20px
             .heading
                 height: 100%
                 display: flex
                 flex-direction: column
                 align-items: start
                 justify-content: center
+                @include media(768)
+                    flex-direction: row
+                    justify-content: space-between
+                    align-items: center
                 .btn
                     margin-top: 40px
+                    @include media(991)
+                        margin-top: 30px
+                    @include media(768)
+                        margin-top: 0
         .colB
             flex: 1
             max-width: 55%
@@ -304,6 +348,18 @@
             border-left: 1px solid $primary
             padding: 110px 70px
             padding-left: 0
+            @include media(1170)
+                padding: 70px
+                padding-left: 0
+                max-width: 60%
+            @include media(991)
+                padding: 60px 
+                padding-left: 0
+            @include media(768)
+                padding: 30px 0 40px 0
+                max-width: 100% 
+            @include media(540)
+                padding: 25px 0 30px 0
             ul
                 height: 100%
                 margin-left: -9px
@@ -311,6 +367,14 @@
                     position: relative
                     padding-left: 70px
                     color: #000000B2
+                    @include media(991)
+                        padding-left: 60px
+                    @include media(768)
+                        padding-left: 40px
+                    @include media(540)
+                        padding-left: 30px
+                        font-size: 14px
+                        line-height: 1.4
                     &:not(:last-child)
                         margin-bottom: 25px
                     &::before
@@ -324,6 +388,16 @@
                         background: #FAFAFA
                         border: 1px solid $primary
                         border-radius: 50%
+                        @include media(991)
+                            top: 11%
+                        @include media(768)
+                            width: 15px
+                            height: 15px
+                            left: 1px
+                        @include media(540)
+                            width: 13px
+                            height: 13px
+                            left: 2px
 
 .case_navigation
     .scroll_wrap
@@ -337,6 +411,13 @@
                 display: grid
                 grid-template-columns: repeat(2, 1fr)
                 grid-gap: 40px 60px
+                @include media(991)
+                    margin-top: 30px
+                    grid-gap: 40px 50px
+                @include media(768)
+                    grid-gap: 30px
+                @include media(540)
+                    grid-gap: 15px
                 .nav_item
                     display: flex
                     align-items: center
@@ -345,6 +426,13 @@
                     border-bottom: 1px solid #00000033
                     padding-bottom: 30px
                     cursor: pointer
+                    @include media(991)
+                        padding-bottom: 25px
+                    @include media(768)
+                        padding-bottom: 20px
+                    @include media(540)
+                        gap: 10px
+                        padding-bottom: 10px
                     &:hover
                         p
                             color: $primary
@@ -360,6 +448,11 @@
                         color: #00000066
                         font-weight: 500
                         transition: .5s ease
+                        @include media(768)
+                            font-size: 22px
+                            line-height: 1.2
+                        @include media(540)
+                            font-size: 16px
                     button
                         width: 40px
                         height: 40px
@@ -369,8 +462,17 @@
                         align-items: center
                         justify-content: center
                         transition: .5s ease
+                        @include media(768)
+                            width: 35px
+                            height: 35px
+                        @include media(540)
+                            width: 25px
+                            height: 25px
                         svg
                             transition: .3s ease
+                            @include media(540)
+                                width: 15px
+                                height: 15px
     .case_nav
         margin: 80px 0 
         border-top: 1px solid #00000033
@@ -379,16 +481,34 @@
         top: calc( var(--headerfixed) - 2px )
         background: #fffc
         backdrop-filter: blur(15px)
+        @include media(1170)
+            margin: 70px 0
+        @include media(991)
+            margin: 60px 0
+        @include media(768)
+            margin: 50px 0
+        @include media(540)
+            margin: 40px 0
         .nav_wrapper
             display: flex
             flex-wrap: wrap
             align-items: center
             justify-content: space-between
+            @include media(768)
+                flex-wrap: nowrap
+                overflow-x: auto
+                gap: 50px
+                @include scrollbar($width: 0)
             >ul
                 display: flex
                 flex-wrap: wrap
                 align-items: center
                 gap: 45px
+                @include media(991)
+                    gap: 25px
+                @include media(768)
+                    flex-wrap: nowrap
+                    gap: 20px
                 li
                     position: relative
                     padding: 20px 0
@@ -398,6 +518,14 @@
                     line-height: 1.2
                     cursor: pointer
                     transition: .5s ease
+                    @include media(991)
+                        padding: 15px 0
+                        font-size: 16px
+                    @include media(768)
+                        white-space: nowrap
+                    @include media(540)
+                        font-size: 14px
+                        padding: 10px 0
                     &.active
                         color: $primary
                         &::before
@@ -417,6 +545,12 @@
                 align-items: center
                 gap: 40px
                 --btnsize: 40px
+                @include media(991)
+                    gap: 20px
+                    --btnsize: 38px
+                @include media(768)
+                    flex-wrap: nowrap
+                    --btnsize: 30px
                 .share_wrap
                     position: relative
                     .shareBtn
@@ -436,9 +570,15 @@
                         right: 100%
                         transform: scale(.75) translate(0%, -50%)
                         opacity: 0
+                        user-select: none
+                        pointer-events: none
+                        @include media(991)
+                            background: $white
                         &.open
                             opacity: 1
                             transform: scale(1) translate(0%, -50%)
+                            user-select: all
+                            pointer-events: all
                         li
                             a
                                 display: block
@@ -466,8 +606,14 @@
         section
             &:not(:last-child)
                 margin-bottom: 60px
+                @include media(991)
+                    margin-bottom: 50px
+                @include media(768)
+                    margin-bottom: 40px
             .heading
                 margin-bottom: 20px
+                @include media(768)
+                    margin-bottom: 15px
                 h2
                     font-size: 14px
                     font-weight: 400
@@ -476,6 +622,10 @@
                 h6
                     font-size: 32px
                     line-height: 1.2
+                    @include media(768)
+                        font-size: 28px
+                    @include media(540)
+                        font-size: 22px
             .content
                 p
                     line-height: 1.5
@@ -484,15 +634,24 @@
 
 .related_sec
     background: #F5F7FA
+    .container
+        @include media(768)
+            padding-right: 0
     .upper_sec
         display: flex
         flex-wrap: wrap
         align-items: center
         justify-content: space-between
         margin-bottom: 40px
+        @include media(768)
+            padding-right: 15px
+        @include media(540)
+            margin-bottom: 30px
     .main_wrapper
         .related_slider 
             padding: 12px
+            @include media(1170)
+                padding: 10px
             .swiper-slide
                 height: auto
             .case_result_col
