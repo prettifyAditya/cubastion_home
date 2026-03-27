@@ -216,6 +216,13 @@
 // Service Details
 
 .banner.serviceD_banner
+    .bg
+        @include media(991) 
+            height: 500px
+        @include media(768) 
+            height: 450px
+        @include media(540) 
+            height: 300px
     &::before
         background: linear-gradient(270deg, #0000 0%, #000000 100%)
     .banner-wrapper
@@ -228,11 +235,19 @@
                 color: $secondary
                 font-size: 16px
                 font-weight: 500
+                @include media(540) 
+                    font-size: 14px
             p
                 font-size: 36px
                 color: $white
                 font-weight: 500
                 line-height: 1.2
+                @include media(991) 
+                    font-size: 32px
+                @include media(768) 
+                    font-size: 26px
+                @include media(540) 
+                    font-size: 20px
 
 .growth_sec
     @include before-blur()
@@ -241,6 +256,12 @@
         bottom: 0
         width: 150px
         height: 150px
+        @include media(768) 
+            width: 120px
+            height: 120px
+        @include media(540) 
+            width: 100px
+            height: 100px
     .main_wrapper
         align-items: center
         .colA
@@ -249,28 +270,77 @@
             width: 100%
             padding: 60px 210px 60px 0
             border-right: 1px solid #00000042
+            @include media(1170) 
+                padding: 60px 100px 60px 0
+            @include media(991) 
+                padding: 50px 55px 50px 0
+            @include media(768) 
+                flex: 0 1 100%
+                max-width: 100%
+                border-right: 0
+                padding: 0
             .heading
                 h2 
                     font-size: 28px
+                    @include media(540) 
+                        font-size: 24px
                 p
                     margin-top: 15px
+                    @include media(768) 
+                        margin-top: 10px
         .colB
             flex: 0 1 40%
             max-width: 40%
             width: 100%
             padding: 30px 0px 30px 100px
+            @include media(1170) 
+                padding: 30px 0 30px 70px
+            @include media(991) 
+                padding: 30px 0 30px 50px
+            @include media(768) 
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 30px 0 0 0 
+            @include media(540) 
+                padding: 20px 0 0 0
             .counter_wrapper
+                @include media(768) 
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-around
+                    text-align: center
+                @include media(540) 
+                    gap: 10px
                 .count_col
+                    @include media(540) 
+                        max-width: 130px
                     &:not(:last-child)
                         margin-bottom: 50px
+                        @include media(991) 
+                            margin-bottom: 45px
+                        @include media(768) 
+                            margin-bottom: 0
                     h6
                         font-weight: 200
                         font-size: 64px
                         line-height: 1.2
+                        @include media(991) 
+                            font-size: 54px
+                        @include media(768) 
+                            font-size: 46px
+                        @include media(540) 
+                            font-size: 32px
                     p
                         font-size: 20px
                         font-weight: 400
                         color: $black
+                        @include media(991) 
+                            font-size: 18px
+                        @include media(768) 
+                            font-size: 16px
+                        @include media(540) 
+                            font-size: 14px
+                            margin-top: 2px
 
 .ad_banner
     position: sticky
@@ -278,6 +348,13 @@
     .banner.banner_sec
         &::before
             display: none 
+        .bg
+            @include media(991) 
+                height: 550px
+            @include media(768) 
+                height: 500px
+            @include media(540) 
+                height: 400px
 
 .offering_sec
     position: relative
@@ -285,14 +362,34 @@
     .main_wrapper
         --gap: 100px
         gap: var(--gap)
+        @include media(1170) 
+            --gap: 70px
+        @include media(991) 
+            --gap: 50px
+        @include media(768) 
+            --gap: 30px
+        @include media(540) 
+            --gap: 20px
         .heading
             flex: 0 1 40%
             max-width: 40%
             width: 100%
             margin-top: 20px
+            @include media(768) 
+                flex: 0 1 100%
+                max-width: 100%
+                margin-top: 0
             h2
                 font-size: 48px
                 font-weight: 300
+                @include media(1170) 
+                    font-size: 42px
+                @include media(991) 
+                    font-size: 36px
+                @include media(768) 
+                    font-size: 30px
+                @include media(540) 
+                    font-size: 24px
             p
                 font-weight: 400
         .offering_faqs
@@ -300,6 +397,10 @@
             max-width: calc( 60% - var(--gap) )
             width: 100%
             border-top: 1px solid #31313159
+            @include media(768) 
+                max-width: 100%
+                border-color: $secondary
+                border-top-width: 2px
             .faq_item
                 border-bottom: 1px solid #31313159
                 &.active
@@ -316,6 +417,10 @@
                     justify-content: space-between
                     gap: 20px
                     padding: 25px 0
+                    @include media(1170) 
+                        padding: 20px 0
+                    @include media(540) 
+                        padding: 15px 0 
                     .faq_item_text
                         flex: 1
                         text-align: left
@@ -323,10 +428,21 @@
                         color: #00000066
                         font-weight: 500
                         transition: .5s ease
+                        @include media(991) 
+                            font-size: 20px
+                        @include media(540) 
+                            font-size: 16px
                     .faq_item_icon
                         flex: 0 1 auto
                         color: #00000066
                         transition: .5s ease
+                        svg
+                            @include media(991) 
+                                width: 18px
+                                height: 18px
+                            @include media(540) 
+                                width: 15px
+                                height: 15px
                 .faq_item_body
                     display: grid
                     grid-template-rows: 0fr
@@ -334,12 +450,18 @@
                     &.active
                         grid-template-rows: 1fr
                         padding-bottom: 30px
+                        @include media(1170) 
+                            padding-bottom: 25px
+                        @include media(540) 
+                            padding-bottom: 20px
                     .faq_item_answer
                         overflow: hidden
 
 .service_testimonials
     position: relative
     background: $white
+    @include media(540) 
+        padding-top: 0
     .main_wrapper
         align-items: center
         justify-content: center
@@ -348,40 +470,90 @@
         background: var(--gradient-a)
         border-radius: 20px
         padding: 160px 100px 100px
+        @include media(1170) 
+            padding: 100px 50px 60px
+            --gap: 70px
+        @include media(991) 
+            padding: 80px 40px 50px
+            --gap: 30px
+        @include media(768) 
+            padding: 60px 30px 50px
+            --gap: 20px
+        @include media(540) 
+            padding: 40px 15px 30px
         @include before(url("/assets/icon/quote.svg"))
         &::before
             background-repeat: no-repeat
             background-position: 45% 18%
+            @include media(1170) 
+                background-position: 34% -5%
+            @include media(991) 
+                background-position: 98% 0%
+                background-size: 32%
         .colA
             flex: 0 1 280px
             max-width: 280px
             width: 100%
+            @include media(768) 
+                flex: 0 1 240px
+                max-width: 240px
+            @include media(540) 
+                flex: 0 1 220px 
+                max-width: 220px
             .testimonial_figure 
                 height: 290px
+                @include media(768) 
+                    height: 250px
+                @include media(540) 
+                    height: 230px
                 figure
                     height: 272px
                     width: 272px
                     border-radius: 50%
+                    @include media(768) 
+                        width: 232px
+                        height: 232px
+                    @include media(540) 
+                        width: 212px
+                        height: 212px
                     img
                         border-radius: 50%
         .colB
             flex: 1
             max-width: calc( 60% - var(--gap) )
             width: 100%
+            @include media(991) 
+                max-width: 100%
             .testimonial_content 
                 figcaption
+                    @include media(991) 
+                        text-align: center
                     .desc
                         margin-bottom: 25px
+                        @include media(768) 
+                            margin-bottom: 20px
+                        @include media(540) 
+                            margin-bottom: 15px
                         p
                             font-size: 24px
                             line-height: 32px
                             color: $white
                             font-weight: 300 
+                            @include media(1170) 
+                                font-size: 22px
+                            @include media(768) 
+                                font-size: 20px
+                                line-height: 1.4
+                            @include media(540) 
+                                font-size: 16px
+                                line-height: 1.4
                             &:not(:last-child)
                                 margin-bottom: 10px
                     .user_details
                         position: relative
                         padding-top: 20px
+                        @include media(540) 
+                            padding-top: 15px
                         &::before
                             content: ""
                             position: absolute
@@ -390,25 +562,56 @@
                             width: 90px
                             height: 3px
                             background: $secondary
+                            @include media(991) 
+                                left: 50%
+                                transform: translateX(-50%)
                         h6
                             font-size: 18px
                             font-weight: 600
                             color: $white
+                            @include media(540) 
+                                font-size: 16px
                         p
                             font-weight: 300
                             color: $white
                             font-size: 14px
             .swiper-nav
                 margin-top: 40px
+                @include media(991) 
+                    justify-content: center
+                    gap: 20px
+                @include media(768) 
+                    margin-top: 30px
+                    gap: 15px
+                @include media(540) 
+                    display: flex !important
+                    margin-top: 20px
 
 .more_services
     position: relative
     background: $white
+    .container, container-fluid
+        @include media(991) 
+            padding-right: 0
     .heading
         text-align: center
         margin-bottom: 60px
+        @include media(1170) 
+            margin-bottom: 50px
+        @include media(768) 
+            margin-bottom: 40px
+        @include media(540) 
+            margin-bottom: 30px
         h2
             font-size: 48px
+            @include media(1170) 
+                font-size: 42px
+            @include media(991) 
+                font-size: 36px
+            @include media(768) 
+                font-size: 30px
+            @include media(540) 
+                font-size: 26px
     .main_wrapper
         position: relative
         .more_services_slider 
@@ -430,13 +633,26 @@
                         transition: .8s ease
                 figcaption
                     padding: 0 35px 40px
+                    @include media(1170) 
+                        padding: 0 25px 30px
+                    @include media(768) 
+                        padding: 0 15px 20px
                     h6
                         color: $white
+                        @include media(768) 
+                            line-height: 1.2
+                            font-size: 18px
 
 .partner-banner.banner
     &::before
         background: linear-gradient(180deg, #0000 0%, #000c 100%)
     .bg
+        @include media(991) 
+            height: 550px
+        @include media(768) 
+            height: 500px
+        @include media(540) 
+            height: 450px
         .banner-wrapper
             .heading
                 max-width: 610px
@@ -446,6 +662,18 @@
                     font-size: 48px
                     color: $white
                     font-weight: 200
+                    @include media(1170) 
+                        font-size: 42px
+                    @include media(768) 
+                        font-size: 36px
+                    @include media(540) 
+                        font-size: 28px
                 .btn
                     margin-top: 60px
+                    @include media(1170) 
+                        margin-top: 50px
+                    @include media(768) 
+                        margin-top: 40px
+                    @include media(540) 
+                        margin-top: 30px
 

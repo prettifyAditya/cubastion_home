@@ -31,7 +31,7 @@
 }
 @media only screen and (max-width: 540px) {
   .about-banner.banner .bg {
-    height: 450px;
+    height: 250px;
   }
 }
 .about-banner.banner .banner-wrapper .container {
@@ -74,7 +74,7 @@
 }
 @media only screen and (max-width: 540px) {
   .about-banner.banner .banner-wrapper .heading p {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .about-banner.banner .banner-wrapper .ceo_details {

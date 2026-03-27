@@ -42,7 +42,11 @@ export default function MoreServices({ data, id }){
                                     slidesPerView: 2.2,
                                     spaceBetween: 15,
                                 },
-                                769: {
+                                768: {
+                                    slidesPerView: 2.2,
+                                    spaceBetween: 15,
+                                },
+                                991: {
                                     slidesPerView: 3,
                                     spaceBetween: 15,
                                 }
